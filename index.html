@@ -3,36 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulado CFP/26 - PMPR</title>
+    <title>Simulado PMPR - Feedback Imediato</title>
     <style>
         :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --success-color: #27ae60;
-            --error-color: #c0392b;
-            --bg-color: #f4f7f6;
+            --primary: #2c3e50; --secondary: #3498db; --success: #27ae60; --error: #c0392b; --bg: #f4f7f6;
         }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-color); margin: 0; padding: 20px; display: flex; justify-content: center; }
-        .quiz-container { background: #fff; width: 100%; max-width: 700px; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
-        .header { border-bottom: 2px solid var(--secondary-color); margin-bottom: 20px; padding-bottom: 10px; text-align: center; }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); margin: 0; padding: 20px; display: flex; justify-content: center; }
+        .quiz-container { background: #fff; width: 100%; max-width: 750px; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .header { border-bottom: 2px solid var(--secondary); margin-bottom: 20px; text-align: center; }
         .progress-bar { height: 8px; background: #eee; border-radius: 4px; margin-bottom: 20px; overflow: hidden; }
-        .progress-fill { height: 100%; background: var(--secondary-color); width: 0%; transition: width 0.3s; }
+        .progress-fill { height: 100%; background: var(--secondary); width: 0%; transition: width 0.3s; }
         .question-box { display: none; }
         .question-box.active { display: block; }
-        .question-text { font-size: 1.1rem; font-weight: 600; color: #333; margin-bottom: 20px; line-height: 1.5; }
-        .options { list-style: none; padding: 0; }
-        .option-item { margin-bottom: 12px; }
-        .option-item label { display: block; padding: 15px; border: 2px solid #ddd; border-radius: 8px; cursor: pointer; transition: all 0.2s; }
+        .option-item { margin-bottom: 12px; position: relative; }
+        .option-item label { display: block; padding: 15px; border: 2px solid #ddd; border-radius: 8px; cursor: pointer; transition: 0.2s; }
         .option-item input { display: none; }
-        .option-item label:hover { background: #f0f7ff; border-color: var(--secondary-color); }
-        .option-item input:checked + label { background: #e1effe; border-color: var(--secondary-color); color: var(--secondary-color); font-weight: bold; }
-        .nav-buttons { margin-top: 30px; display: flex; justify-content: flex-end; }
-        button { background: var(--secondary-color); color: white; border: none; padding: 12px 25px; border-radius: 6px; cursor: pointer; font-size: 1rem; font-weight: bold; }
-        button:hover { opacity: 0.9; }
+        .option-item input:checked + label { border-color: var(--secondary); background: #e1effe; }
+        
+        /* Cores de Feedback */
+        .correct-choice label { border-color: var(--success) !important; background: #d4edda !important; color: #155724; font-weight: bold; }
+        .wrong-choice label { border-color: var(--error) !important; background: #f8d7da !important; color: #721c24; }
+        
+        #feedback-msg { margin-top: 15px; font-weight: bold; font-size: 1.1rem; text-align: center; min-height: 25px; }
+        .btn-area { margin-top: 25px; display: flex; flex-direction: column; gap: 10px; }
+        button { padding: 12px; border-radius: 6px; border: none; cursor: pointer; font-weight: bold; font-size: 1rem; }
+        #action-btn { background: var(--secondary); color: white; }
         #results-screen { display: none; text-align: center; }
-        .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 20px 0; }
-        .stat-card { background: #f9f9f9; padding: 15px; border-radius: 8px; border: 1px solid #ddd; }
-        .history-list { text-align: left; margin-top: 20px; max-height: 200px; overflow-y: auto; background: #f1f1f1; padding: 10px; border-radius: 5px; }
+        .history-list { text-align: left; background: #f1f1f1; padding: 15px; border-radius: 8px; margin-top: 20px; max-height: 200px; overflow-y: auto; }
     </style>
 </head>
 <body>
@@ -40,149 +37,144 @@
 <div class="quiz-container">
     <div id="quiz-screen">
         <div class="header">
-            <h2 id="quiz-title">Simulado CFP/26 PMPR</h2>
-            <div id="counter">Questão 1 de 21</div>
+            <h2 id="counter">Questão 1 de 21</h2>
         </div>
         <div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
         <div id="questions-area"></div>
-        <div class="nav-buttons">
-            <button onclick="nextQuestion()" id="next-btn">Próxima Questão</button>
+        <div id="feedback-msg"></div>
+        <div class="btn-area">
+            <button id="action-btn" onclick="handleButtonClick()">Verificar Resposta</button>
         </div>
     </div>
 
     <div id="results-screen">
-        <h2 style="color: var(--primary-color)">Resultado do Simulado</h2>
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div style="font-size: 0.9rem; color: #666;">Acertos</div>
-                <div id="final-score" style="font-size: 1.5rem; font-weight: bold; color: var(--success-color)">0</div>
-            </div>
-            <div class="stat-card">
-                <div style="font-size: 0.9rem; color: #666;">Aproveitamento</div>
-                <div id="final-percent" style="font-size: 1.5rem; font-weight: bold; color: var(--secondary-color)">0%</div>
-            </div>
-        </div>
-        <h3>Histórico de Melhoria</h3>
-        <div id="history-area" class="history-list">Nenhum teste anterior registrado.</div>
-        <button onclick="location.reload()" style="margin-top: 20px; background: var(--primary-color);">Reiniciar Simulado</button>
+        <h2>Simulado Concluído</h2>
+        <p style="font-size: 1.2rem">Acertos: <span id="final-score">0</span>/21 (<span id="final-percent">0%</span>)</p>
+        <h3>Seu Histórico (Últimos 5):</h3>
+        <div id="history-area" class="history-list"></div>
+        <button onclick="location.reload()" style="background: var(--primary); color: white; width: 100%; margin-top: 20px;">Reiniciar Simulado</button>
     </div>
 </div>
 
 <script>
-    // Dados extraídos das fontes [1], [2], [3], [4], [5], [6]
     const questions = [
-        { q: "Emancipação Política do Paraná: Assinale a alternativa que indica corretamente a sua antiga denominação e a data de sua emancipação política:", options: {A: "Comarca de Paranaguá, pertencente à Província de São Paulo; emancipada em 29 de agosto de 1853.", B: "Província das Araucárias, pertencente a Santa Catarina; emancipada em 12 de outubro de 1822.", C: "Comarca de Curitiba, pertencente à Província do Rio de Janeiro; emancipada em 07 de setembro de 1889.", D: "Província do Guairá, pertencente ao Mato Grosso; emancipada em 15 de novembro de 1889."}, correct: "A" },
-        { q: "Qual fator socioeconômico foi determinante para o início do embate na Guerra do Contestado?", options: {A: "Disputa por jazidas de ouro recém-descobertas.", B: "A demissão em massa e o abandono de milhares de operários trazidos para construir a ferrovia da Brazil Railway Company.", C: "A invasão de tropas argentinas para o plantio de erva mate.", D: "A revolta dos cafeicultores locais contra taxas alfandegárias."}, correct: "B" },
-        { q: "Sobre o desfecho do conflito do Contestado e suas inovações táticas, assinale a correta:", options: {A: "Foi o primeiro conflito com blindados terrestres trazidos da Europa.", B: "O conflito foi pacificado por plebiscito popular.", C: "Marcou a primeira vez no Brasil em que a aviação militar foi empregada para bombardear civis.", D: "Terminou com a anexação de toda a área pela Argentina."}, correct: "C" },
-        { q: "Associe as unidades BPRV e BPMA às suas respectivas atribuições:", options: {A: "BPRV faz policiamento aéreo; BPMA escolta cargas ferroviárias.", B: "BPRV combate tráfico de animais; BPMA faz fiscalização de trânsito federal.", C: "BPRV atua em crimes bancários; BPMA patrulha águas continentais.", D: "O BPRV garante a segurança viária (ex: BR-277 e Graciosa); o BPMA combate crimes ambientais (ex: extração de palmito na Mata Atlântica)."}, correct: "D" },
-        { q: "Qual alternativa NÃO corresponde a um objetivo da disciplina de História da PMPR?", options: {A: "Desenvolver sentimento de pertencimento.", B: "Isentar o policial militar do cumprimento estrito da legalidade em prol de decisões autônomas.", C: "Refletir sobre erros e conquistas.", D: "Fortalecer princípios como disciplina e hierarquia."}, correct: "B" },
-        { q: "Qual a origem geológica e característica do solo do Terceiro Planalto (Guarapuava)?", options: {A: "Solo arenoso de caatinga.", B: "Terra roxa de extrema fertilidade, originada de derrames vulcânicos.", C: "Solo de massapê escuro de calcárias e granito.", D: "Solo podzólico de sedimentos marinhos."}, correct: "B" },
-        { q: "O que representam o Falcão Nhapecani e as três elevações no brasão da PMPR?", options: {A: "Gavião da força aérea e as três bacias hidrográficas.", B: "O Falcão Nhapecani; a representação dos três planaltos paranaenses.", C: "A Águia Imperial e os três poderes constitucionais.", D: "O Condor Andino e as três principais cidades coloniais."}, correct: "B" },
-        { q: "Em que ano a instituição recebeu o nome definitivo de Polícia Militar do Estado do Paraná?", options: {A: "1892", B: "1917", C: "1932", D: "1946"}, correct: "D" },
-        { q: "Qual a origem do capacete Pickelhaube?", options: {A: "França napoleônica.", B: "Criado em 1842 pelo Reino da Prússia; feito em couro envernizado com ponteira metálica.", C: "Império Britânico; tecido cáqui.", D: "Itália renascentista; aço escovado."}, correct: "B" },
-        { q: "Qual era o principal temor de ordem fiscal que uniu os conspiradores da Inconfidência Mineira?", options: {A: "Imposto sobre extração de pau-brasil.", B: "A prática da 'Derrama', cobrança compulsória de dívidas atrasadas.", C: "Proibição de mão de obra escravizada.", D: "Confisco de terras improdutivas para colonos europeus."}, correct: "B" },
-        { q: "Por que apenas Tiradentes foi condenado à morte no desfecho da Inconfidência?", options: {A: "Era o financiador milionário.", B: "Pertencia à elite agrária de Portugal.", C: "Foi pego tentando assassinar a rainha.", D: "Possuía a patente militar mais baixa entre os réus (alferes) e assumiu toda a responsabilidade."}, correct: "D" },
-        { q: "Qual estratégia da elite paranaense conquistou a simpatia de Dom Pedro II para a criação da Província em 1853?", options: {A: "Apoio armado à Coroa em 1822.", B: "Neutralidade absoluta na Guerra do Paraguai.", C: "Demonstração de fidelidade ao Império enviando tropas contra a Revolução Farroupilha (1835-1845).", D: "Financiamento da corte sediada em Curitiba."}, correct: "C" },
-        { q: "A Companhia de Força Policial (1854), sob Zacarias de Góis, foi inspirada em qual modelo?", options: {A: "Fuzileiros navais britânicos.", B: "Gendarmeria Francesa, com efetivo inicial de 100 praças e oficiais.", C: "Batedores civis voluntários do Prata.", D: "Corpo de Voluntários da Pátria do Ministério da Guerra."}, correct: "B" },
-        { q: "Sobre o ingresso feminino na PMPR, assinale a correta:", options: {A: "Ocorreu apenas após a Constituição de 1988.", B: "A entrada ocorreu em 19 de abril de 1977, fazendo do Paraná o segundo estado do Brasil a permitir o público feminino.", C: "Iniciou-se em 1854 no combate ao banditismo.", D: "As vagas eram exclusivas para o BPMOA nos anos 2000."}, correct: "B" },
-        { q: "Conforme o Artigo 144 da CF/88, qual a missão principal das Polícias Militares?", options: {A: "Investigação de infrações penais comuns.", B: "Patrulhamento das rodovias federais.", C: "Execução da polícia ostensiva e a preservação da ordem pública.", D: "Guarda externa de presídios federais."}, correct: "C" },
-        { q: "Segundo o Artigo 42 da CF, quais direitos são PROIBIDOS ao militar estadual na ativa?", options: {A: "Voto e casamento civil.", B: "Sindicalização e greve.", C: "Porte de armas e livre trânsito.", D: "Ensino superior e posse de imóveis."}, correct: "B" },
-        { q: "Na Guerra do Paraguai, NÃO se incluía entre as atividades dos policiais paranaenses o(a):", options: {A: "Apoio logístico.", B: "Combate direto na linha de frente.", C: "Defesa do território nacional.", D: "Comando geral da Marinha imperial brasileira."}, correct: "D" },
-        { q: "Geopoliticamente, o que representava a bacia hidrográfica do Rio da Prata?", options: {A: "Barreira natural intransponível.", B: "Motivo geopolítico central do conflito, envolvendo interesses políticos, econômicos e territoriais.", C: "Linha de demarcação do Tratado de Tordesilhas.", D: "Zona neutra coordenada pelo Império Britânico."}, correct: "B" },
-        { q: "Qual corrente historiográfica atribui o conflito à consolidação dos Estados-Nação e discordâncias na bacia platina?", options: {A: "Corrente Tradicional.", B: "Corrente Revisionista.", C: "Nova Historiografia.", D: "Historiografia Imperial."}, correct: "C" },
-        { q: "Por que a Batalha de Acosta Ñu (1869) é considerada um dos episódios mais trágicos?", options: {A: "Pela vitória de Solano López.", B: "Consistiu no massacre de cerca de 500 crianças e adolescentes paraguaios.", C: "Pela destruição da fundição de Ibicuí.", D: "Pelo uso de mísseis balísticos."}, correct: "B" },
-        { q: "Como as Polícias Militares atuam constitucionalmente em caso de guerra internacional?", options: {A: "Instituições autônomas sem subordinação.", B: "Forças auxiliares e reserva do Exército Brasileiro, subordinadas aos Governadores.", C: "Organizações paramilitares privadas.", D: "Divisões da ONU."}, correct: "B" }
+        { q: "1. Qual a data de emancipação política do Paraná?", options: {A: "12 de outubro de 1822", B: "29 de agosto de 1853", C: "07 de setembro de 1889", D: "15 de novembro de 1889"}, correct: "B" },
+        { q: "2. Qual fator iniciou a Guerra do Contestado?", options: {A: "Disputa de ouro", B: "Demissão em massa na Brazil Railway Company", C: "Invasão argentina", D: "Taxas do café"}, correct: "B" },
+        { q: "3. Inovação tática marcante no Contestado:", options: {A: "Tanques pesados", B: "Plebiscito popular", C: "Uso de aviação militar contra civis", D: "Anexação argentina"}, correct: "C" },
+        { q: "4. Atribuição correta das unidades BPRV e BPMA:", options: {A: "BPRV: Rodovias; BPMA: Crimes Ambientais", B: "BPRV: Aéreo; BPMA: Ferroviário", C: "BPRV: Bancário; BPMA: Fronteiras", D: "BPRV: Urbano; BPMA: Escolta"}, correct: "A" },
+        { q: "5. NÃO é objetivo da História da PMPR:", options: {A: "Sentimento de pertencimento", B: "Isentar o policial do estrito cumprimento da legalidade", C: "Refletir sobre erros", D: "Fortalecer disciplina"}, correct: "B" },
+        { q: "6. Característica do solo do Terceiro Planalto:", options: {A: "Arenoso", B: "Terra roxa fértil (vulcanismo)", C: "Massapê calcário", D: "Podzólico marinho"}, correct: "B" },
+        { q: "7. O que representam as três elevações no brasão da PMPR?", options: {A: "Bacias hidrográficas", B: "Os três planaltos paranaenses", C: "Três poderes", D: "Três cidades coloniais"}, correct: "B" },
+        { q: "8. Ano do nome 'Polícia Militar do Estado do Paraná':", options: {A: "1892", B: "1917", C: "1932", D: "1946"}, correct: "D" },
+        { q: "9. Origem do capacete Pickelhaube:", options: {A: "França", B: "Reino da Prússia (1842)", C: "Império Britânico", D: "Itália"}, correct: "B" },
+        { q: "10. Motivo fiscal da Inconfidência Mineira:", options: {A: "Imposto do pau-brasil", B: "A 'Derrama'", C: "Fim da escravidão", D: "Confisco de terras"}, correct: "B" },
+        { q: "11. Por que Tiradentes foi o único executado?", options: {A: "Era o líder financeiro", B: "Elite agrária", C: "Tentou matar a Rainha", D: "Patente mais baixa (alferes) e assumiu culpa"}, correct: "D" },
+        { q: "12. Estratégia paranaense para ganhar autonomia em 1853:", options: {A: "Apoio em 1822", B: "Neutralidade no Paraguai", C: "Fidelidade contra a Rev. Farroupilha", D: "Financiamento da Corte"}, correct: "C" },
+        { q: "13. Modelo da Companhia de Força Policial (1854):", options: {A: "Marinha Inglesa", B: "Gendarmeria Francesa", C: "Batedores do Prata", D: "Exército Alemão"}, correct: "B" },
+        { q: "14. Ingresso feminino na PMPR:", options: {A: "Pós-1988", B: "19 de abril de 1977", C: "Desde 1854", D: "Apenas nos anos 2000"}, correct: "B" },
+        { q: "15. Missão da PM (Art. 144 CF):", options: {A: "Investigação civil", B: "Patrulha federal", C: "Polícia ostensiva e ordem pública", D: "Guarda de presídios"}, correct: "C" },
+        { q: "16. Proibição ao militar (Art. 42 CF):", options: {A: "Voto", B: "Sindicalização e greve", C: "Porte de arma", D: "Ensino superior"}, correct: "B" },
+        { q: "17. NÃO era atividade da PMPR na Guerra do Paraguai:", options: {A: "Logística", B: "Linha de frente", C: "Defesa territorial", D: "Comando da Marinha"}, correct: "D" },
+        { q: "18. Importância do Rio da Prata no conflito:", options: {A: "Barreira física", B: "Motivo geopolítico central", C: "Linha de Tordesilhas", D: "Zona neutra"}, correct: "B" },
+        { q: "19. Corrente que foca na consolidação dos Estados-Nação:", options: {A: "Tradicional", B: "Revisionista", C: "Nova Historiografia", D: "Imperial"}, correct: "C" },
+        { q: "20. Tragédia da Batalha de Acosta Ñu:", options: {A: "Morte de Solano", B: "Massacre de 500 crianças paraguaias", C: "Fim da fundição", D: "Mísseis balísticos"}, correct: "B" },
+        { q: "21. Papel das PMs em guerra internacional:", options: {A: "Autônomas", B: "Forças auxiliares e reserva do Exército", C: "Paramilitares privadas", D: "Submetidas à ONU"}, correct: "B" }
     ];
 
-    let currentIdx = 0;
-    let score = 0;
+    let currentIdx = 0, score = 0, isChecking = true;
 
-    function initQuiz() {
+    function init() {
         const area = document.getElementById('questions-area');
-        questions.forEach((q, index) => {
-            let optionsHtml = '';
-            for (let opt in q.options) {
-                optionsHtml += `
-                    <div class="option-item">
-                        <input type="radio" name="q${index}" id="q${index}${opt}" value="${opt}">
-                        <label for="q${index}${opt}">${opt}) ${q.options[opt]}</label>
-                    </div>`;
-            }
-            area.innerHTML += `
-                <div class="question-box" id="box-${index}">
-                    <p class="question-text">${q.q}</p>
-                    <div class="options">${optionsHtml}</div>
+        questions.forEach((q, i) => {
+            let opts = '';
+            for (let k in q.options) {
+                opts += `<div class="option-item" id="opt-container-${i}-${k}">
+                    <input type="radio" name="q${i}" id="q${i}${k}" value="${k}">
+                    <label for="q${i}${k}">${k}) ${q.options[k]}</label>
                 </div>`;
+            }
+            area.innerHTML += `<div class="question-box" id="box-${i}">${q.q}<div style="margin-top:15px">${opts}</div></div>`;
         });
-        showQuestion(0);
+        updateDisplay();
         loadHistory();
     }
 
-    function showQuestion(index) {
-        document.querySelectorAll('.question-box').forEach(box => box.classList.remove('active'));
-        document.getElementById(`box-${index}`).classList.add('active');
-        document.getElementById('counter').innerText = `Questão ${index + 1} de ${questions.length}`;
-        document.getElementById('progress').style.width = `${((index + 1) / questions.length) * 100}%`;
+    function handleButtonClick() {
+        const btn = document.getElementById('action-btn');
+        if (isChecking) {
+            verifyAnswer();
+        } else {
+            nextQuestion();
+        }
+    }
+
+    function verifyAnswer() {
+        const selected = document.querySelector(`input[name="q${currentIdx}"]:checked`);
+        if (!selected) { return alert("Selecione uma opção!"); }
+
+        const correct = questions[currentIdx].correct;
+        const feedback = document.getElementById('feedback-msg');
+        
+        // Bloquear rádio buttons
+        document.querySelectorAll(`input[name="q${currentIdx}"]`).forEach(input => input.disabled = true);
+
+        if (selected.value === correct) {
+            score++;
+            feedback.innerText = "CORRETO!";
+            feedback.style.color = "var(--success)";
+            document.getElementById(`opt-container-${currentIdx}-${correct}`).classList.add('correct-choice');
+        } else {
+            feedback.innerText = `INCORRETO. A resposta certa era ${correct}.`;
+            feedback.style.color = "var(--error)";
+            document.getElementById(`opt-container-${currentIdx}-${selected.value}`).classList.add('wrong-choice');
+            document.getElementById(`opt-container-${currentIdx}-${correct}`).classList.add('correct-choice');
+        }
+
+        document.getElementById('action-btn').innerText = (currentIdx < questions.length - 1) ? "Próxima Questão" : "Ver Resultado Final";
+        isChecking = false;
     }
 
     function nextQuestion() {
-        const selected = document.querySelector(`input[name="q${currentIdx}"]:checked`);
-        if (!selected) {
-            alert("Por favor, selecione uma resposta!");
-            return;
-        }
-
-        if (selected.value === questions[currentIdx].correct) {
-            score++;
-        }
-
         currentIdx++;
         if (currentIdx < questions.length) {
-            showQuestion(currentIdx);
-            if (currentIdx === questions.length - 1) {
-                document.getElementById('next-btn').innerText = "Finalizar Simulado";
-            }
+            isChecking = true;
+            document.getElementById('action-btn').innerText = "Verificar Resposta";
+            document.getElementById('feedback-msg').innerText = "";
+            updateDisplay();
         } else {
-            showResults();
+            showFinalResults();
         }
     }
 
-    function showResults() {
+    function updateDisplay() {
+        document.querySelectorAll('.question-box').forEach(b => b.classList.remove('active'));
+        document.getElementById(`box-${currentIdx}`).classList.add('active');
+        document.getElementById('counter').innerText = `Questão ${currentIdx + 1} de ${questions.length}`;
+        document.getElementById('progress').style.width = `${((currentIdx + 1) / questions.length) * 100}%`;
+    }
+
+    function showFinalResults() {
         document.getElementById('quiz-screen').style.display = 'none';
         document.getElementById('results-screen').style.display = 'block';
         document.getElementById('final-score').innerText = score;
-        const percent = ((score / questions.length) * 100).toFixed(1);
-        document.getElementById('final-percent').innerText = `${percent}%`;
-
-        saveHistory(score, percent);
+        const pct = ((score / 21) * 100).toFixed(1);
+        document.getElementById('final-percent').innerText = pct + "%";
+        saveHistory(score, pct);
     }
 
-    function saveHistory(score, percent) {
-        let history = JSON.parse(localStorage.getItem('pmpr_history')) || [];
-        const entry = {
-            date: new Date().toLocaleString('pt-BR'),
-            score: score,
-            percent: percent
-        };
-        history.unshift(entry);
-        localStorage.setItem('pmpr_history', JSON.stringify(history.slice(0, 5))); // Salva os últimos 5
+    function saveHistory(s, p) {
+        let h = JSON.parse(localStorage.getItem('pmpr_v2')) || [];
+        h.unshift({ d: new Date().toLocaleString('pt-BR'), s, p });
+        localStorage.setItem('pmpr_v2', JSON.stringify(h.slice(0, 5)));
         loadHistory();
     }
 
     function loadHistory() {
-        let history = JSON.parse(localStorage.getItem('pmpr_history')) || [];
-        const area = document.getElementById('history-area');
-        if (history.length > 0) {
-            area.innerHTML = history.map(h => 
-                `<div style="margin-bottom:8px; border-bottom:1px solid #ccc; padding-bottom:4px">
-                    <strong>${h.date}</strong>: ${h.score}/${questions.length} (${h.percent}%)
-                </div>`
-            ).join('');
-        }
+        let h = JSON.parse(localStorage.getItem('pmpr_v2')) || [];
+        document.getElementById('history-area').innerHTML = h.length ? h.map(x => `<div>${x.d}: ${x.s}/21 (${x.p}%)</div>`).join('') : "Sem histórico.";
     }
 
-    window.onload = initQuiz;
+    window.onload = init;
 </script>
-
 </body>
 </html>
