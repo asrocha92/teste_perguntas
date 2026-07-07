@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado PMPR - Estilo Concurso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .question-text {
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .options {
+            list-style: none;
+            padding: 0;
+        }
+        .options li {
+            margin-bottom: 10px;
+        }
+        .options label {
+            display: block;
+            padding: 10px;
+            background: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .options label:hover {
+            background: #e9ecef;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .result {
+            margin-top: 10px;
+            font-weight: bold;
+            display: none;
+        }
+        .correct { color: #27ae60; }
+        .wrong { color: #c0392b; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Simulado: História da PMPR e Conflitos</h1>
+
+    <!-- Questão 1: Guerra do Paraguai -->
+    <div class="question" id="q1">
+        <p class="question-text">1. No início do conflito, a então Força Policial da Província do Paraná foi mobilizada para integrar as forças imperiais brasileiras. Entre as principais atividades desempenhadas pelos policiais paranaenses na Guerra do Paraguai, <strong>NÃO</strong> se incluía o(a):</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q1" value="A"> A) Apoio logístico.</label></li>
+            <li><label><input type="radio" name="q1" value="B"> B) Combate direto na linha de frente.</label></li>
+            <li><label><input type="radio" name="q1" value="C"> C) Defesa do território nacional.</label></li>
+            <li><label><input type="radio" name="q1" value="D"> D) Comando geral da Marinha imperial brasileira.</label></li>
+        </ul>
+        <button onclick="checkAnswer('q1', 'D')">Responder</button>
+        <p class="result" id="res-q1"></p>
+    </div>
+
+    <!-- Questão 2: Emancipação do Paraná -->
+    <div class="question" id="q2">
+        <p class="question-text">2. Durante o período colonial, o território que hoje compreende o estado do Paraná pertencia a outra unidade federativa. Assinale a alternativa que indica corretamente a sua antiga denominação e a data de sua emancipação política:</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q2" value="A"> A) Comarca de Paranaguá, pertencente à Província de São Paulo; emancipada em 29 de agosto de 1853.</label></li>
+            <li><label><input type="radio" name="q2" value="B"> B) Província das Araucárias, pertencente a Santa Catarina; emancipada em 12 de outubro de 1822.</label></li>
+            <li><label><input type="radio" name="q2" value="C"> C) Comarca de Curitiba, pertencente à Província do Rio de Janeiro; emancipada em 07 de setembro de 1889.</label></li>
+            <li><label><input type="radio" name="q2" value="D"> D) Província do Guairá, pertencente ao Mato Grosso; emancipada em 15 de novembro de 1889.</label></li>
+        </ul>
+        <button onclick="checkAnswer('q2', 'A')">Responder</button>
+        <p class="result" id="res-q2"></p>
+    </div>
+
+    <!-- Questão 3: Batalha de Acosta Ñu -->
+    <div class="question" id="q3">
+        <p class="question-text">3. A Batalha de Acosta Ñu (ou Batalha de Campo Grande), ocorrida em 16 de agosto de 1869, é lembrada como um dos episódios mais trágicos e violentos do conflito. Esse confronto é historicamente marcante porque:</p>
+        <ul class="options">
+            <li><label><input type="radio" name="q3" value="A"> A) Selou a vitória imediata e definitiva do ditador Francisco Solano López sobre a Argentina.</label></li>
+            <li><label><input type="radio" name="q3" value="B"> B) Consistiu no massacre de cerca de 500 crianças e adolescentes paraguaios pelas forças aliadas.</label></li>
+            <li><label><input type="radio" name="q3" value="C"> C) Marcou a destruição completa da fundição de armas paraguaia na cidade de Ibicuí.</label></li>
+            <li><label><input type="radio" name="q3" value="D"> D) Envolveu o uso pioneiro de mísseis balísticos e tecnologia pesada de longo alcance.</label></li>
+        </ul>
+        <button onclick="checkAnswer('q3', 'B')">Responder</button>
+        <p class="result" id="res-q3"></p>
+    </div>
+</div>
+
+<script>
+    function checkAnswer(questionId, correctAnswer) {
+        const options = document.getElementsByName(questionId);
+        let selectedValue = "";
+        for (const option of options) {
+            if (option.checked) {
+                selectedValue = option.value;
+                break;
+            }
+        }
+
+        const resultElement = document.getElementById('res-' + questionId);
+        resultElement.style.display = "block";
+
+        if (selectedValue === correctAnswer) {
+            resultElement.innerHTML = "Correto!";
+            resultElement.className = "result correct";
+        } else if (selectedValue === "") {
+            resultElement.innerHTML = "Por favor, selecione uma opção.";
+            resultElement.className = "result wrong";
+        } else {
+            resultElement.innerHTML = "Errado. A resposta correta é a alternativa " + correctAnswer + ".";
+            resultElement.className = "result wrong";
+        }
+    }
+</script>
+
+</body>
+</html>
