@@ -3,42 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulado PMPR - Feedback Imediato</title>
+    <title>Simulado Oficial CFP/26</title>
     <style>
         :root {
             --primary: #2c3e50; --secondary: #3498db; --success: #27ae60; --error: #c0392b; --bg: #f4f7f6;
         }
         body { font-family: 'Segoe UI', sans-serif; background: var(--bg); margin: 0; padding: 20px; display: flex; justify-content: center; }
-        .quiz-container { background: #fff; width: 100%; max-width: 750px; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .quiz-container { background: #fff; width: 100%; max-width: 800px; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
         .header { border-bottom: 2px solid var(--secondary); margin-bottom: 20px; text-align: center; }
         .progress-bar { height: 8px; background: #eee; border-radius: 4px; margin-bottom: 20px; overflow: hidden; }
         .progress-fill { height: 100%; background: var(--secondary); width: 0%; transition: width 0.3s; }
-        .question-box { display: none; }
+        .question-box { display: none; font-size: 1.05rem; line-height: 1.6; color: #333; }
         .question-box.active { display: block; }
-        .option-item { margin-bottom: 12px; position: relative; }
-        .option-item label { display: block; padding: 15px; border: 2px solid #ddd; border-radius: 8px; cursor: pointer; transition: 0.2s; }
+        .option-item { margin-top: 10px; }
+        .option-item label { display: block; padding: 12px; border: 2px solid #ddd; border-radius: 8px; cursor: pointer; transition: 0.2s; }
         .option-item input { display: none; }
         .option-item input:checked + label { border-color: var(--secondary); background: #e1effe; }
-        
-        /* Cores de Feedback */
         .correct-choice label { border-color: var(--success) !important; background: #d4edda !important; color: #155724; font-weight: bold; }
         .wrong-choice label { border-color: var(--error) !important; background: #f8d7da !important; color: #721c24; }
-        
-        #feedback-msg { margin-top: 15px; font-weight: bold; font-size: 1.1rem; text-align: center; min-height: 25px; }
-        .btn-area { margin-top: 25px; display: flex; flex-direction: column; gap: 10px; }
-        button { padding: 12px; border-radius: 6px; border: none; cursor: pointer; font-weight: bold; font-size: 1rem; }
-        #action-btn { background: var(--secondary); color: white; }
+        #feedback-msg { margin: 20px 0; font-weight: bold; text-align: center; min-height: 24px; }
+        .btn-area { display: flex; flex-direction: column; gap: 10px; }
+        button { padding: 15px; border-radius: 6px; border: none; cursor: pointer; font-weight: bold; font-size: 1rem; background: var(--secondary); color: white; }
         #results-screen { display: none; text-align: center; }
-        .history-list { text-align: left; background: #f1f1f1; padding: 15px; border-radius: 8px; margin-top: 20px; max-height: 200px; overflow-y: auto; }
+        .history-list { text-align: left; background: #f1f1f1; padding: 15px; border-radius: 8px; margin-top: 20px; }
     </style>
 </head>
 <body>
 
 <div class="quiz-container">
     <div id="quiz-screen">
-        <div class="header">
-            <h2 id="counter">Questão 1 de 21</h2>
-        </div>
+        <div class="header"><h2 id="counter">Carregando...</h2></div>
         <div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
         <div id="questions-area"></div>
         <div id="feedback-msg"></div>
@@ -49,36 +43,80 @@
 
     <div id="results-screen">
         <h2>Simulado Concluído</h2>
-        <p style="font-size: 1.2rem">Acertos: <span id="final-score">0</span>/21 (<span id="final-percent">0%</span>)</p>
-        <h3>Seu Histórico (Últimos 5):</h3>
+        <p style="font-size: 1.4rem">Acertos: <span id="final-score">0</span> / 21</p>
+        <div id="final-percent" style="font-weight: bold; color: var(--secondary); margin-bottom: 20px;"></div>
+        <h3>Histórico Recente:</h3>
         <div id="history-area" class="history-list"></div>
-        <button onclick="location.reload()" style="background: var(--primary); color: white; width: 100%; margin-top: 20px;">Reiniciar Simulado</button>
+        <button onclick="location.reload()" style="background: var(--primary); margin-top: 20px; width: 100%;">Tentar Novamente</button>
     </div>
 </div>
 
 <script>
     const questions = [
-        { q: "1. Qual a data de emancipação política do Paraná?", options: {A: "12 de outubro de 1822", B: "29 de agosto de 1853", C: "07 de setembro de 1889", D: "15 de novembro de 1889"}, correct: "B" },
-        { q: "2. Qual fator iniciou a Guerra do Contestado?", options: {A: "Disputa de ouro", B: "Demissão em massa na Brazil Railway Company", C: "Invasão argentina", D: "Taxas do café"}, correct: "B" },
-        { q: "3. Inovação tática marcante no Contestado:", options: {A: "Tanques pesados", B: "Plebiscito popular", C: "Uso de aviação militar contra civis", D: "Anexação argentina"}, correct: "C" },
-        { q: "4. Atribuição correta das unidades BPRV e BPMA:", options: {A: "BPRV: Rodovias; BPMA: Crimes Ambientais", B: "BPRV: Aéreo; BPMA: Ferroviário", C: "BPRV: Bancário; BPMA: Fronteiras", D: "BPRV: Urbano; BPMA: Escolta"}, correct: "A" },
-        { q: "5. NÃO é objetivo da História da PMPR:", options: {A: "Sentimento de pertencimento", B: "Isentar o policial do estrito cumprimento da legalidade", C: "Refletir sobre erros", D: "Fortalecer disciplina"}, correct: "B" },
-        { q: "6. Característica do solo do Terceiro Planalto:", options: {A: "Arenoso", B: "Terra roxa fértil (vulcanismo)", C: "Massapê calcário", D: "Podzólico marinho"}, correct: "B" },
-        { q: "7. O que representam as três elevações no brasão da PMPR?", options: {A: "Bacias hidrográficas", B: "Os três planaltos paranaenses", C: "Três poderes", D: "Três cidades coloniais"}, correct: "B" },
-        { q: "8. Ano do nome 'Polícia Militar do Estado do Paraná':", options: {A: "1892", B: "1917", C: "1932", D: "1946"}, correct: "D" },
-        { q: "9. Origem do capacete Pickelhaube:", options: {A: "França", B: "Reino da Prússia (1842)", C: "Império Britânico", D: "Itália"}, correct: "B" },
-        { q: "10. Motivo fiscal da Inconfidência Mineira:", options: {A: "Imposto do pau-brasil", B: "A 'Derrama'", C: "Fim da escravidão", D: "Confisco de terras"}, correct: "B" },
-        { q: "11. Por que Tiradentes foi o único executado?", options: {A: "Era o líder financeiro", B: "Elite agrária", C: "Tentou matar a Rainha", D: "Patente mais baixa (alferes) e assumiu culpa"}, correct: "D" },
-        { q: "12. Estratégia paranaense para ganhar autonomia em 1853:", options: {A: "Apoio em 1822", B: "Neutralidade no Paraguai", C: "Fidelidade contra a Rev. Farroupilha", D: "Financiamento da Corte"}, correct: "C" },
-        { q: "13. Modelo da Companhia de Força Policial (1854):", options: {A: "Marinha Inglesa", B: "Gendarmeria Francesa", C: "Batedores do Prata", D: "Exército Alemão"}, correct: "B" },
-        { q: "14. Ingresso feminino na PMPR:", options: {A: "Pós-1988", B: "19 de abril de 1977", C: "Desde 1854", D: "Apenas nos anos 2000"}, correct: "B" },
-        { q: "15. Missão da PM (Art. 144 CF):", options: {A: "Investigação civil", B: "Patrulha federal", C: "Polícia ostensiva e ordem pública", D: "Guarda de presídios"}, correct: "C" },
-        { q: "16. Proibição ao militar (Art. 42 CF):", options: {A: "Voto", B: "Sindicalização e greve", C: "Porte de arma", D: "Ensino superior"}, correct: "B" },
-        { q: "17. NÃO era atividade da PMPR na Guerra do Paraguai:", options: {A: "Logística", B: "Linha de frente", C: "Defesa territorial", D: "Comando da Marinha"}, correct: "D" },
-        { q: "18. Importância do Rio da Prata no conflito:", options: {A: "Barreira física", B: "Motivo geopolítico central", C: "Linha de Tordesilhas", D: "Zona neutra"}, correct: "B" },
-        { q: "19. Corrente que foca na consolidação dos Estados-Nação:", options: {A: "Tradicional", B: "Revisionista", C: "Nova Historiografia", D: "Imperial"}, correct: "C" },
-        { q: "20. Tragédia da Batalha de Acosta Ñu:", options: {A: "Morte de Solano", B: "Massacre de 500 crianças paraguaias", C: "Fim da fundição", D: "Mísseis balísticos"}, correct: "B" },
-        { q: "21. Papel das PMs em guerra internacional:", options: {A: "Autônomas", B: "Forças auxiliares e reserva do Exército", C: "Paramilitares privadas", D: "Submetidas à ONU"}, correct: "B" }
+        // HISTÓRIA DA PMPR (Imagens 1 a 4)
+        { q: "<b>Questão 1: Emancipação Política do Paraná</b><br>Durante o período colonial, o território que hoje compreende o estado do Paraná pertencia a outra unidade federativa. Assinale a alternativa que indica corretamente a sua antiga denominação e a data de sua emancipação política:", 
+          options: {A: "Comarca de Paranaguá, pertencente à Província de São Paulo; emancipada em 29 de agosto de 1853.", B: "Província das Araucárias, pertencente a Santa Catarina; emancipada em 12 de outubro de 1822.", C: "Comarca de Curitiba, pertencente à Província do Rio de Janeiro; emancipada em 07 de setembro de 1889.", D: "Província do Guairá, pertencente ao Mato Grosso; emancipada em 15 de novembro de 1889."}, correct: "A" },
+        
+        { q: "<b>Questão 2: Contexto da Guerra do Contestado (1912–1916)</b><br>A Guerra do Contestado envolveu cerca de 50 mil camponeses em conflito contra forças estaduais e o Exército Brasileiro. Qual fator socioeconômico foi determinante para o início desse embate na região sul do Paraná?", 
+          options: {A: "A disputa por jazidas de ouro recém-descobertas por empresas britânicas na Serra do Mar.", B: "A demissão em massa e o abandono de milhares de operários trazidos para construir a ferrovia da Brazil Railway Company.", C: "A invasão de tropas argentinas para o plantio de erva mate na fronteira.", D: "A revolta dos cafeicultores locais contra as taxas alfandegárias cobradas pela província paulista."}, correct: "B" },
+
+        { q: "<b>Questão 3: Consequências e Aspectos Militares do Contestado</b><br>A Guerra do Contestado marcou profundamente a história militar brasileira. Sobre o desfecho do conflito e suas inovações táticas, assinale a alternativa correta:", 
+          options: {A: "Foi o primeiro conflito em solo nacional a utilizar blindados terrestres pesados trazidos da Europa.", B: "O conflito foi pacificado por meio de um plebiscito popular que dividiu igualmente as terras entre os camponeses.", C: "Marcou a primeira vez na história do Brasil em que a aviação militar foi empregada para bombardear civis.", D: "Terminou com a anexação de toda a área disputada ao território da Argentina."}, correct: "C" },
+
+        { q: "<b>Questão 4: Especialização e Adaptação Geográfica da PMPR</b><br>Para atender às demandas impostas pelo relevo acidentado, clima e biomas do estado, a PMPR descentraliza suas forças em batalhões especializados. Associe as unidades BPRV e BPMA (Força Verde) às suas respectivas atribuições:", 
+          options: {A: "O BPRV realiza o policiamento aéreo nas matas fechadas; o BPMA atua na escolta de cargas nas ferrovias.", B: "O BPRV combate o tráfico de animais silvestres; o BPMA faz a fiscalização de trânsito em rodovias federais.", C: "O BPRV atua em repúdio a crimes bancários; o BPMA patrulha exclusivamente águas marítimas continentais.", D: "O BPRV garante a segurança viária em trechos como a BR-277 e Estrada da Graciosa; o BPMA combate crimes ambientais como a extração ilegal de palmito juçara na Mata Atlântica."}, correct: "D" },
+
+        { q: "<b>Questão 5: Formação da Identidade Profissional</b><br>Qual das alternativas abaixo NÃO corresponde a um objetivo listado para a construção dessa identidade profissional?", 
+          options: {A: "Desenvolver o sentimento de pertencimento e valorização da instituição.", B: "Isentar o policial militar do cumprimento estrito da legalidade em prol de decisões autôomas.", C: "Refletir sobre erros, conquistas e transformações da atividade policial ao longo do tempo.", D: "Fortalecer princípios fundamentais como a disciplina, a hierarquia e a ética."}, correct: "B" },
+
+        { q: "<b>Questão 6: Unidades Geomorfológicas e Solo do Terceiro Planalto</b><br>O Terceiro Planalto (ou Planalto de Guarapuava) é a maior unidade de relevo do território paranaense... Qual é a característica marcante do solo dessa região e qual sua origem geológica?", 
+          options: {A: "Solo arenoso de caatinga, originado pela sedimentação de rios temporários.", B: "Terra roxa de extrema fertilidade, originada a partir de derrames vulcânicos.", C: "Solo de massapê escuro, formado pela decomposição de rochas calcárias e granito.", D: "Solo podzólico de encosta, gerado pelo acúmulo de sedimentos marinhos recentes."}, correct: "B" },
+
+        { q: "<b>Questão 7: Simbologia e Elementos do Brasão da PMPR</b><br>De acordo com a descrição oficial do escudo, o que representam o timbre posicionado na parte superior com asas semiabertas e as três elevações no canto esquerdo?", 
+          options: {A: "O Gavião da força aérea; as três grandes bacias hidrográficas do estado.", B: "O Falcão Nhapecani (timbre dourado); a representação dos três planaltos paranaenses.", C: "A Águia Imperial (império brasileiro); os três poderes constitucionais.", D: "O Condor Andino (integração sul-americana); as três principais cidades coloniais do Paraná."}, correct: "B" },
+
+        { q: "<b>Questão 8: Evolução Histórica do Nome da Corporação</b><br>Assinale a alternativa que indica o ano em que a instituição recebeu o nome definitivo de Polícia Militar do Estado do Paraná:", 
+          options: {A: "1892", B: "1917", C: "1932", D: "1946"}, correct: "D" },
+
+        { q: "<b>Questão 9: O Capacete Histórico Pickelhaube</b><br>Qual era a origem desse modelo de capacete e suas características físicas?", 
+          options: {A: "Criado na França napoleônica; feito de fibras de vime trançadas.", B: "Criado em 1842 pelo Reino da Prússia; confeccionado em couro envernizado com ponteira e guarnições metálicas.", C: "Criado no Império Britânico; feito de cortiça revestida de tecido cáqui.", D: "Criado na Itália renascentista; forjado inteiramente em aço escovado."}, correct: "B" },
+
+        { q: "<b>Questão 10: Motivações Econômicas da Inconfidência Mineira</b><br>Qual era o principal temor de ordem fiscal que uniu esse grupo de conspiradores contra a Coroa Portuguesa?", 
+          options: {A: "A instituição do imposto sobre a extração do pau-brasil.", B: "A prática da 'Derrama', uma cobrança iminente e compulsória das dívidas atrasadas com o fisco português.", C: "A proibição do uso de mão de obra escravizada indígena e africana nas minas.", D: "O confisco obrigatório de terras improdutivas para doação a novos colonos europeus."}, correct: "B" },
+
+        { q: "<b>Questão 11: O Julgamento e a Assunção de Responsabilidade de Tiradentes</b><br>Quais motivos determinaram o desfecho da condenação à morte de Tiradentes?", 
+          options: {A: "Ele foi delatado como o financiador milionário da revolta.", B: "Ele pertencia à elite agrária de Portugal e foi acusado de espionagem.", C: "Ele foi pego em flagrante tentando assassinar a rainha no Rio de Janeiro.", D: "Ele possuía a patente militar mais baixa entre os réus (alferes) e assumiu toda a responsabilidade na prisão."}, correct: "D" },
+
+        { q: "<b>Questão 12: Alianças Políticas e Criação da Província</b><br>Qual estratégia capitalizada pela elite paranaense conquistou a simpatia de Dom Pedro II?", 
+          options: {A: "O apoio armado à Coroa Portuguesa durante o processo de Independência em 1822.", B: "A manutenção da neutralidade absoluta durante a Guerra do Paraguai.", C: "A demonstração de fidelidade ao Império através do envio de tropas e recursos contra a Revolução Farroupilha (1835-1845).", D: "O financiamento direto da construção da nova Corte Imperial sediada em Curitiba."}, correct: "C" },
+
+        { q: "<b>Questão 13: O Ato de Fundação da Força Pública</b><br>O que essa legislação instituiu originalmente e sob qual modelo estrutural de segurança internacional?", 
+          options: {A: "A Divisão da Guarda Imperial, inspirada nos fuzileiros navais britânicos.", B: "A Companhia de Força Policial, com efetivo inicial de 100 praças e oficiais, inspirada na Gendarmeria Francesa.", C: "O Regimento de Rondas da Lapa, composto por batedores civis voluntários do Prata.", D: "O Corpo de Voluntários da Pátria, subordinado diretamente ao Ministério da Guerra."}, correct: "B" },
+
+        { q: "<b>Questão 14: Pioneirismo e História da Policial Feminina</b><br>Assinale a alternativa correta sobre o ingresso do público feminino nas fileiras da PMPR:", 
+          options: {A: "As mulheres ingressaram na PMPR apenas após a promulgação da Constituição Federal de 1988.", B: "A entrada ocorreu em 19 de abril de 1977, fazendo do Paraná o segundo estado do Brasil a permitir o público feminino.", C: "O ingresso feminino iniciou-se em 1854 na linha de frente do combate ao banditismo rural.", D: "As vagas femininas foram abertas exclusivamente para o BPMOA no início dos anos 2000."}, correct: "B" },
+
+        { q: "<b>Questão 15: Competências Constitucionais da PM (Artigo 144)</b><br>Qual é a missão principal atribuída às Polícias Militares e a qual autoridade máxima elas se subordinam diretamente?", 
+          options: {A: "Investigação de infrações penais comuns; subordinação direta ao Ministro da Justiça.", B: "Patrulhamento das rodovias federais; subordinação ao Comando Militar do Exército.", C: "Execução da polícia ostensiva e a preservação da ordem pública; subordinação aos Governadores dos Estados.", D: "Guarda externa de presídios federais; subordinação ao Secretário Nacional de Segurança."}, correct: "C" },
+
+        { q: "<b>Questão 16: Estatuto dos Militares Estaduais e Restrições (Artigo 42)</b><br>Quais direitos civis comuns são expressamente proibidos ao policial militar enquanto estiver na ativa?", 
+          options: {A: "Direito ao voto e ao casamento civil.", B: "Direito à sindicalização e à greve.", C: "Direito ao porte de armas fora de serviço e ao livre trânsito.", D: "Direito de ingressar em cursos de ensino superior e de possuir bens imóveis."}, correct: "B" },
+
+        // GUERRA DO PARAGUAI (Imagens 5 e 6)
+        { q: "<b>Guerra do Paraguai - Questão 1</b><br>Entre as principais atividades desempenhadas pelos policiais paranaenses na Guerra do Paraguai, NÃO se incluía o(a):", 
+          options: {A: "Apoio logístico.", B: "Combate direto na linha de frente.", C: "Defesa do território nacional.", D: "Comando geral da Marinha imperial brasileira."}, correct: "D" },
+
+        { q: "<b>Guerra do Paraguai - Questão 2</b><br>A bacia hidrográfica do Rio da Prata... De acordo com o material apresentado, ela representou o(a):", 
+          options: {A: "Principal barreira natural intransponível que impediu o avanço das tropas da Tríplice Aliança.", B: "Motivo geopolítico central do conflito, envolvendo interesses políticos, econômicos e territoriais.", C: "Linha de demarcação definitiva estabelecida pelo Tratado de Tordesilhas entre as nações.", D: "Zona neutra onde ocorreram as negociações pacíficas coordenadas pelo Império Britânico."}, correct: "B" },
+
+        { q: "<b>Guerra do Paraguai - Questão 3</b><br>A corrente explicativa que atribui o início do conflito à consolidação dos Estados-Nação na bacia platina é denominada:", 
+          options: {A: "Corrente Tradicional.", B: "Corrente Revisionista.", C: "Nova Historiografia.", D: "Historiografia Imperial."}, correct: "C" },
+
+        { q: "<b>Guerra do Paraguai - Questão 4</b><br>A Batalha de Acosta Ñu (1869) é historicamente marcante porque:", 
+          options: {A: "Selou a vitória imediata e definitiva do ditador Francisco Solano López.", B: "Consistiu no massacre de cerca de 500 crianças e adolescentes paraguaios pelas forças aliadas.", C: "Marcou a destruição completa da fundição de armas paraguaia na cidade de Ibicuí.", D: "Envolveu o uso pioneiro de mísseis balísticos na América do Sul."}, correct: "B" },
+
+        { q: "<b>Guerra do Paraguai - Questão 5</b><br>Em caso de uma eventual guerra internacional declarada, as Polícias Militares atuam constitucionalmente como:", 
+          options: {A: "Instituições autônomas sem qualquer subordinação aos Governadores estaduais.", B: "Forças auxiliares e reserva do Exército Brasileiro, subordinadas aos Governadores.", C: "Organizações paramilitares privadas sem vínculo com a Administração Pública.", D: "Divisões de segurança internacional controladas pela ONU."}, correct: "B" }
     ];
 
     let currentIdx = 0, score = 0, isChecking = true;
@@ -100,31 +138,25 @@
     }
 
     function handleButtonClick() {
-        const btn = document.getElementById('action-btn');
-        if (isChecking) {
-            verifyAnswer();
-        } else {
-            nextQuestion();
-        }
+        if (isChecking) verifyAnswer();
+        else nextQuestion();
     }
 
     function verifyAnswer() {
         const selected = document.querySelector(`input[name="q${currentIdx}"]:checked`);
-        if (!selected) { return alert("Selecione uma opção!"); }
+        if (!selected) return alert("Selecione uma opção!");
 
         const correct = questions[currentIdx].correct;
         const feedback = document.getElementById('feedback-msg');
-        
-        // Bloquear rádio buttons
-        document.querySelectorAll(`input[name="q${currentIdx}"]`).forEach(input => input.disabled = true);
+        document.querySelectorAll(`input[name="q${currentIdx}"]`).forEach(i => i.disabled = true);
 
         if (selected.value === correct) {
             score++;
-            feedback.innerText = "CORRETO!";
+            feedback.innerText = "CERTO! ✅";
             feedback.style.color = "var(--success)";
             document.getElementById(`opt-container-${currentIdx}-${correct}`).classList.add('correct-choice');
         } else {
-            feedback.innerText = `INCORRETO. A resposta certa era ${correct}.`;
+            feedback.innerText = `ERRADO! ❌ A correta é a ${correct}`;
             feedback.style.color = "var(--error)";
             document.getElementById(`opt-container-${currentIdx}-${selected.value}`).classList.add('wrong-choice');
             document.getElementById(`opt-container-${currentIdx}-${correct}`).classList.add('correct-choice');
@@ -141,9 +173,7 @@
             document.getElementById('action-btn').innerText = "Verificar Resposta";
             document.getElementById('feedback-msg').innerText = "";
             updateDisplay();
-        } else {
-            showFinalResults();
-        }
+        } else showFinalResults();
     }
 
     function updateDisplay() {
@@ -158,20 +188,20 @@
         document.getElementById('results-screen').style.display = 'block';
         document.getElementById('final-score').innerText = score;
         const pct = ((score / 21) * 100).toFixed(1);
-        document.getElementById('final-percent').innerText = pct + "%";
+        document.getElementById('final-percent').innerText = `Desempenho: ${pct}%`;
         saveHistory(score, pct);
     }
 
     function saveHistory(s, p) {
-        let h = JSON.parse(localStorage.getItem('pmpr_v2')) || [];
+        let h = JSON.parse(localStorage.getItem('pmpr_final')) || [];
         h.unshift({ d: new Date().toLocaleString('pt-BR'), s, p });
-        localStorage.setItem('pmpr_v2', JSON.stringify(h.slice(0, 5)));
+        localStorage.setItem('pmpr_final', JSON.stringify(h.slice(0, 5)));
         loadHistory();
     }
 
     function loadHistory() {
-        let h = JSON.parse(localStorage.getItem('pmpr_v2')) || [];
-        document.getElementById('history-area').innerHTML = h.length ? h.map(x => `<div>${x.d}: ${x.s}/21 (${x.p}%)</div>`).join('') : "Sem histórico.";
+        let h = JSON.parse(localStorage.getItem('pmpr_final')) || [];
+        document.getElementById('history-area').innerHTML = h.length ? h.map(x => `<div>${x.d} - <b>${x.s}/21</b> (${x.p}%)</div>`).join('') : "Nenhum dado.";
     }
 
     window.onload = init;
