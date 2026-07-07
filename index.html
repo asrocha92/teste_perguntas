@@ -3,155 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulado PMPR - Estilo Concurso</title>
+    <title>Simulado CFP/26 - PMPR</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 20px;
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --success-color: #27ae60;
+            --error-color: #c0392b;
+            --bg-color: #f4f7f6;
         }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #2c3e50;
-            text-align: center;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-        .question {
-            margin-bottom: 30px;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        .question-text {
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: #333;
-        }
-        .options {
-            list-style: none;
-            padding: 0;
-        }
-        .options li {
-            margin-bottom: 10px;
-        }
-        .options label {
-            display: block;
-            padding: 10px;
-            background: #f9f9f9;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .options label:hover {
-            background: #e9ecef;
-        }
-        input[type="radio"] {
-            margin-right: 10px;
-        }
-        button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            background-color: #3498db;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        button:hover {
-            background-color: #2980b9;
-        }
-        .result {
-            margin-top: 10px;
-            font-weight: bold;
-            display: none;
-        }
-        .correct { color: #27ae60; }
-        .wrong { color: #c0392b; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-color); margin: 0; padding: 20px; display: flex; justify-content: center; }
+        .quiz-container { background: #fff; width: 100%; max-width: 700px; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .header { border-bottom: 2px solid var(--secondary-color); margin-bottom: 20px; padding-bottom: 10px; text-align: center; }
+        .progress-bar { height: 8px; background: #eee; border-radius: 4px; margin-bottom: 20px; overflow: hidden; }
+        .progress-fill { height: 100%; background: var(--secondary-color); width: 0%; transition: width 0.3s; }
+        .question-box { display: none; }
+        .question-box.active { display: block; }
+        .question-text { font-size: 1.1rem; font-weight: 600; color: #333; margin-bottom: 20px; line-height: 1.5; }
+        .options { list-style: none; padding: 0; }
+        .option-item { margin-bottom: 12px; }
+        .option-item label { display: block; padding: 15px; border: 2px solid #ddd; border-radius: 8px; cursor: pointer; transition: all 0.2s; }
+        .option-item input { display: none; }
+        .option-item label:hover { background: #f0f7ff; border-color: var(--secondary-color); }
+        .option-item input:checked + label { background: #e1effe; border-color: var(--secondary-color); color: var(--secondary-color); font-weight: bold; }
+        .nav-buttons { margin-top: 30px; display: flex; justify-content: flex-end; }
+        button { background: var(--secondary-color); color: white; border: none; padding: 12px 25px; border-radius: 6px; cursor: pointer; font-size: 1rem; font-weight: bold; }
+        button:hover { opacity: 0.9; }
+        #results-screen { display: none; text-align: center; }
+        .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 20px 0; }
+        .stat-card { background: #f9f9f9; padding: 15px; border-radius: 8px; border: 1px solid #ddd; }
+        .history-list { text-align: left; margin-top: 20px; max-height: 200px; overflow-y: auto; background: #f1f1f1; padding: 10px; border-radius: 5px; }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>Simulado: História da PMPR e Conflitos</h1>
-
-    <!-- Questão 1: Guerra do Paraguai -->
-    <div class="question" id="q1">
-        <p class="question-text">1. No início do conflito, a então Força Policial da Província do Paraná foi mobilizada para integrar as forças imperiais brasileiras. Entre as principais atividades desempenhadas pelos policiais paranaenses na Guerra do Paraguai, <strong>NÃO</strong> se incluía o(a):</p>
-        <ul class="options">
-            <li><label><input type="radio" name="q1" value="A"> A) Apoio logístico.</label></li>
-            <li><label><input type="radio" name="q1" value="B"> B) Combate direto na linha de frente.</label></li>
-            <li><label><input type="radio" name="q1" value="C"> C) Defesa do território nacional.</label></li>
-            <li><label><input type="radio" name="q1" value="D"> D) Comando geral da Marinha imperial brasileira.</label></li>
-        </ul>
-        <button onclick="checkAnswer('q1', 'D')">Responder</button>
-        <p class="result" id="res-q1"></p>
+<div class="quiz-container">
+    <div id="quiz-screen">
+        <div class="header">
+            <h2 id="quiz-title">Simulado CFP/26 PMPR</h2>
+            <div id="counter">Questão 1 de 21</div>
+        </div>
+        <div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
+        <div id="questions-area"></div>
+        <div class="nav-buttons">
+            <button onclick="nextQuestion()" id="next-btn">Próxima Questão</button>
+        </div>
     </div>
 
-    <!-- Questão 2: Emancipação do Paraná -->
-    <div class="question" id="q2">
-        <p class="question-text">2. Durante o período colonial, o território que hoje compreende o estado do Paraná pertencia a outra unidade federativa. Assinale a alternativa que indica corretamente a sua antiga denominação e a data de sua emancipação política:</p>
-        <ul class="options">
-            <li><label><input type="radio" name="q2" value="A"> A) Comarca de Paranaguá, pertencente à Província de São Paulo; emancipada em 29 de agosto de 1853.</label></li>
-            <li><label><input type="radio" name="q2" value="B"> B) Província das Araucárias, pertencente a Santa Catarina; emancipada em 12 de outubro de 1822.</label></li>
-            <li><label><input type="radio" name="q2" value="C"> C) Comarca de Curitiba, pertencente à Província do Rio de Janeiro; emancipada em 07 de setembro de 1889.</label></li>
-            <li><label><input type="radio" name="q2" value="D"> D) Província do Guairá, pertencente ao Mato Grosso; emancipada em 15 de novembro de 1889.</label></li>
-        </ul>
-        <button onclick="checkAnswer('q2', 'A')">Responder</button>
-        <p class="result" id="res-q2"></p>
-    </div>
-
-    <!-- Questão 3: Batalha de Acosta Ñu -->
-    <div class="question" id="q3">
-        <p class="question-text">3. A Batalha de Acosta Ñu (ou Batalha de Campo Grande), ocorrida em 16 de agosto de 1869, é lembrada como um dos episódios mais trágicos e violentos do conflito. Esse confronto é historicamente marcante porque:</p>
-        <ul class="options">
-            <li><label><input type="radio" name="q3" value="A"> A) Selou a vitória imediata e definitiva do ditador Francisco Solano López sobre a Argentina.</label></li>
-            <li><label><input type="radio" name="q3" value="B"> B) Consistiu no massacre de cerca de 500 crianças e adolescentes paraguaios pelas forças aliadas.</label></li>
-            <li><label><input type="radio" name="q3" value="C"> C) Marcou a destruição completa da fundição de armas paraguaia na cidade de Ibicuí.</label></li>
-            <li><label><input type="radio" name="q3" value="D"> D) Envolveu o uso pioneiro de mísseis balísticos e tecnologia pesada de longo alcance.</label></li>
-        </ul>
-        <button onclick="checkAnswer('q3', 'B')">Responder</button>
-        <p class="result" id="res-q3"></p>
+    <div id="results-screen">
+        <h2 style="color: var(--primary-color)">Resultado do Simulado</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div style="font-size: 0.9rem; color: #666;">Acertos</div>
+                <div id="final-score" style="font-size: 1.5rem; font-weight: bold; color: var(--success-color)">0</div>
+            </div>
+            <div class="stat-card">
+                <div style="font-size: 0.9rem; color: #666;">Aproveitamento</div>
+                <div id="final-percent" style="font-size: 1.5rem; font-weight: bold; color: var(--secondary-color)">0%</div>
+            </div>
+        </div>
+        <h3>Histórico de Melhoria</h3>
+        <div id="history-area" class="history-list">Nenhum teste anterior registrado.</div>
+        <button onclick="location.reload()" style="margin-top: 20px; background: var(--primary-color);">Reiniciar Simulado</button>
     </div>
 </div>
 
 <script>
-    function checkAnswer(questionId, correctAnswer) {
-        const options = document.getElementsByName(questionId);
-        let selectedValue = "";
-        for (const option of options) {
-            if (option.checked) {
-                selectedValue = option.value;
-                break;
+    // Dados extraídos das fontes [1], [2], [3], [4], [5], [6]
+    const questions = [
+        { q: "Emancipação Política do Paraná: Assinale a alternativa que indica corretamente a sua antiga denominação e a data de sua emancipação política:", options: {A: "Comarca de Paranaguá, pertencente à Província de São Paulo; emancipada em 29 de agosto de 1853.", B: "Província das Araucárias, pertencente a Santa Catarina; emancipada em 12 de outubro de 1822.", C: "Comarca de Curitiba, pertencente à Província do Rio de Janeiro; emancipada em 07 de setembro de 1889.", D: "Província do Guairá, pertencente ao Mato Grosso; emancipada em 15 de novembro de 1889."}, correct: "A" },
+        { q: "Qual fator socioeconômico foi determinante para o início do embate na Guerra do Contestado?", options: {A: "Disputa por jazidas de ouro recém-descobertas.", B: "A demissão em massa e o abandono de milhares de operários trazidos para construir a ferrovia da Brazil Railway Company.", C: "A invasão de tropas argentinas para o plantio de erva mate.", D: "A revolta dos cafeicultores locais contra taxas alfandegárias."}, correct: "B" },
+        { q: "Sobre o desfecho do conflito do Contestado e suas inovações táticas, assinale a correta:", options: {A: "Foi o primeiro conflito com blindados terrestres trazidos da Europa.", B: "O conflito foi pacificado por plebiscito popular.", C: "Marcou a primeira vez no Brasil em que a aviação militar foi empregada para bombardear civis.", D: "Terminou com a anexação de toda a área pela Argentina."}, correct: "C" },
+        { q: "Associe as unidades BPRV e BPMA às suas respectivas atribuições:", options: {A: "BPRV faz policiamento aéreo; BPMA escolta cargas ferroviárias.", B: "BPRV combate tráfico de animais; BPMA faz fiscalização de trânsito federal.", C: "BPRV atua em crimes bancários; BPMA patrulha águas continentais.", D: "O BPRV garante a segurança viária (ex: BR-277 e Graciosa); o BPMA combate crimes ambientais (ex: extração de palmito na Mata Atlântica)."}, correct: "D" },
+        { q: "Qual alternativa NÃO corresponde a um objetivo da disciplina de História da PMPR?", options: {A: "Desenvolver sentimento de pertencimento.", B: "Isentar o policial militar do cumprimento estrito da legalidade em prol de decisões autônomas.", C: "Refletir sobre erros e conquistas.", D: "Fortalecer princípios como disciplina e hierarquia."}, correct: "B" },
+        { q: "Qual a origem geológica e característica do solo do Terceiro Planalto (Guarapuava)?", options: {A: "Solo arenoso de caatinga.", B: "Terra roxa de extrema fertilidade, originada de derrames vulcânicos.", C: "Solo de massapê escuro de calcárias e granito.", D: "Solo podzólico de sedimentos marinhos."}, correct: "B" },
+        { q: "O que representam o Falcão Nhapecani e as três elevações no brasão da PMPR?", options: {A: "Gavião da força aérea e as três bacias hidrográficas.", B: "O Falcão Nhapecani; a representação dos três planaltos paranaenses.", C: "A Águia Imperial e os três poderes constitucionais.", D: "O Condor Andino e as três principais cidades coloniais."}, correct: "B" },
+        { q: "Em que ano a instituição recebeu o nome definitivo de Polícia Militar do Estado do Paraná?", options: {A: "1892", B: "1917", C: "1932", D: "1946"}, correct: "D" },
+        { q: "Qual a origem do capacete Pickelhaube?", options: {A: "França napoleônica.", B: "Criado em 1842 pelo Reino da Prússia; feito em couro envernizado com ponteira metálica.", C: "Império Britânico; tecido cáqui.", D: "Itália renascentista; aço escovado."}, correct: "B" },
+        { q: "Qual era o principal temor de ordem fiscal que uniu os conspiradores da Inconfidência Mineira?", options: {A: "Imposto sobre extração de pau-brasil.", B: "A prática da 'Derrama', cobrança compulsória de dívidas atrasadas.", C: "Proibição de mão de obra escravizada.", D: "Confisco de terras improdutivas para colonos europeus."}, correct: "B" },
+        { q: "Por que apenas Tiradentes foi condenado à morte no desfecho da Inconfidência?", options: {A: "Era o financiador milionário.", B: "Pertencia à elite agrária de Portugal.", C: "Foi pego tentando assassinar a rainha.", D: "Possuía a patente militar mais baixa entre os réus (alferes) e assumiu toda a responsabilidade."}, correct: "D" },
+        { q: "Qual estratégia da elite paranaense conquistou a simpatia de Dom Pedro II para a criação da Província em 1853?", options: {A: "Apoio armado à Coroa em 1822.", B: "Neutralidade absoluta na Guerra do Paraguai.", C: "Demonstração de fidelidade ao Império enviando tropas contra a Revolução Farroupilha (1835-1845).", D: "Financiamento da corte sediada em Curitiba."}, correct: "C" },
+        { q: "A Companhia de Força Policial (1854), sob Zacarias de Góis, foi inspirada em qual modelo?", options: {A: "Fuzileiros navais britânicos.", B: "Gendarmeria Francesa, com efetivo inicial de 100 praças e oficiais.", C: "Batedores civis voluntários do Prata.", D: "Corpo de Voluntários da Pátria do Ministério da Guerra."}, correct: "B" },
+        { q: "Sobre o ingresso feminino na PMPR, assinale a correta:", options: {A: "Ocorreu apenas após a Constituição de 1988.", B: "A entrada ocorreu em 19 de abril de 1977, fazendo do Paraná o segundo estado do Brasil a permitir o público feminino.", C: "Iniciou-se em 1854 no combate ao banditismo.", D: "As vagas eram exclusivas para o BPMOA nos anos 2000."}, correct: "B" },
+        { q: "Conforme o Artigo 144 da CF/88, qual a missão principal das Polícias Militares?", options: {A: "Investigação de infrações penais comuns.", B: "Patrulhamento das rodovias federais.", C: "Execução da polícia ostensiva e a preservação da ordem pública.", D: "Guarda externa de presídios federais."}, correct: "C" },
+        { q: "Segundo o Artigo 42 da CF, quais direitos são PROIBIDOS ao militar estadual na ativa?", options: {A: "Voto e casamento civil.", B: "Sindicalização e greve.", C: "Porte de armas e livre trânsito.", D: "Ensino superior e posse de imóveis."}, correct: "B" },
+        { q: "Na Guerra do Paraguai, NÃO se incluía entre as atividades dos policiais paranaenses o(a):", options: {A: "Apoio logístico.", B: "Combate direto na linha de frente.", C: "Defesa do território nacional.", D: "Comando geral da Marinha imperial brasileira."}, correct: "D" },
+        { q: "Geopoliticamente, o que representava a bacia hidrográfica do Rio da Prata?", options: {A: "Barreira natural intransponível.", B: "Motivo geopolítico central do conflito, envolvendo interesses políticos, econômicos e territoriais.", C: "Linha de demarcação do Tratado de Tordesilhas.", D: "Zona neutra coordenada pelo Império Britânico."}, correct: "B" },
+        { q: "Qual corrente historiográfica atribui o conflito à consolidação dos Estados-Nação e discordâncias na bacia platina?", options: {A: "Corrente Tradicional.", B: "Corrente Revisionista.", C: "Nova Historiografia.", D: "Historiografia Imperial."}, correct: "C" },
+        { q: "Por que a Batalha de Acosta Ñu (1869) é considerada um dos episódios mais trágicos?", options: {A: "Pela vitória de Solano López.", B: "Consistiu no massacre de cerca de 500 crianças e adolescentes paraguaios.", C: "Pela destruição da fundição de Ibicuí.", D: "Pelo uso de mísseis balísticos."}, correct: "B" },
+        { q: "Como as Polícias Militares atuam constitucionalmente em caso de guerra internacional?", options: {A: "Instituições autônomas sem subordinação.", B: "Forças auxiliares e reserva do Exército Brasileiro, subordinadas aos Governadores.", C: "Organizações paramilitares privadas.", D: "Divisões da ONU."}, correct: "B" }
+    ];
+
+    let currentIdx = 0;
+    let score = 0;
+
+    function initQuiz() {
+        const area = document.getElementById('questions-area');
+        questions.forEach((q, index) => {
+            let optionsHtml = '';
+            for (let opt in q.options) {
+                optionsHtml += `
+                    <div class="option-item">
+                        <input type="radio" name="q${index}" id="q${index}${opt}" value="${opt}">
+                        <label for="q${index}${opt}">${opt}) ${q.options[opt]}</label>
+                    </div>`;
             }
+            area.innerHTML += `
+                <div class="question-box" id="box-${index}">
+                    <p class="question-text">${q.q}</p>
+                    <div class="options">${optionsHtml}</div>
+                </div>`;
+        });
+        showQuestion(0);
+        loadHistory();
+    }
+
+    function showQuestion(index) {
+        document.querySelectorAll('.question-box').forEach(box => box.classList.remove('active'));
+        document.getElementById(`box-${index}`).classList.add('active');
+        document.getElementById('counter').innerText = `Questão ${index + 1} de ${questions.length}`;
+        document.getElementById('progress').style.width = `${((index + 1) / questions.length) * 100}%`;
+    }
+
+    function nextQuestion() {
+        const selected = document.querySelector(`input[name="q${currentIdx}"]:checked`);
+        if (!selected) {
+            alert("Por favor, selecione uma resposta!");
+            return;
         }
 
-        const resultElement = document.getElementById('res-' + questionId);
-        resultElement.style.display = "block";
+        if (selected.value === questions[currentIdx].correct) {
+            score++;
+        }
 
-        if (selectedValue === correctAnswer) {
-            resultElement.innerHTML = "Correto!";
-            resultElement.className = "result correct";
-        } else if (selectedValue === "") {
-            resultElement.innerHTML = "Por favor, selecione uma opção.";
-            resultElement.className = "result wrong";
+        currentIdx++;
+        if (currentIdx < questions.length) {
+            showQuestion(currentIdx);
+            if (currentIdx === questions.length - 1) {
+                document.getElementById('next-btn').innerText = "Finalizar Simulado";
+            }
         } else {
-            resultElement.innerHTML = "Errado. A resposta correta é a alternativa " + correctAnswer + ".";
-            resultElement.className = "result wrong";
+            showResults();
         }
     }
+
+    function showResults() {
+        document.getElementById('quiz-screen').style.display = 'none';
+        document.getElementById('results-screen').style.display = 'block';
+        document.getElementById('final-score').innerText = score;
+        const percent = ((score / questions.length) * 100).toFixed(1);
+        document.getElementById('final-percent').innerText = `${percent}%`;
+
+        saveHistory(score, percent);
+    }
+
+    function saveHistory(score, percent) {
+        let history = JSON.parse(localStorage.getItem('pmpr_history')) || [];
+        const entry = {
+            date: new Date().toLocaleString('pt-BR'),
+            score: score,
+            percent: percent
+        };
+        history.unshift(entry);
+        localStorage.setItem('pmpr_history', JSON.stringify(history.slice(0, 5))); // Salva os últimos 5
+        loadHistory();
+    }
+
+    function loadHistory() {
+        let history = JSON.parse(localStorage.getItem('pmpr_history')) || [];
+        const area = document.getElementById('history-area');
+        if (history.length > 0) {
+            area.innerHTML = history.map(h => 
+                `<div style="margin-bottom:8px; border-bottom:1px solid #ccc; padding-bottom:4px">
+                    <strong>${h.date}</strong>: ${h.score}/${questions.length} (${h.percent}%)
+                </div>`
+            ).join('');
+        }
+    }
+
+    window.onload = initQuiz;
 </script>
 
 </body>
