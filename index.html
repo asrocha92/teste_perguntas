@@ -3,208 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulado Oficial CFP/26</title>
+    <title>Simulado CFP/26 - PMPR com Chat</title>
     <style>
         :root {
             --primary: #2c3e50; --secondary: #3498db; --success: #27ae60; --error: #c0392b; --bg: #f4f7f6;
         }
-        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); margin: 0; padding: 20px; display: flex; justify-content: center; }
-        .quiz-container { background: #fff; width: 100%; max-width: 800px; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
-        .header { border-bottom: 2px solid var(--secondary); margin-bottom: 20px; text-align: center; }
-        .progress-bar { height: 8px; background: #eee; border-radius: 4px; margin-bottom: 20px; overflow: hidden; }
-        .progress-fill { height: 100%; background: var(--secondary); width: 0%; transition: width 0.3s; }
-        .question-box { display: none; font-size: 1.05rem; line-height: 1.6; color: #333; }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); margin: 0; display: flex; height: 100vh; overflow: hidden; }
+        
+        /* Container Principal */
+        #main-layout { display: flex; width: 100%; transition: 0.3s; }
+        .quiz-container { flex-grow: 1; padding: 40px; overflow-y: auto; display: flex; justify-content: center; }
+        .quiz-card { background: #fff; width: 100%; max-width: 700px; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); align-self: flex-start; }
+
+        /* Tela de Login */
+        #login-screen { position: fixed; inset: 0; background: var(--primary); display: flex; align-items: center; justify-content: center; z-index: 1000; color: white; }
+        .login-box { text-align: center; background: rgba(255,255,255,0.1); padding: 40px; border-radius: 15px; }
+        .login-box input { padding: 10px; border-radius: 5px; border: none; width: 250px; margin-bottom: 15px; }
+
+        /* Chat Lateral */
+        #chat-sidebar { width: 300px; background: #fff; border-left: 2px solid #ddd; display: flex; flex-direction: column; transition: 0.3s; position: relative; }
+        #chat-sidebar.minimized { width: 40px; }
+        .chat-header { background: var(--primary); color: white; padding: 10px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
+        .chat-messages { flex-grow: 1; padding: 10px; overflow-y: auto; display: block; }
+        #chat-sidebar.minimized .chat-messages, #chat-sidebar.minimized .chat-input-area { display: none; }
+        .chat-input-area { padding: 10px; border-top: 1px solid #ddd; display: flex; }
+        .chat-input-area input { flex-grow: 1; padding: 8px; border: 1px solid #ddd; border-radius: 4px; }
+        .msg { margin-bottom: 8px; font-size: 0.9rem; }
+        .msg b { color: var(--secondary); }
+
+        /* Estilos do Quiz (Baseados nas imagens) */
+        .question-box { display: none; }
         .question-box.active { display: block; }
-        .option-item { margin-top: 10px; }
-        .option-item label { display: block; padding: 12px; border: 2px solid #ddd; border-radius: 8px; cursor: pointer; transition: 0.2s; }
-        .option-item input { display: none; }
-        .option-item input:checked + label { border-color: var(--secondary); background: #e1effe; }
-        .correct-choice label { border-color: var(--success) !important; background: #d4edda !important; color: #155724; font-weight: bold; }
-        .wrong-choice label { border-color: var(--error) !important; background: #f8d7da !important; color: #721c24; }
-        #feedback-msg { margin: 20px 0; font-weight: bold; text-align: center; min-height: 24px; }
-        .btn-area { display: flex; flex-direction: column; gap: 10px; }
-        button { padding: 15px; border-radius: 6px; border: none; cursor: pointer; font-weight: bold; font-size: 1rem; background: var(--secondary); color: white; }
-        #results-screen { display: none; text-align: center; }
-        .history-list { text-align: left; background: #f1f1f1; padding: 15px; border-radius: 8px; margin-top: 20px; }
+        .option-item { margin: 10px 0; }
+        .option-item label { display: block; padding: 10px; border: 1px solid #ccc; border-radius: 5px; cursor: pointer; }
+        .option-item input:checked + label { background: #e1effe; border-color: var(--secondary); }
+        .correct { background: #d4edda !important; border-color: var(--success) !important; }
+        .wrong { background: #f8d7da !important; border-color: var(--error) !important; }
+        button { cursor: pointer; padding: 10px 20px; background: var(--secondary); color: white; border: none; border-radius: 5px; }
     </style>
 </head>
 <body>
 
-<div class="quiz-container">
-    <div id="quiz-screen">
-        <div class="header"><h2 id="counter">Carregando...</h2></div>
-        <div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
-        <div id="questions-area"></div>
-        <div id="feedback-msg"></div>
-        <div class="btn-area">
-            <button id="action-btn" onclick="handleButtonClick()">Verificar Resposta</button>
+<!-- Tela Inicial de Nome -->
+<div id="login-screen">
+    <div class="login-box">
+        <h2>Simulado PMPR CFP/26</h2>
+        <p>Informe seu nome para começar:</p>
+        <input type="text" id="user-name" placeholder="Seu nome ou Grito de Guerra"><br>
+        <button onclick="startApp()">Entrar no Simulado</button>
+    </div>
+</div>
+
+<div id="main-layout">
+    <!-- Área do Quiz -->
+    <div class="quiz-container">
+        <div class="quiz-card" id="quiz-card" style="display:none;">
+            <div id="quiz-header">
+                <h3 id="progress-text">Questão 1 de 21</h3>
+                <div id="user-display" style="font-size: 0.8rem; color: #666;"></div>
+            </div>
+            <hr>
+            <div id="questions-area"></div>
+            <div id="feedback" style="margin: 15px 0; font-weight: bold;"></div>
+            <button id="action-btn" onclick="handleQuiz()">Verificar Resposta</button>
+        </div>
+        
+        <!-- Tela de Resultados -->
+        <div class="quiz-card" id="results-screen" style="display:none; text-align: center;">
+            <h2>Fim do Simulado!</h2>
+            <p id="final-stats"></p>
+            <button onclick="location.reload()">Reiniciar</button>
         </div>
     </div>
 
-    <div id="results-screen">
-        <h2>Simulado Concluído</h2>
-        <p style="font-size: 1.4rem">Acertos: <span id="final-score">0</span> / 21</p>
-        <div id="final-percent" style="font-weight: bold; color: var(--secondary); margin-bottom: 20px;"></div>
-        <h3>Histórico Recente:</h3>
-        <div id="history-area" class="history-list"></div>
-        <button onclick="location.reload()" style="background: var(--primary); margin-top: 20px; width: 100%;">Tentar Novamente</button>
+    <!-- Chat Lateral -->
+    <div id="chat-sidebar" id="chat-sidebar">
+        <div class="chat-header" onclick="toggleChat()">
+            <span id="chat-title">Chat Público</span>
+            <span id="toggle-icon">[-]</span>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="msg"><i>Bem-vindo ao chat de estudos!</i></div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Mensagem..." onkeypress="if(event.key==='Enter') sendMessage()">
+            <button onclick="sendMessage()" style="padding: 5px 10px; margin-left: 5px;">></button>
+        </div>
     </div>
 </div>
 
 <script>
+    // Configurações WebSocket
+    let socket;
+    let userName = "";
+    const wsUrl = "ws://localhost:8080"; // Altere para o seu servidor real se houver
+
+    // Dados das Questões (Conforme imagens das fontes) [1-6]
     const questions = [
-        // HISTÓRIA DA PMPR (Imagens 1 a 4)
-        { q: "<b>Questão 1: Emancipação Política do Paraná</b><br>Durante o período colonial, o território que hoje compreende o estado do Paraná pertencia a outra unidade federativa. Assinale a alternativa que indica corretamente a sua antiga denominação e a data de sua emancipação política:", 
-          options: {A: "Comarca de Paranaguá, pertencente à Província de São Paulo; emancipada em 29 de agosto de 1853.", B: "Província das Araucárias, pertencente a Santa Catarina; emancipada em 12 de outubro de 1822.", C: "Comarca de Curitiba, pertencente à Província do Rio de Janeiro; emancipada em 07 de setembro de 1889.", D: "Província do Guairá, pertencente ao Mato Grosso; emancipada em 15 de novembro de 1889."}, correct: "A" },
-        
-        { q: "<b>Questão 2: Contexto da Guerra do Contestado (1912–1916)</b><br>A Guerra do Contestado envolveu cerca de 50 mil camponeses em conflito contra forças estaduais e o Exército Brasileiro. Qual fator socioeconômico foi determinante para o início desse embate na região sul do Paraná?", 
-          options: {A: "A disputa por jazidas de ouro recém-descobertas por empresas britânicas na Serra do Mar.", B: "A demissão em massa e o abandono de milhares de operários trazidos para construir a ferrovia da Brazil Railway Company.", C: "A invasão de tropas argentinas para o plantio de erva mate na fronteira.", D: "A revolta dos cafeicultores locais contra as taxas alfandegárias cobradas pela província paulista."}, correct: "B" },
-
-        { q: "<b>Questão 3: Consequências e Aspectos Militares do Contestado</b><br>A Guerra do Contestado marcou profundamente a história militar brasileira. Sobre o desfecho do conflito e suas inovações táticas, assinale a alternativa correta:", 
-          options: {A: "Foi o primeiro conflito em solo nacional a utilizar blindados terrestres pesados trazidos da Europa.", B: "O conflito foi pacificado por meio de um plebiscito popular que dividiu igualmente as terras entre os camponeses.", C: "Marcou a primeira vez na história do Brasil em que a aviação militar foi empregada para bombardear civis.", D: "Terminou com a anexação de toda a área disputada ao território da Argentina."}, correct: "C" },
-
-        { q: "<b>Questão 4: Especialização e Adaptação Geográfica da PMPR</b><br>Para atender às demandas impostas pelo relevo acidentado, clima e biomas do estado, a PMPR descentraliza suas forças em batalhões especializados. Associe as unidades BPRV e BPMA (Força Verde) às suas respectivas atribuições:", 
-          options: {A: "O BPRV realiza o policiamento aéreo nas matas fechadas; o BPMA atua na escolta de cargas nas ferrovias.", B: "O BPRV combate o tráfico de animais silvestres; o BPMA faz a fiscalização de trânsito em rodovias federais.", C: "O BPRV atua em repúdio a crimes bancários; o BPMA patrulha exclusivamente águas marítimas continentais.", D: "O BPRV garante a segurança viária em trechos como a BR-277 e Estrada da Graciosa; o BPMA combate crimes ambientais como a extração ilegal de palmito juçara na Mata Atlântica."}, correct: "D" },
-
-        { q: "<b>Questão 5: Formação da Identidade Profissional</b><br>Qual das alternativas abaixo NÃO corresponde a um objetivo listado para a construção dessa identidade profissional?", 
-          options: {A: "Desenvolver o sentimento de pertencimento e valorização da instituição.", B: "Isentar o policial militar do cumprimento estrito da legalidade em prol de decisões autôomas.", C: "Refletir sobre erros, conquistas e transformações da atividade policial ao longo do tempo.", D: "Fortalecer princípios fundamentais como a disciplina, a hierarquia e a ética."}, correct: "B" },
-
-        { q: "<b>Questão 6: Unidades Geomorfológicas e Solo do Terceiro Planalto</b><br>O Terceiro Planalto (ou Planalto de Guarapuava) é a maior unidade de relevo do território paranaense... Qual é a característica marcante do solo dessa região e qual sua origem geológica?", 
-          options: {A: "Solo arenoso de caatinga, originado pela sedimentação de rios temporários.", B: "Terra roxa de extrema fertilidade, originada a partir de derrames vulcânicos.", C: "Solo de massapê escuro, formado pela decomposição de rochas calcárias e granito.", D: "Solo podzólico de encosta, gerado pelo acúmulo de sedimentos marinhos recentes."}, correct: "B" },
-
-        { q: "<b>Questão 7: Simbologia e Elementos do Brasão da PMPR</b><br>De acordo com a descrição oficial do escudo, o que representam o timbre posicionado na parte superior com asas semiabertas e as três elevações no canto esquerdo?", 
-          options: {A: "O Gavião da força aérea; as três grandes bacias hidrográficas do estado.", B: "O Falcão Nhapecani (timbre dourado); a representação dos três planaltos paranaenses.", C: "A Águia Imperial (império brasileiro); os três poderes constitucionais.", D: "O Condor Andino (integração sul-americana); as três principais cidades coloniais do Paraná."}, correct: "B" },
-
-        { q: "<b>Questão 8: Evolução Histórica do Nome da Corporação</b><br>Assinale a alternativa que indica o ano em que a instituição recebeu o nome definitivo de Polícia Militar do Estado do Paraná:", 
-          options: {A: "1892", B: "1917", C: "1932", D: "1946"}, correct: "D" },
-
-        { q: "<b>Questão 9: O Capacete Histórico Pickelhaube</b><br>Qual era a origem desse modelo de capacete e suas características físicas?", 
-          options: {A: "Criado na França napoleônica; feito de fibras de vime trançadas.", B: "Criado em 1842 pelo Reino da Prússia; confeccionado em couro envernizado com ponteira e guarnições metálicas.", C: "Criado no Império Britânico; feito de cortiça revestida de tecido cáqui.", D: "Criado na Itália renascentista; forjado inteiramente em aço escovado."}, correct: "B" },
-
-        { q: "<b>Questão 10: Motivações Econômicas da Inconfidência Mineira</b><br>Qual era o principal temor de ordem fiscal que uniu esse grupo de conspiradores contra a Coroa Portuguesa?", 
-          options: {A: "A instituição do imposto sobre a extração do pau-brasil.", B: "A prática da 'Derrama', uma cobrança iminente e compulsória das dívidas atrasadas com o fisco português.", C: "A proibição do uso de mão de obra escravizada indígena e africana nas minas.", D: "O confisco obrigatório de terras improdutivas para doação a novos colonos europeus."}, correct: "B" },
-
-        { q: "<b>Questão 11: O Julgamento e a Assunção de Responsabilidade de Tiradentes</b><br>Quais motivos determinaram o desfecho da condenação à morte de Tiradentes?", 
-          options: {A: "Ele foi delatado como o financiador milionário da revolta.", B: "Ele pertencia à elite agrária de Portugal e foi acusado de espionagem.", C: "Ele foi pego em flagrante tentando assassinar a rainha no Rio de Janeiro.", D: "Ele possuía a patente militar mais baixa entre os réus (alferes) e assumiu toda a responsabilidade na prisão."}, correct: "D" },
-
-        { q: "<b>Questão 12: Alianças Políticas e Criação da Província</b><br>Qual estratégia capitalizada pela elite paranaense conquistou a simpatia de Dom Pedro II?", 
-          options: {A: "O apoio armado à Coroa Portuguesa durante o processo de Independência em 1822.", B: "A manutenção da neutralidade absoluta durante a Guerra do Paraguai.", C: "A demonstração de fidelidade ao Império através do envio de tropas e recursos contra a Revolução Farroupilha (1835-1845).", D: "O financiamento direto da construção da nova Corte Imperial sediada em Curitiba."}, correct: "C" },
-
-        { q: "<b>Questão 13: O Ato de Fundação da Força Pública</b><br>O que essa legislação instituiu originalmente e sob qual modelo estrutural de segurança internacional?", 
-          options: {A: "A Divisão da Guarda Imperial, inspirada nos fuzileiros navais britânicos.", B: "A Companhia de Força Policial, com efetivo inicial de 100 praças e oficiais, inspirada na Gendarmeria Francesa.", C: "O Regimento de Rondas da Lapa, composto por batedores civis voluntários do Prata.", D: "O Corpo de Voluntários da Pátria, subordinado diretamente ao Ministério da Guerra."}, correct: "B" },
-
-        { q: "<b>Questão 14: Pioneirismo e História da Policial Feminina</b><br>Assinale a alternativa correta sobre o ingresso do público feminino nas fileiras da PMPR:", 
-          options: {A: "As mulheres ingressaram na PMPR apenas após a promulgação da Constituição Federal de 1988.", B: "A entrada ocorreu em 19 de abril de 1977, fazendo do Paraná o segundo estado do Brasil a permitir o público feminino.", C: "O ingresso feminino iniciou-se em 1854 na linha de frente do combate ao banditismo rural.", D: "As vagas femininas foram abertas exclusivamente para o BPMOA no início dos anos 2000."}, correct: "B" },
-
-        { q: "<b>Questão 15: Competências Constitucionais da PM (Artigo 144)</b><br>Qual é a missão principal atribuída às Polícias Militares e a qual autoridade máxima elas se subordinam diretamente?", 
-          options: {A: "Investigação de infrações penais comuns; subordinação direta ao Ministro da Justiça.", B: "Patrulhamento das rodovias federais; subordinação ao Comando Militar do Exército.", C: "Execução da polícia ostensiva e a preservação da ordem pública; subordinação aos Governadores dos Estados.", D: "Guarda externa de presídios federais; subordinação ao Secretário Nacional de Segurança."}, correct: "C" },
-
-        { q: "<b>Questão 16: Estatuto dos Militares Estaduais e Restrições (Artigo 42)</b><br>Quais direitos civis comuns são expressamente proibidos ao policial militar enquanto estiver na ativa?", 
-          options: {A: "Direito ao voto e ao casamento civil.", B: "Direito à sindicalização e à greve.", C: "Direito ao porte de armas fora de serviço e ao livre trânsito.", D: "Direito de ingressar em cursos de ensino superior e de possuir bens imóveis."}, correct: "B" },
-
-        // GUERRA DO PARAGUAI (Imagens 5 e 6)
-        { q: "<b>Guerra do Paraguai - Questão 1</b><br>Entre as principais atividades desempenhadas pelos policiais paranaenses na Guerra do Paraguai, NÃO se incluía o(a):", 
-          options: {A: "Apoio logístico.", B: "Combate direto na linha de frente.", C: "Defesa do território nacional.", D: "Comando geral da Marinha imperial brasileira."}, correct: "D" },
-
-        { q: "<b>Guerra do Paraguai - Questão 2</b><br>A bacia hidrográfica do Rio da Prata... De acordo com o material apresentado, ela representou o(a):", 
-          options: {A: "Principal barreira natural intransponível que impediu o avanço das tropas da Tríplice Aliança.", B: "Motivo geopolítico central do conflito, envolvendo interesses políticos, econômicos e territoriais.", C: "Linha de demarcação definitiva estabelecida pelo Tratado de Tordesilhas entre as nações.", D: "Zona neutra onde ocorreram as negociações pacíficas coordenadas pelo Império Britânico."}, correct: "B" },
-
-        { q: "<b>Guerra do Paraguai - Questão 3</b><br>A corrente explicativa que atribui o início do conflito à consolidação dos Estados-Nação na bacia platina é denominada:", 
-          options: {A: "Corrente Tradicional.", B: "Corrente Revisionista.", C: "Nova Historiografia.", D: "Historiografia Imperial."}, correct: "C" },
-
-        { q: "<b>Guerra do Paraguai - Questão 4</b><br>A Batalha de Acosta Ñu (1869) é historicamente marcante porque:", 
-          options: {A: "Selou a vitória imediata e definitiva do ditador Francisco Solano López.", B: "Consistiu no massacre de cerca de 500 crianças e adolescentes paraguaios pelas forças aliadas.", C: "Marcou a destruição completa da fundição de armas paraguaia na cidade de Ibicuí.", D: "Envolveu o uso pioneiro de mísseis balísticos na América do Sul."}, correct: "B" },
-
-        { q: "<b>Guerra do Paraguai - Questão 5</b><br>Em caso de uma eventual guerra internacional declarada, as Polícias Militares atuam constitucionalmente como:", 
-          options: {A: "Instituições autônomas sem qualquer subordinação aos Governadores estaduais.", B: "Forças auxiliares e reserva do Exército Brasileiro, subordinadas aos Governadores.", C: "Organizações paramilitares privadas sem vínculo com a Administração Pública.", D: "Divisões de segurança internacional controladas pela ONU."}, correct: "B" }
+        { q: "1. Antiga denominação do território paranaense e data de emancipação:", options: {A: "Comarca de Paranaguá (SP); 29/08/1853", B: "Província das Araucárias (SC); 12/10/1822", C: "Comarca de Curitiba (RJ); 07/09/1889", D: "Província do Guairá (MT); 15/11/1889"}, correct: "A" },
+        { q: "2. Fator socioeconômico determinante no Contestado (1912-1916):", options: {A: "Disputa de ouro", B: "Demissão de operários da Brazil Railway Company", C: "Invasão argentina", D: "Taxas do café"}, correct: "B" },
+        { q: "3. Inovação tática marcante no Contestado:", options: {A: "Blindados terrestres", B: "Plebiscito popular", C: "Uso de aviação militar contra civis", D: "Mísseis balísticos"}, correct: "C" },
+        { q: "4. Atribuição correta BPRV / BPMA:", options: {A: "Aéreo / Ferroviário", B: "Tráfico animais / Rodovias Federais", C: "Crimes bancários / Mares", D: "Segurança viária (BR-277) / Crimes ambientais (Palmito)"}, correct: "D" },
+        { q: "5. NÃO é objetivo da História da PMPR:", options: {A: "Sentimento pertencimento", B: "Isentar o policial da legalidade", C: "Refletir sobre erros", D: "Fortalecer disciplina"}, correct: "B" },
+        { q: "6. Solo do Terceiro Planalto (Guarapuava):", options: {A: "Arenoso", B: "Terra roxa (derrames vulcânicos)", C: "Massapê", D: "Podzólico"}, correct: "B" },
+        { q: "7. Representação das 3 elevações no brasão PMPR:", options: {A: "Bacias hidrográficas", B: "Os três planaltos paranaenses", C: "Três poderes", D: "Três cidades coloniais"}, correct: "B" },
+        { q: "8. Ano do nome 'Polícia Militar do Estado do Paraná':", options: {A: "1892", B: "1917", C: "1932", D: "1946"}, correct: "D" },
+        { q: "9. Origem do capacete Pickelhaube:", options: {A: "França", B: "Reino da Prússia (1842)", C: "Inglaterra", D: "Itália"}, correct: "B" },
+        { q: "10. Temor fiscal da Inconfidência Mineira:", options: {A: "Imposto madeira", B: "Prática da 'Derrama'", C: "Fim escravidão", D: "Confisco terras"}, correct: "B" },
+        { q: "11. Por que Tiradentes foi o único executado?", options: {A: "Líder rico", B: "Elite agrária", C: "Matou a Rainha", D: "Patente mais baixa (alferes) e assumiu culpa"}, correct: "D" },
+        { q: "12. Estratégia paranaense para autonomia em 1853:", options: {A: "Apoio 1822", B: "Neutralidade", C: "Fidelidade contra a Rev. Farroupilha", D: "Financiamento da Corte"}, correct: "C" },
+        { q: "13. Modelo da Força Policial de 1854:", options: {A: "Inglês", B: "Gendarmeria Francesa", C: "Batedores", D: "Exército Alemão"}, correct: "B" },
+        { q: "14. Ingresso feminino na PMPR:", options: {A: "Pós-1988", B: "19 de abril de 1977 (2º estado do Brasil)", C: "1854", D: "Anos 2000"}, correct: "B" },
+        { q: "15. Missão PM (Art. 144 CF):", options: {A: "Investigação", B: "Rodovias Federais", C: "Polícia ostensiva e ordem pública", D: "Presídios"}, correct: "C" },
+        { q: "16. Proibição ao militar (Art. 42 CF):", options: {A: "Voto", B: "Sindicalização e greve", C: "Porte arma", D: "Ensino superior"}, correct: "B" },
+        { q: "17. Guerra Paraguai - NÃO era função da PMPR:", options: {A: "Logística", B: "Frente de combate", C: "Defesa territorial", D: "Comando da Marinha Imperial"}, correct: "D" },
+        { q: "18. Importância do Rio da Prata:", options: {A: "Barreira", B: "Motivo geopolítico central", C: "Tordesilhas", D: "Zona neutra"}, correct: "B" },
+        { q: "19. Corrente 'Estados-Nação':", options: {A: "Tradicional", B: "Revisionista", C: "Nova Historiografia", D: "Imperial"}, correct: "C" },
+        { q: "20. Batalha de Acosta Ñu (1869):", options: {A: "Vitória Solano", B: "Massacre de 500 crianças paraguaias", C: "Ibicuí", D: "Mísseis"}, correct: "B" },
+        { q: "21. Papel das PMs em guerra internacional:", options: {A: "Autônomas", B: "Forças auxiliares e reserva do Exército", C: "Privadas", D: "ONU"}, correct: "B" }
     ];
 
-    let currentIdx = 0, score = 0, isChecking = true;
+    let currentIdx = 0;
+    let score = 0;
+    let checking = true;
 
-    function init() {
+    function startApp() {
+        const nameInput = document.getElementById('user-name');
+        if(!nameInput.value.trim()) return alert("Digite seu nome!");
+        
+        userName = nameInput.value;
+        document.getElementById('login-screen').style.display = 'none';
+        document.getElementById('quiz-card').style.display = 'block';
+        document.getElementById('user-display').innerText = "Soldado: " + userName;
+        
+        initQuiz();
+        setupWebSocket();
+    }
+
+    function setupWebSocket() {
+        try {
+            socket = new WebSocket(wsUrl);
+            socket.onmessage = (event) => {
+                const data = JSON.parse(event.data);
+                appendMessage(data.user, data.text);
+            };
+            socket.onerror = () => appendMessage("Sistema", "Servidor offline. Chat local apenas.");
+        } catch(e) { console.log("Erro WS"); }
+    }
+
+    function toggleChat() {
+        const side = document.getElementById('chat-sidebar');
+        const icon = document.getElementById('toggle-icon');
+        side.classList.toggle('minimized');
+        icon.innerText = side.classList.contains('minimized') ? "[+]" : "[-]";
+    }
+
+    function sendMessage() {
+        const input = document.getElementById('chat-input');
+        if(!input.value) return;
+        
+        const msgData = { user: userName, text: input.value };
+        if(socket && socket.readyState === WebSocket.OPEN) {
+            socket.send(JSON.stringify(msgData));
+        }
+        appendMessage("Você", input.value);
+        input.value = "";
+    }
+
+    function appendMessage(user, text) {
+        const container = document.getElementById('chat-messages');
+        container.innerHTML += `<div class="msg"><b>${user}:</b> ${text}</div>`;
+        container.scrollTop = container.scrollHeight;
+    }
+
+    // Lógica do Quiz
+    function initQuiz() {
         const area = document.getElementById('questions-area');
         questions.forEach((q, i) => {
-            let opts = '';
-            for (let k in q.options) {
-                opts += `<div class="option-item" id="opt-container-${i}-${k}">
-                    <input type="radio" name="q${i}" id="q${i}${k}" value="${k}">
-                    <label for="q${i}${k}">${k}) ${q.options[k]}</label>
-                </div>`;
+            let opts = "";
+            for(let key in q.options) {
+                opts += `<div class="option-item" id="cont-${i}-${key}">
+                            <input type="radio" name="q${i}" id="q${i}${key}" value="${key}">
+                            <label for="q${i}${key}">${key}) ${q.options[key]}</label>
+                         </div>`;
             }
-            area.innerHTML += `<div class="question-box" id="box-${i}">${q.q}<div style="margin-top:15px">${opts}</div></div>`;
+            area.innerHTML += `<div class="question-box" id="box-${i}">${q.q}${opts}</div>`;
         });
-        updateDisplay();
-        loadHistory();
+        showQuestion();
     }
 
-    function handleButtonClick() {
-        if (isChecking) verifyAnswer();
-        else nextQuestion();
-    }
-
-    function verifyAnswer() {
-        const selected = document.querySelector(`input[name="q${currentIdx}"]:checked`);
-        if (!selected) return alert("Selecione uma opção!");
-
-        const correct = questions[currentIdx].correct;
-        const feedback = document.getElementById('feedback-msg');
-        document.querySelectorAll(`input[name="q${currentIdx}"]`).forEach(i => i.disabled = true);
-
-        if (selected.value === correct) {
-            score++;
-            feedback.innerText = "CERTO! ✅";
-            feedback.style.color = "var(--success)";
-            document.getElementById(`opt-container-${currentIdx}-${correct}`).classList.add('correct-choice');
-        } else {
-            feedback.innerText = `ERRADO! ❌ A correta é a ${correct}`;
-            feedback.style.color = "var(--error)";
-            document.getElementById(`opt-container-${currentIdx}-${selected.value}`).classList.add('wrong-choice');
-            document.getElementById(`opt-container-${currentIdx}-${correct}`).classList.add('correct-choice');
-        }
-
-        document.getElementById('action-btn').innerText = (currentIdx < questions.length - 1) ? "Próxima Questão" : "Ver Resultado Final";
-        isChecking = false;
-    }
-
-    function nextQuestion() {
-        currentIdx++;
-        if (currentIdx < questions.length) {
-            isChecking = true;
-            document.getElementById('action-btn').innerText = "Verificar Resposta";
-            document.getElementById('feedback-msg').innerText = "";
-            updateDisplay();
-        } else showFinalResults();
-    }
-
-    function updateDisplay() {
+    function showQuestion() {
         document.querySelectorAll('.question-box').forEach(b => b.classList.remove('active'));
         document.getElementById(`box-${currentIdx}`).classList.add('active');
-        document.getElementById('counter').innerText = `Questão ${currentIdx + 1} de ${questions.length}`;
-        document.getElementById('progress').style.width = `${((currentIdx + 1) / questions.length) * 100}%`;
+        document.getElementById('progress-text').innerText = `Questão ${currentIdx+1} de ${questions.length}`;
     }
 
-    function showFinalResults() {
-        document.getElementById('quiz-screen').style.display = 'none';
+    function handleQuiz() {
+        if(checking) {
+            const selected = document.querySelector(`input[name="q${currentIdx}"]:checked`);
+            if(!selected) return alert("Selecione!");
+            
+            const correct = questions[currentIdx].correct;
+            const feedback = document.getElementById('feedback');
+            
+            if(selected.value === correct) {
+                score++;
+                feedback.innerText = "Correto! ⚔️";
+                feedback.style.color = "var(--success)";
+                document.getElementById(`cont-${currentIdx}-${correct}`).classList.add('correct');
+            } else {
+                feedback.innerText = "Errado. Correta: " + correct;
+                feedback.style.color = "var(--error)";
+                document.getElementById(`cont-${currentIdx}-${selected.value}`).classList.add('wrong');
+                document.getElementById(`cont-${currentIdx}-${correct}`).classList.add('correct');
+            }
+            document.getElementById('action-btn').innerText = "Próxima";
+            checking = false;
+        } else {
+            currentIdx++;
+            if(currentIdx < questions.length) {
+                checking = true;
+                document.getElementById('feedback').innerText = "";
+                document.getElementById('action-btn').innerText = "Verificar Resposta";
+                showQuestion();
+            } else {
+                showResults();
+            }
+        }
+    }
+
+    function showResults() {
+        document.getElementById('quiz-card').style.display = 'none';
         document.getElementById('results-screen').style.display = 'block';
-        document.getElementById('final-score').innerText = score;
-        const pct = ((score / 21) * 100).toFixed(1);
-        document.getElementById('final-percent').innerText = `Desempenho: ${pct}%`;
-        saveHistory(score, pct);
+        document.getElementById('final-stats').innerText = `${userName}, você acertou ${score} de ${questions.length} questões.`;
     }
-
-    function saveHistory(s, p) {
-        let h = JSON.parse(localStorage.getItem('pmpr_final')) || [];
-        h.unshift({ d: new Date().toLocaleString('pt-BR'), s, p });
-        localStorage.setItem('pmpr_final', JSON.stringify(h.slice(0, 5)));
-        loadHistory();
-    }
-
-    function loadHistory() {
-        let h = JSON.parse(localStorage.getItem('pmpr_final')) || [];
-        document.getElementById('history-area').innerHTML = h.length ? h.map(x => `<div>${x.d} - <b>${x.s}/21</b> (${x.p}%)</div>`).join('') : "Nenhum dado.";
-    }
-
-    window.onload = init;
 </script>
 </body>
 </html>
