@@ -1,0 +1,1260 @@
+[
+  {
+    "id": 1,
+    "artigo": "Art. 1",
+    "tipo": "multipla_escolha",
+    "pergunta": "A Lei nº 13.675/2018 institui o Sistema Único de Segurança Pública (SUSP) e cria a Política Nacional de Segurança Pública e Defesa Social (PNSPDS) com qual finalidade principal?",
+    "opcoes": [
+      "A) Unificar as polícias civis e militares sob uma única administração federal.",
+      "B) Preservação da ordem pública e da incolumidade das pessoas e do patrimônio.",
+      "C) Extinguir os conselhos tutelares e municipais de segurança.",
+      "D) Centralizar a arrecadação de tributos voltados para as Forças Armadas.",
+      "E) Substituir os códigos penais dos Estados por regulamentos gerais."
+    ],
+    "correta": "B",
+    "comentario": "De acordo com o Art. 1º da Lei nº 13.675/2018, a finalidade do SUSP e da PNSPDS é a preservação da ordem pública e da incolumidade das pessoas e do patrimônio por meio da atuação conjunta, coordenada, sistêmica e integrada dos órgãos de segurança pública e defesa social."
+  },
+  {
+    "id": 2,
+    "artigo": "Art. 1",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: O SUSP adota como meio de atuação a cooperação meramente eventual e descentralizada, sem necessidade de coordenação sistêmica ou integração de órgãos.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "O erro está em afirmar que a cooperação é meramente eventual. O Art. 1º deixa claro que a atuação deve ser conjunta, coordenada, sistêmica e integrada."
+  },
+  {
+    "id": 3,
+    "artigo": "Art. 2",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: Conforme o Art. 2º da Lei nº 13.675/2018, a segurança pública é dever do Estado, direito e responsabilidade de todos.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Texto literal do Art. 2º da referida lei, reafirmando o preceito constitucional do art. 144 da CF/88."
+  },
+  {
+    "id": 4,
+    "artigo": "Art. 3",
+    "tipo": "multipla_escolha",
+    "pergunta": "O § 1º do Art. 3º estabelece que a PNSPDS deverá dialogar com o Plano Nacional de Educação. Qual o objetivo primordial desse diálogo intersetorial?",
+    "opcoes": [
+      "A) Promover a militarização das escolas públicas municipais.",
+      "B) Reduzir o orçamento da educação para cobrir despesas de segurança pública.",
+      "C) Consolidar uma cultura de paz e prevenção da violência nas escolas.",
+      "D) Permitir que policiais civis exerçam o magistério em regime de exclusividade.",
+      "E) Isentar os jovens da aplicação do Estatuto da Criança e do Adolescente."
+    ],
+    "correta": "C",
+    "comentario": "O Art. 3º, § 1º, prevê que as políticas de segurança devem dialogar com áreas como educação, cultura e saúde, buscando a prevenção da criminalidade e o fortalecimento de uma cultura de paz."
+  },
+  {
+    "id": 5,
+    "artigo": "Art. 4",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: O princípio estabelecido no Art. 4º da Lei nº 13.675/2018 inclui expressamente o seguinte preceito: 'I - respeito ao ordenamento jurídico e aos direitos e garantias individuais e coletivos'.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Este é textualmente um dos princípios fundamentais fixados no Art. 4º da Lei do SUSP."
+  },
+  {
+    "id": 6,
+    "artigo": "Art. 4",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: O princípio estabelecido no Art. 4º da Lei nº 13.675/2018 inclui expressamente o seguinte preceito: 'II - proteção dos direitos humanos, respeito aos direitos fundamentais e preservação da dignidade da pessoa humana'.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Este é textualmente um dos princípios fundamentais fixados no Art. 4º da Lei do SUSP."
+  },
+  {
+    "id": 7,
+    "artigo": "Art. 4",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: O princípio estabelecido no Art. 4º da Lei nº 13.675/2018 inclui expressamente o seguinte preceito: 'III - eficiência na prevenção e na repressão das infrações penais'.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Este é textualmente um dos princípios fundamentais fixados no Art. 4º da Lei do SUSP."
+  },
+  {
+    "id": 8,
+    "artigo": "Art. 4",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: O princípio estabelecido no Art. 4º da Lei nº 13.675/2018 inclui expressamente o seguinte preceito: 'IV - eficiência na atividade de polícia judiciária e na apuração das infrações penais'.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Este é textualmente um dos princípios fundamentais fixados no Art. 4º da Lei do SUSP."
+  },
+  {
+    "id": 9,
+    "artigo": "Art. 4",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: O princípio estabelecido no Art. 4º da Lei nº 13.675/2018 inclui expressamente o seguinte preceito: 'V - eficiência na execução das penas e nas medidas socioeducativas'.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Este é textualmente um dos princípios fundamentais fixados no Art. 4º da Lei do SUSP."
+  },
+  {
+    "id": 10,
+    "artigo": "Art. 4",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: O princípio estabelecido no Art. 4º da Lei nº 13.675/2018 inclui expressamente o seguinte preceito: 'VI - participação e controle social'.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Este é textualmente um dos princípios fundamentais fixados no Art. 4º da Lei do SUSP."
+  },
+  {
+    "id": 11,
+    "artigo": "Art. 4",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: O princípio estabelecido no Art. 4º da Lei nº 13.675/2018 inclui expressamente o seguinte preceito: 'VII - resolutividade nas ações decorrentes das políticas de segurança pública'.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Este é textualmente um dos princípios fundamentais fixados no Art. 4º da Lei do SUSP."
+  },
+  {
+    "id": 12,
+    "artigo": "Art. 4",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: O princípio estabelecido no Art. 4º da Lei nº 13.675/2018 inclui expressamente o seguinte preceito: 'VIII - transparência, responsabilização e prestação de contas'.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Este é textualmente um dos princípios fundamentais fixados no Art. 4º da Lei do SUSP."
+  },
+  {
+    "id": 13,
+    "artigo": "Art. 4",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: O princípio estabelecido no Art. 4º da Lei nº 13.675/2018 inclui expressamente o seguinte preceito: 'IX - publicidade das informações, ressalvadas as hipóteses de sigilo'.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Este é textualmente um dos princípios fundamentais fixados no Art. 4º da Lei do SUSP."
+  },
+  {
+    "id": 14,
+    "artigo": "Art. 4",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: O princípio estabelecido no Art. 4º da Lei nº 13.675/2018 inclui expressamente o seguinte preceito: 'X - coordenação, cooperação e integração dos órgãos e das instituições'.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Este é textualmente um dos princípios fundamentais fixados no Art. 4º da Lei do SUSP."
+  },
+  {
+    "id": 15,
+    "artigo": "Art. 5",
+    "tipo": "multipla_escolha",
+    "pergunta": "Constitui um dos objetivos primordiais da PNSPDS, previsto expressamente no Art. 5º da Lei nº 13.675/2018:",
+    "opcoes": [
+      "A) Unificar os tribunais de justiça estaduais em um órgão federal unificado.",
+      "B) Promover a integração e a cooperação entre os órgãos de segurança pública, defesa social e a sociedade civil.",
+      "C) Estimular o isolamento informacional das agências de inteligência estaduais.",
+      "D) Extinguir gradativamente a atuação da Polícia Federal nas fronteiras.",
+      "E) Estabelecer penas mínimas aplicáveis aos crimes contra a administração."
+    ],
+    "correta": "B",
+    "comentario": "O inciso I do Art. 5º define como objetivo promover a integração e a cooperação entre os órgãos integrantes do SUSP e com a sociedade civil."
+  },
+  {
+    "id": 16,
+    "artigo": "Art. 5",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item com base no Art. 5º: É objetivo da PNSPDS a racionalização dos esforços e a otimização dos recursos humanos, materiais e financeiros dos órgãos de segurança pública. (Questão ID 16)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Conforme o Art. 5º, inciso III, a racionalização de esforços e otimização de recursos é um dos pilares de objetivos do SUSP."
+  },
+  {
+    "id": 17,
+    "artigo": "Art. 5",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item com base no Art. 5º: É objetivo da PNSPDS a racionalização dos esforços e a otimização dos recursos humanos, materiais e financeiros dos órgãos de segurança pública. (Questão ID 17)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Conforme o Art. 5º, inciso III, a racionalização de esforços e otimização de recursos é um dos pilares de objetivos do SUSP."
+  },
+  {
+    "id": 18,
+    "artigo": "Art. 5",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item com base no Art. 5º: É objetivo da PNSPDS a racionalização dos esforços e a otimização dos recursos humanos, materiais e financeiros dos órgãos de segurança pública. (Questão ID 18)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Conforme o Art. 5º, inciso III, a racionalização de esforços e otimização de recursos é um dos pilares de objetivos do SUSP."
+  },
+  {
+    "id": 19,
+    "artigo": "Art. 5",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item com base no Art. 5º: É objetivo da PNSPDS a racionalização dos esforços e a otimização dos recursos humanos, materiais e financeiros dos órgãos de segurança pública. (Questão ID 19)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Conforme o Art. 5º, inciso III, a racionalização de esforços e otimização de recursos é um dos pilares de objetivos do SUSP."
+  },
+  {
+    "id": 20,
+    "artigo": "Art. 5",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item com base no Art. 5º: É objetivo da PNSPDS a racionalização dos esforços e a otimização dos recursos humanos, materiais e financeiros dos órgãos de segurança pública. (Questão ID 20)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Conforme o Art. 5º, inciso III, a racionalização de esforços e otimização de recursos é um dos pilares de objetivos do SUSP."
+  },
+  {
+    "id": 21,
+    "artigo": "Art. 5",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item com base no Art. 5º: É objetivo da PNSPDS a racionalização dos esforços e a otimização dos recursos humanos, materiais e financeiros dos órgãos de segurança pública. (Questão ID 21)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Conforme o Art. 5º, inciso III, a racionalização de esforços e otimização de recursos é um dos pilares de objetivos do SUSP."
+  },
+  {
+    "id": 22,
+    "artigo": "Art. 5",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item com base no Art. 5º: É objetivo da PNSPDS a racionalização dos esforços e a otimização dos recursos humanos, materiais e financeiros dos órgãos de segurança pública. (Questão ID 22)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Conforme o Art. 5º, inciso III, a racionalização de esforços e otimização de recursos é um dos pilares de objetivos do SUSP."
+  },
+  {
+    "id": 23,
+    "artigo": "Art. 5",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item com base no Art. 5º: É objetivo da PNSPDS a racionalização dos esforços e a otimização dos recursos humanos, materiais e financeiros dos órgãos de segurança pública. (Questão ID 23)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Conforme o Art. 5º, inciso III, a racionalização de esforços e otimização de recursos é um dos pilares de objetivos do SUSP."
+  },
+  {
+    "id": 24,
+    "artigo": "Art. 5",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item com base no Art. 5º: É objetivo da PNSPDS a racionalização dos esforços e a otimização dos recursos humanos, materiais e financeiros dos órgãos de segurança pública. (Questão ID 24)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Conforme o Art. 5º, inciso III, a racionalização de esforços e otimização de recursos é um dos pilares de objetivos do SUSP."
+  },
+  {
+    "id": 25,
+    "artigo": "Art. 6",
+    "tipo": "multipla_escolha",
+    "pergunta": "O Art. 6º da Lei nº 13.675/2018 estabelece as diretrizes da PNSPDS. Assinale a alternativa que apresenta uma diretriz autêntica da referida lei:",
+    "opcoes": [
+      "A) Atendimento prioritário e imediato aos cidadãos através de canais unificados.",
+      "B) Omissão planejada de dados estatísticos sensíveis para evitar pânico social.",
+      "C) Centralização total da formação policial em uma única academia federal no DF.",
+      "D) Restrição da participação da sociedade civil nos conselhos comunitários.",
+      "E) Desvinculação dos planos estaduais de segurança em relação ao plano nacional."
+    ],
+    "correta": "A",
+    "comentario": "O inciso I do Art. 6º prevê o atendimento imediato ao cidadão como diretriz."
+  },
+  {
+    "id": 26,
+    "artigo": "Art. 6",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: É diretriz da PNSPDS o uso preventivo, proporcional e progressivo da força, em consonância com os direitos humanos. (Questão ID 26)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Baseado no Art. 6º, que destaca a proporcionalidade e a progressividade no uso da força pública."
+  },
+  {
+    "id": 27,
+    "artigo": "Art. 6",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: É diretriz da PNSPDS o uso preventivo, proporcional e progressivo da força, em consonância com os direitos humanos. (Questão ID 27)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Baseado no Art. 6º, que destaca a proporcionalidade e a progressividade no uso da força pública."
+  },
+  {
+    "id": 28,
+    "artigo": "Art. 6",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: É diretriz da PNSPDS o uso preventivo, proporcional e progressivo da força, em consonância com os direitos humanos. (Questão ID 28)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Baseado no Art. 6º, que destaca a proporcionalidade e a progressividade no uso da força pública."
+  },
+  {
+    "id": 29,
+    "artigo": "Art. 6",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: É diretriz da PNSPDS o uso preventivo, proporcional e progressivo da força, em consonância com os direitos humanos. (Questão ID 29)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Baseado no Art. 6º, que destaca a proporcionalidade e a progressividade no uso da força pública."
+  },
+  {
+    "id": 30,
+    "artigo": "Art. 6",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: É diretriz da PNSPDS o uso preventivo, proporcional e progressivo da força, em consonância com os direitos humanos. (Questão ID 30)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Baseado no Art. 6º, que destaca a proporcionalidade e a progressividade no uso da força pública."
+  },
+  {
+    "id": 31,
+    "artigo": "Art. 6",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: É diretriz da PNSPDS o uso preventivo, proporcional e progressivo da força, em consonância com os direitos humanos. (Questão ID 31)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Baseado no Art. 6º, que destaca a proporcionalidade e a progressividade no uso da força pública."
+  },
+  {
+    "id": 32,
+    "artigo": "Art. 6",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: É diretriz da PNSPDS o uso preventivo, proporcional e progressivo da força, em consonância com os direitos humanos. (Questão ID 32)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Baseado no Art. 6º, que destaca a proporcionalidade e a progressividade no uso da força pública."
+  },
+  {
+    "id": 33,
+    "artigo": "Art. 6",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: É diretriz da PNSPDS o uso preventivo, proporcional e progressivo da força, em consonância com os direitos humanos. (Questão ID 33)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Baseado no Art. 6º, que destaca a proporcionalidade e a progressividade no uso da força pública."
+  },
+  {
+    "id": 34,
+    "artigo": "Art. 6",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: É diretriz da PNSPDS o uso preventivo, proporcional e progressivo da força, em consonância com os direitos humanos. (Questão ID 34)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Baseado no Art. 6º, que destaca a proporcionalidade e a progressividade no uso da força pública."
+  },
+  {
+    "id": 35,
+    "artigo": "Art. 4 e 5",
+    "tipo": "relacionar",
+    "pergunta": "Relacione os conceitos da Lei nº 13.675/2018 (Princípios vs. Objetivos):",
+    "coluna_a": [
+      "1. Princípio Fundamental do SUSP",
+      "2. Objetivo Estratégico da PNSPDS"
+    ],
+    "coluna_b": [
+      "( ) Proteção dos direitos humanos e respeito aos direitos fundamentais.",
+      "( ) Eficiência na execução das penas e nas medidas socioeducativas.",
+      "( ) Fomentar a pesquisa, o desenvolvimento científico e a inovação tecnológica.",
+      "( ) Promover a integração e a cooperação entre os órgãos integrantes."
+    ],
+    "correta": "1, 1, 2, 2",
+    "comentario": "A proteção dos direitos humanos e a eficiência penal são Princípios (Art. 4º); fomentar a pesquisa e promover a integração são Objetivos (Art. 5º)."
+  },
+  {
+    "id": 36,
+    "artigo": "Art. 7",
+    "tipo": "multipla_escolha",
+    "pergunta": "Quem exerce a coordenação superior da PNSPDS e do SUSP?",
+    "opcoes": [
+      "A) O Ministro da Defesa.",
+      "B) O Diretor-Geral da Polícia Federal.",
+      "C) O Ministro de Estado da Justiça e Segurança Pública.",
+      "D) O Presidente do Supremo Tribunal Federal.",
+      "E) O Secretário de Segurança Pública do Estado mais populoso."
+    ],
+    "correta": "C",
+    "comentario": "De acordo com o Art. 7º, caput, a coordenação superior cabe ao Ministério da Justiça e Segurança Pública."
+  },
+  {
+    "id": 37,
+    "artigo": "Art. 8",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: O Plano Nacional de Segurança Pública e Defesa Social (PNSPDS) terá duração de 10 (dez) anos e deve ser elaborado pelo Ministério competente. (Questão ID 37)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "O Art. 22 e correlatos indicam o planejamento decenal como padrão de políticas de Estado para a segurança pública na lei brasileira."
+  },
+  {
+    "id": 38,
+    "artigo": "Art. 8",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: O Plano Nacional de Segurança Pública e Defesa Social (PNSPDS) terá duração de 10 (dez) anos e deve ser elaborado pelo Ministério competente. (Questão ID 38)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "O Art. 22 e correlatos indicam o planejamento decenal como padrão de políticas de Estado para a segurança pública na lei brasileira."
+  },
+  {
+    "id": 39,
+    "artigo": "Art. 8",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: O Plano Nacional de Segurança Pública e Defesa Social (PNSPDS) terá duração de 10 (dez) anos e deve ser elaborado pelo Ministério competente. (Questão ID 39)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "O Art. 22 e correlatos indicam o planejamento decenal como padrão de políticas de Estado para a segurança pública na lei brasileira."
+  },
+  {
+    "id": 40,
+    "artigo": "Art. 8",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: O Plano Nacional de Segurança Pública e Defesa Social (PNSPDS) terá duração de 10 (dez) anos e deve ser elaborado pelo Ministério competente. (Questão ID 40)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "O Art. 22 e correlatos indicam o planejamento decenal como padrão de políticas de Estado para a segurança pública na lei brasileira."
+  },
+  {
+    "id": 41,
+    "artigo": "Art. 8",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: O Plano Nacional de Segurança Pública e Defesa Social (PNSPDS) terá duração de 10 (dez) anos e deve ser elaborado pelo Ministério competente. (Questão ID 41)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "O Art. 22 e correlatos indicam o planejamento decenal como padrão de políticas de Estado para a segurança pública na lei brasileira."
+  },
+  {
+    "id": 42,
+    "artigo": "Art. 8",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: O Plano Nacional de Segurança Pública e Defesa Social (PNSPDS) terá duração de 10 (dez) anos e deve ser elaborado pelo Ministério competente. (Questão ID 42)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "O Art. 22 e correlatos indicam o planejamento decenal como padrão de políticas de Estado para a segurança pública na lei brasileira."
+  },
+  {
+    "id": 43,
+    "artigo": "Art. 8",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: O Plano Nacional de Segurança Pública e Defesa Social (PNSPDS) terá duração de 10 (dez) anos e deve ser elaborado pelo Ministério competente. (Questão ID 43)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "O Art. 22 e correlatos indicam o planejamento decenal como padrão de políticas de Estado para a segurança pública na lei brasileira."
+  },
+  {
+    "id": 44,
+    "artigo": "Art. 8",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: O Plano Nacional de Segurança Pública e Defesa Social (PNSPDS) terá duração de 10 (dez) anos e deve ser elaborado pelo Ministério competente. (Questão ID 44)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "O Art. 22 e correlatos indicam o planejamento decenal como padrão de políticas de Estado para a segurança pública na lei brasileira."
+  },
+  {
+    "id": 45,
+    "artigo": "Art. 9",
+    "tipo": "multipla_escolha",
+    "pergunta": "Nos termos do Art. 9º, são integrantes ESTRATÉGICOS do SUSP, EXCETO:",
+    "opcoes": [
+      "A) A Polícia Federal e a Polícia Rodoviária Federal.",
+      "B) As polícias civis, polícias militares e corpos de bombeiros militares.",
+      "C) As guardas municipais e os agentes penitenciários (policiais penais).",
+      "D) As empresas de segurança privada credenciadas pelos municípios.",
+      "E) Os institutos de perícia oficial de natureza criminal."
+    ],
+    "correta": "D",
+    "comentario": "As empresas de segurança privada não fazem parte da composição oficial do SUSP descrita no Art. 9º."
+  },
+  {
+    "id": 46,
+    "artigo": "Art. 9",
+    "tipo": "relacionar",
+    "pergunta": "Relacione os órgãos operacionais às esferas administrativas correspondentes:",
+    "coluna_a": [
+      "1. Órgão da Esfera Federal",
+      "2. Órgão da Esfera Estadual/Distrital",
+      "3. Órgão da Esfera Municipal"
+    ],
+    "coluna_b": [
+      "( ) Polícia Rodoviária Federal.",
+      "( ) Polícia Civil e Polícia Militar.",
+      "( ) Guarda Municipal.",
+      "( ) Perícia Oficial de natureza criminal estadual."
+    ],
+    "correta": "1, 2, 3, 2",
+    "comentario": "PRF é federal, Polícia Civil, Militar e Perícia Oficial são estaduais, Guarda Municipal é municipal, nos moldes do Art. 9º do SUSP."
+  },
+  {
+    "id": 47,
+    "artigo": "Art. 9",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: As Guardas Municipais integram o Sistema Único de Segurança Pública (SUSP) na qualidade de integrantes operacionais. (Questão ID 47)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "De acordo com o Art. 9º, § 1º, inciso VII, as guardas municipais são listadas formalmente como integrantes operacionais do SUSP."
+  },
+  {
+    "id": 48,
+    "artigo": "Art. 9",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: As Guardas Municipais integram o Sistema Único de Segurança Pública (SUSP) na qualidade de integrantes operacionais. (Questão ID 48)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "De acordo com o Art. 9º, § 1º, inciso VII, as guardas municipais são listadas formalmente como integrantes operacionais do SUSP."
+  },
+  {
+    "id": 49,
+    "artigo": "Art. 9",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: As Guardas Municipais integram o Sistema Único de Segurança Pública (SUSP) na qualidade de integrantes operacionais. (Questão ID 49)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "De acordo com o Art. 9º, § 1º, inciso VII, as guardas municipais são listadas formalmente como integrantes operacionais do SUSP."
+  },
+  {
+    "id": 50,
+    "artigo": "Art. 9",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: As Guardas Municipais integram o Sistema Único de Segurança Pública (SUSP) na qualidade de integrantes operacionais. (Questão ID 50)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "De acordo com o Art. 9º, § 1º, inciso VII, as guardas municipais são listadas formalmente como integrantes operacionais do SUSP."
+  },
+  {
+    "id": 51,
+    "artigo": "Art. 9",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: As Guardas Municipais integram o Sistema Único de Segurança Pública (SUSP) na qualidade de integrantes operacionais. (Questão ID 51)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "De acordo com o Art. 9º, § 1º, inciso VII, as guardas municipais são listadas formalmente como integrantes operacionais do SUSP."
+  },
+  {
+    "id": 52,
+    "artigo": "Art. 9",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: As Guardas Municipais integram o Sistema Único de Segurança Pública (SUSP) na qualidade de integrantes operacionais. (Questão ID 52)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "De acordo com o Art. 9º, § 1º, inciso VII, as guardas municipais são listadas formalmente como integrantes operacionais do SUSP."
+  },
+  {
+    "id": 53,
+    "artigo": "Art. 9",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: As Guardas Municipais integram o Sistema Único de Segurança Pública (SUSP) na qualidade de integrantes operacionais. (Questão ID 53)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "De acordo com o Art. 9º, § 1º, inciso VII, as guardas municipais são listadas formalmente como integrantes operacionais do SUSP."
+  },
+  {
+    "id": 54,
+    "artigo": "Art. 9",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: As Guardas Municipais integram o Sistema Único de Segurança Pública (SUSP) na qualidade de integrantes operacionais. (Questão ID 54)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "De acordo com o Art. 9º, § 1º, inciso VII, as guardas municipais são listadas formalmente como integrantes operacionais do SUSP."
+  },
+  {
+    "id": 55,
+    "artigo": "Art. 10",
+    "tipo": "multipla_escolha",
+    "pergunta": "Compete à União, na governança do SUSP:",
+    "opcoes": [
+      "A) Apoiar os Estados e Municípios na implementação de seus respectivos planos de segurança.",
+      "B) Comandar diretamente os batalhões de polícia militar estaduais.",
+      "C) Definir os salários de todos os policiais civis do Brasil.",
+      "D) Nomear os secretários estaduais de segurança pública.",
+      "E) Fiscalizar o trânsito estritamente municipal nas vias urbanas internas."
+    ],
+    "correta": "A",
+    "comentario": "A União exerce papel coordenador, de apoio técnico e financeiro, respeitando a autonomia federativa dos Estados e Municípios."
+  },
+  {
+    "id": 56,
+    "artigo": "Art. 12",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: Os Estados e o Distrito Federal devem elaborar seus planos decenais de segurança pública em perfeita consonância com o Plano Nacional. (Questão ID 56)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "É mandamento da lei para garantir a harmonia, a padronização e a integração sistêmica preconizada pelo SUSP."
+  },
+  {
+    "id": 57,
+    "artigo": "Art. 12",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: Os Estados e o Distrito Federal devem elaborar seus planos decenais de segurança pública em perfeita consonância com o Plano Nacional. (Questão ID 57)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "É mandamento da lei para garantir a harmonia, a padronização e a integração sistêmica preconizada pelo SUSP."
+  },
+  {
+    "id": 58,
+    "artigo": "Art. 12",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: Os Estados e o Distrito Federal devem elaborar seus planos decenais de segurança pública em perfeita consonância com o Plano Nacional. (Questão ID 58)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "É mandamento da lei para garantir a harmonia, a padronização e a integração sistêmica preconizada pelo SUSP."
+  },
+  {
+    "id": 59,
+    "artigo": "Art. 12",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: Os Estados e o Distrito Federal devem elaborar seus planos decenais de segurança pública em perfeita consonância com o Plano Nacional. (Questão ID 59)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "É mandamento da lei para garantir a harmonia, a padronização e a integração sistêmica preconizada pelo SUSP."
+  },
+  {
+    "id": 60,
+    "artigo": "Art. 12",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: Os Estados e o Distrito Federal devem elaborar seus planos decenais de segurança pública em perfeita consonância com o Plano Nacional. (Questão ID 60)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "É mandamento da lei para garantir a harmonia, a padronização e a integração sistêmica preconizada pelo SUSP."
+  },
+  {
+    "id": 61,
+    "artigo": "Art. 12",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: Os Estados e o Distrito Federal devem elaborar seus planos decenais de segurança pública em perfeita consonância com o Plano Nacional. (Questão ID 61)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "É mandamento da lei para garantir a harmonia, a padronização e a integração sistêmica preconizada pelo SUSP."
+  },
+  {
+    "id": 62,
+    "artigo": "Art. 12",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: Os Estados e o Distrito Federal devem elaborar seus planos decenais de segurança pública em perfeita consonância com o Plano Nacional. (Questão ID 62)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "É mandamento da lei para garantir a harmonia, a padronização e a integração sistêmica preconizada pelo SUSP."
+  },
+  {
+    "id": 63,
+    "artigo": "Art. 12",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: Os Estados e o Distrito Federal devem elaborar seus planos decenais de segurança pública em perfeita consonância com o Plano Nacional. (Questão ID 63)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "É mandamento da lei para garantir a harmonia, a padronização e a integração sistêmica preconizada pelo SUSP."
+  },
+  {
+    "id": 64,
+    "artigo": "Art. 12",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: Os Estados e o Distrito Federal devem elaborar seus planos decenais de segurança pública em perfeita consonância com o Plano Nacional. (Questão ID 64)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "É mandamento da lei para garantir a harmonia, a padronização e a integração sistêmica preconizada pelo SUSP."
+  },
+  {
+    "id": 65,
+    "artigo": "Art. 15",
+    "tipo": "multipla_escolha",
+    "pergunta": "As operações conjuntas e integradas no âmbito do SUSP demandam:",
+    "opcoes": [
+      "A) Extinção prévia das competências específicas de cada corporação.",
+      "B) Planejamento tático unificado, compartilhamento de informações e coordenação em gabinetes de gestão integrada.",
+      "C) Autorização expressa e individualizada do Congresso Nacional para cada ação.",
+      "D) Comando único e exclusivo exercido sempre por um oficial do Exército.",
+      "E) Descarte de dados coletados por inteligência eletrônica."
+    ],
+    "correta": "B",
+    "comentario": "O SUSP fomenta a integração operacional por meio de gabinetes integrados, respeito mútuo às atribuições e compartilhamento informacional."
+  },
+  {
+    "id": 66,
+    "artigo": "Art. 19",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: É permitida a criação de forças-tarefas integradas e temporárias para atuar no combate ao crime organizado e a situações de crise. (Questão ID 66)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "As forças-tarefas e operações interagências são instrumentos operacionais expressamente validados pela Lei nº 13.675."
+  },
+  {
+    "id": 67,
+    "artigo": "Art. 19",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: É permitida a criação de forças-tarefas integradas e temporárias para atuar no combate ao crime organizado e a situações de crise. (Questão ID 67)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "As forças-tarefas e operações interagências são instrumentos operacionais expressamente validados pela Lei nº 13.675."
+  },
+  {
+    "id": 68,
+    "artigo": "Art. 19",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: É permitida a criação de forças-tarefas integradas e temporárias para atuar no combate ao crime organizado e a situações de crise. (Questão ID 68)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "As forças-tarefas e operações interagências são instrumentos operacionais expressamente validados pela Lei nº 13.675."
+  },
+  {
+    "id": 69,
+    "artigo": "Art. 19",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: É permitida a criação de forças-tarefas integradas e temporárias para atuar no combate ao crime organizado e a situações de crise. (Questão ID 69)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "As forças-tarefas e operações interagências são instrumentos operacionais expressamente validados pela Lei nº 13.675."
+  },
+  {
+    "id": 70,
+    "artigo": "Art. 19",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: É permitida a criação de forças-tarefas integradas e temporárias para atuar no combate ao crime organizado e a situações de crise. (Questão ID 70)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "As forças-tarefas e operações interagências são instrumentos operacionais expressamente validados pela Lei nº 13.675."
+  },
+  {
+    "id": 71,
+    "artigo": "Art. 19",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: É permitida a criação de forças-tarefas integradas e temporárias para atuar no combate ao crime organizado e a situações de crise. (Questão ID 71)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "As forças-tarefas e operações interagências são instrumentos operacionais expressamente validados pela Lei nº 13.675."
+  },
+  {
+    "id": 72,
+    "artigo": "Art. 19",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: É permitida a criação de forças-tarefas integradas e temporárias para atuar no combate ao crime organizado e a situações de crise. (Questão ID 72)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "As forças-tarefas e operações interagências são instrumentos operacionais expressamente validados pela Lei nº 13.675."
+  },
+  {
+    "id": 73,
+    "artigo": "Art. 19",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: É permitida a criação de forças-tarefas integradas e temporárias para atuar no combate ao crime organizado e a situações de crise. (Questão ID 73)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "As forças-tarefas e operações interagências são instrumentos operacionais expressamente validados pela Lei nº 13.675."
+  },
+  {
+    "id": 74,
+    "artigo": "Art. 19",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: É permitida a criação de forças-tarefas integradas e temporárias para atuar no combate ao crime organizado e a situações de crise. (Questão ID 74)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "As forças-tarefas e operações interagências são instrumentos operacionais expressamente validados pela Lei nº 13.675."
+  },
+  {
+    "id": 75,
+    "artigo": "Art. 22",
+    "tipo": "multipla_escolha",
+    "pergunta": "O Sistema Nacional de Informações de Segurança Pública, Prisionais, de Rastreabilidade de Armas e Munições, de Material Genético, de Digitais e de Drogas (Sinesp) tem por objetivo:",
+    "opcoes": [
+      "A) Centralizar os processos judiciais criminais sigilosos exclusivamente no STF.",
+      "B) Subsidiar a formulação, a implementação, a execução, o acompanhamento e a avaliação das políticas de segurança pública.",
+      "C) Fornecer dados abertos irrestritos contendo nomes de agentes disfarçados.",
+      "D) Substituir as polícias científicas locais por um único banco de dados estático.",
+      "E) Cobrar tarifas dos cidadãos para consultas criminais básicas."
+    ],
+    "correta": "B",
+    "comentario": "O Sinesp é uma ferramenta de gestão governamental voltada à coleta, tratamento e consolidação de dados para formulação de políticas públicas eficazes."
+  },
+  {
+    "id": 76,
+    "artigo": "Art. 24",
+    "tipo": "relacionar",
+    "pergunta": "Relacione as obrigações dos entes federativos quanto ao fornecimento de dados ao Sinesp:",
+    "coluna_a": [
+      "1. Obrigatoriedade de envio",
+      "2. Sanção pelo não envio"
+    ],
+    "coluna_b": [
+      "( ) Envio regular de dados estatísticos e operacionais de segurança pelos Estados.",
+      "( ) Suspensão de transferências voluntárias de recursos federais vinculados à segurança pública.",
+      "( ) Envio de dados prisionais e de execução de medidas socioeducativas.",
+      "( ) Impossibilidade de celebração de novos convênios com o Ministério da Justiça."
+    ],
+    "correta": "1, 2, 1, 2",
+    "comentario": "O fornecimento de dados é obrigatório (1) e o descumprimento gera sanções financeiras e restrições a convênios federais (2), nos termos da lei."
+  },
+  {
+    "id": 77,
+    "artigo": "Art. 26",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: Os entes federados que não fornecerem dados ao Sinesp nos prazos fixados em regulamento ficarão impedidos de receber recursos do Fundo Nacional de Segurança Pública. (Questão ID 77)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Esta é a principal sanção administrativa/financeira prevista para forçar a alimentação contínua e precisa do sistema nacional."
+  },
+  {
+    "id": 78,
+    "artigo": "Art. 26",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: Os entes federados que não fornecerem dados ao Sinesp nos prazos fixados em regulamento ficarão impedidos de receber recursos do Fundo Nacional de Segurança Pública. (Questão ID 78)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Esta é a principal sanção administrativa/financeira prevista para forçar a alimentação contínua e precisa do sistema nacional."
+  },
+  {
+    "id": 79,
+    "artigo": "Art. 26",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: Os entes federados que não fornecerem dados ao Sinesp nos prazos fixados em regulamento ficarão impedidos de receber recursos do Fundo Nacional de Segurança Pública. (Questão ID 79)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Esta é a principal sanção administrativa/financeira prevista para forçar a alimentação contínua e precisa do sistema nacional."
+  },
+  {
+    "id": 80,
+    "artigo": "Art. 26",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: Os entes federados que não fornecerem dados ao Sinesp nos prazos fixados em regulamento ficarão impedidos de receber recursos do Fundo Nacional de Segurança Pública. (Questão ID 80)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Esta é a principal sanção administrativa/financeira prevista para forçar a alimentação contínua e precisa do sistema nacional."
+  },
+  {
+    "id": 81,
+    "artigo": "Art. 26",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: Os entes federados que não fornecerem dados ao Sinesp nos prazos fixados em regulamento ficarão impedidos de receber recursos do Fundo Nacional de Segurança Pública. (Questão ID 81)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Esta é a principal sanção administrativa/financeira prevista para forçar a alimentação contínua e precisa do sistema nacional."
+  },
+  {
+    "id": 82,
+    "artigo": "Art. 26",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: Os entes federados que não fornecerem dados ao Sinesp nos prazos fixados em regulamento ficarão impedidos de receber recursos do Fundo Nacional de Segurança Pública. (Questão ID 82)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Esta é a principal sanção administrativa/financeira prevista para forçar a alimentação contínua e precisa do sistema nacional."
+  },
+  {
+    "id": 83,
+    "artigo": "Art. 26",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: Os entes federados que não fornecerem dados ao Sinesp nos prazos fixados em regulamento ficarão impedidos de receber recursos do Fundo Nacional de Segurança Pública. (Questão ID 83)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Esta é a principal sanção administrativa/financeira prevista para forçar a alimentação contínua e precisa do sistema nacional."
+  },
+  {
+    "id": 84,
+    "artigo": "Art. 26",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: Os entes federados que não fornecerem dados ao Sinesp nos prazos fixados em regulamento ficarão impedidos de receber recursos do Fundo Nacional de Segurança Pública. (Questão ID 84)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Esta é a principal sanção administrativa/financeira prevista para forçar a alimentação contínua e precisa do sistema nacional."
+  },
+  {
+    "id": 85,
+    "artigo": "Art. 31",
+    "tipo": "multipla_escolha",
+    "pergunta": "O Programa Nacional de Valorização dos Profissionais de Segurança Pública (Pró-Vida) visa ao atendimento dos profissionais em quais dimensões prioritárias?",
+    "opcoes": [
+      "A) Apenas financeira, com foco em gratificações e bônus.",
+      "B) Saúde física, saúde mental, segurança no trabalho e assistência social.",
+      "C) Isenção tributária integral e vitalícia em todo o território nacional.",
+      "D) Concessão de imunidade civil e administrativa absoluta.",
+      "E) Fornecimento de armamento militar pesado para uso particular domiciliar."
+    ],
+    "correta": "B",
+    "comentario": "O Pró-Vida abrange ações multidimensionais focadas na saúde integral, apoio biopsicossocial, condições seguras de trabalho e valorização humana do profissional."
+  },
+  {
+    "id": 86,
+    "artigo": "Art. 34",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: A matriz curricular nacional para formação profissional de segurança pública deve unificar conceitos e respeitar os direitos humanos. (Questão ID 86)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "O SUSP preconiza a padronização e o nivelamento pedagógico das academias de polícia com forte base em direitos humanos e cidadania."
+  },
+  {
+    "id": 87,
+    "artigo": "Art. 34",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: A matriz curricular nacional para formação profissional de segurança pública deve unificar conceitos e respeitar os direitos humanos. (Questão ID 87)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "O SUSP preconiza a padronização e o nivelamento pedagógico das academias de polícia com forte base em direitos humanos e cidadania."
+  },
+  {
+    "id": 88,
+    "artigo": "Art. 34",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: A matriz curricular nacional para formação profissional de segurança pública deve unificar conceitos e respeitar os direitos humanos. (Questão ID 88)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "O SUSP preconiza a padronização e o nivelamento pedagógico das academias de polícia com forte base em direitos humanos e cidadania."
+  },
+  {
+    "id": 89,
+    "artigo": "Art. 34",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: A matriz curricular nacional para formação profissional de segurança pública deve unificar conceitos e respeitar os direitos humanos. (Questão ID 89)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "O SUSP preconiza a padronização e o nivelamento pedagógico das academias de polícia com forte base em direitos humanos e cidadania."
+  },
+  {
+    "id": 90,
+    "artigo": "Art. 34",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: A matriz curricular nacional para formação profissional de segurança pública deve unificar conceitos e respeitar os direitos humanos. (Questão ID 90)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "O SUSP preconiza a padronização e o nivelamento pedagógico das academias de polícia com forte base em direitos humanos e cidadania."
+  },
+  {
+    "id": 91,
+    "artigo": "Art. 34",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: A matriz curricular nacional para formação profissional de segurança pública deve unificar conceitos e respeitar os direitos humanos. (Questão ID 91)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "O SUSP preconiza a padronização e o nivelamento pedagógico das academias de polícia com forte base em direitos humanos e cidadania."
+  },
+  {
+    "id": 92,
+    "artigo": "Art. 38",
+    "tipo": "multipla_escolha",
+    "pergunta": "Os Conselhos de Segurança Pública e Defesa Social instituídos nas esferas federal, estadual e municipal possuem qual caráter precípuo?",
+    "opcoes": [
+      "A) Deliberativo com poder de veto sobre leis federais.",
+      "B) Consultivo, de sugestão, acompanhamento e fiscalização das políticas de segurança.",
+      "C) Judiciário, atuando como tribunais de exceção para crimes de policiais.",
+      "D) Estritamente sigiloso e sem acesso público.",
+      "E) Subordinado diretamente ao comando das Forças Armadas."
+    ],
+    "correta": "B",
+    "comentario": "Os Conselhos são órgãos colegiados com funções consultivas, de fiscalização, controle social e acompanhamento das políticas públicas da área."
+  },
+  {
+    "id": 93,
+    "artigo": "Art. 40",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: As Ouvidorias das polícias e órgãos do SUSP devem possuir autonomia funcional e assegurar sigilo de denúncias legítimas dos cidadãos. (Questão ID 93)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "O canal de ouvidoria deve ser autônomo e seguro para garantir o controle social qualificado e coibir desvios de conduta profissionais."
+  },
+  {
+    "id": 94,
+    "artigo": "Art. 40",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: As Ouvidorias das polícias e órgãos do SUSP devem possuir autonomia funcional e assegurar sigilo de denúncias legítimas dos cidadãos. (Questão ID 94)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "O canal de ouvidoria deve ser autônomo e seguro para garantir o controle social qualificado e coibir desvios de conduta profissionais."
+  },
+  {
+    "id": 95,
+    "artigo": "Art. 40",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: As Ouvidorias das polícias e órgãos do SUSP devem possuir autonomia funcional e assegurar sigilo de denúncias legítimas dos cidadãos. (Questão ID 95)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "O canal de ouvidoria deve ser autônomo e seguro para garantir o controle social qualificado e coibir desvios de conduta profissionais."
+  },
+  {
+    "id": 96,
+    "artigo": "Art. 40",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: As Ouvidorias das polícias e órgãos do SUSP devem possuir autonomia funcional e assegurar sigilo de denúncias legítimas dos cidadãos. (Questão ID 96)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "O canal de ouvidoria deve ser autônomo e seguro para garantir o controle social qualificado e coibir desvios de conduta profissionais."
+  },
+  {
+    "id": 97,
+    "artigo": "Art. 40",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: As Ouvidorias das polícias e órgãos do SUSP devem possuir autonomia funcional e assegurar sigilo de denúncias legítimas dos cidadãos. (Questão ID 97)",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "O canal de ouvidoria deve ser autônomo e seguro para garantir o controle social qualificado e coibir desvios de conduta profissionais."
+  },
+  {
+    "id": 98,
+    "artigo": "Art. 42",
+    "tipo": "multipla_escolha",
+    "pergunta": "A avaliação anual da implementação dos planos de segurança pública deve ser realizada para garantir:",
+    "opcoes": [
+      "A) A punição imediata e exoneração automática de gestores estaduais.",
+      "B) A aferição da eficácia das metas, retificação de rumos e transparência na aplicação dos recursos públicos.",
+      "C) O aumento linear de impostos federais para o ano subsequente.",
+      "D) O fechamento de delegacias que não atingirem metas comerciais.",
+      "E) A suspensão definitiva do repasse para a área da saúde."
+    ],
+    "correta": "B",
+    "comentario": "A avaliação sistemática é uma ferramenta indispensável do SUSP para monitorar indicadores, corrigir distorções de gestão e otimizar as políticas aplicadas."
+  },
+  {
+    "id": 99,
+    "artigo": "Art. 44",
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Julgue o item: O financiamento de ações de segurança pública pode contar com recursos oriundos de fundos específicos, repasses da União, dos Estados e de receitas complementares previstas na legislação.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A lei prevê múltiplas fontes de custeio e investimento, destacando os fundos de segurança pública (como o FNSP) como instrumentos centrais de fomento."
+  },
+  {
+    "id": 100,
+    "artigo": "Art. 46",
+    "tipo": "multipla_escolha",
+    "pergunta": "As disposições finais da Lei nº 13.675/2018 determinam que os entes que não se adequarem às diretrizes estruturais do SUSP em prazos legais:",
+    "opcoes": [
+      "A) Sofrerão intervenção federal imediata com tropas militares ordinárias.",
+      "B) Estarão sujeitos a restrições no acesso a incentivos e recursos discricionários da União voltados à área de segurança.",
+      "C) Serão dissolvidos administrativamente e anexados a estados vizinhos.",
+      "D) Terão seus governantes processados com perda irrevogável de direitos civis.",
+      "E) Ficarão isentos de cumprir qualquer outra norma de direito público."
+    ],
+    "correta": "B",
+    "comentario": "A lei utiliza mecanismos de indução financeira e administrativa, restringindo recursos federais voluntários a fim de assegurar o cumprimento das diretrizes de integração nacional."
+  }
+]
