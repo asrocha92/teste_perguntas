@@ -1,16 +1,16 @@
 [
-{
+  {
     "id": 101,
     "artigo": "Contexto",
     "tipo": "multipla_escolha",
     "pergunta": "Qual era o principal problema que a Lei nº 13.675/2018 visou corrigir?",
     "opcoes": [
-      "A) A falta de armamento pesado para as Guardas Municipais.",
       "B) A fragmentação e o isolamento das forças policiais ('ilhas de informação').",
+      "A) A falta de armamento pesado para as Guardas Municipais.",
       "C) A extinção da Polícia Ferroviária Federal.",
       "D) O excesso de recursos financeiros nos fundos estaduais."
     ],
-    "correta": "B",
+    "correta": "A",
     "comentario": "A lei buscou acabar com a atuação sem coordenação que gerava retrabalho e falhas de inteligência [1, 2]."
   },
   {
@@ -18,7 +18,10 @@
     "artigo": "Conceitos",
     "tipo": "verdadeiro_falso",
     "pergunta": "A lógica do SUSP é centralizar a execução operacional na União e descentralizar as estratégias para os Estados.",
-    "opcoes": ["V", "F"],
+    "opcoes": [
+      "V",
+      "F"
+    ],
     "correta": "F",
     "comentario": "É o contrário: centraliza estratégias e inteligência nacional, mas descentraliza a execução operacional [2]."
   },
@@ -28,12 +31,12 @@
     "tipo": "multipla_escolha",
     "pergunta": "Sobre a diferença entre Princípios e Diretrizes no SUSP, é correto afirmar:",
     "opcoes": [
-      "A) Princípios são ferramentas práticas; Diretrizes são valores éticos.",
       "B) Ambos possuem a mesma função jurídica e operacional.",
       "C) Princípios são os alicerces éticos; Diretrizes são os caminhos e ações práticas.",
+      "A) Princípios são ferramentas práticas; Diretrizes são valores éticos.",
       "D) As Diretrizes são imutáveis, enquanto os Princípios mudam a cada 10 anos."
     ],
-    "correta": "C",
+    "correta": "B",
     "comentario": "O texto legal define Princípios como valores inegociáveis e Diretrizes como linhas de ação operacional [3]."
   },
   {
@@ -41,7 +44,10 @@
     "artigo": "Art. 4",
     "tipo": "verdadeiro_falso",
     "pergunta": "O princípio da 'Proteção e valorização dos profissionais' reconhece o agente público como o principal ativo do sistema.",
-    "opcoes": ["V", "F"],
+    "opcoes": [
+      "V",
+      "F"
+    ],
     "correta": "V",
     "comentario": "Este princípio garante que o Estado deve assegurar condições dignas, apoio psicológico e jurídico ao agente [4]."
   },
@@ -51,10 +57,10 @@
     "tipo": "multipla_escolha",
     "pergunta": "O princípio que impede a violação da legalidade sob o pretexto de combater a criminalidade é o:",
     "opcoes": [
-      "A) Eficiência na repressão.",
+      "D) Celeridade investigativa.",
       "B) Respeito aos direitos humanos, fundamentais e à cidadania.",
-      "C) Autonomia técnico-científica.",
-      "D) Celeridade investigativa."
+      "A) Eficiência na repressão.",
+      "C) Autonomia técnico-científica."
     ],
     "correta": "B",
     "comentario": "A atuação policial deve submeter-se estritamente às garantias constitucionais [4, 5]."
@@ -64,7 +70,10 @@
     "artigo": "Art. 4",
     "tipo": "verdadeiro_falso",
     "pergunta": "O princípio da 'Integração e cooperação sistêmica' visa mitigar as vaidades institucionais entre os órgãos.",
-    "opcoes": ["V", "F"],
+    "opcoes": [
+      "V",
+      "F"
+    ],
     "correta": "V",
     "comentario": "Exige que órgãos de diferentes esferas atuem em simbiose [5]."
   },
@@ -87,7 +96,10 @@
     "artigo": "Art. 4",
     "tipo": "verdadeiro_falso",
     "pergunta": "O uso da força letal deve ser a primeira opção para garantir a celeridade nas investigações.",
-    "opcoes": ["V", "F"],
+    "opcoes": [
+      "V",
+      "F"
+    ],
     "correta": "F",
     "comentario": "O uso da força é o último recurso, pautado pela necessidade e proporcionalidade [6, 7]."
   },
@@ -97,12 +109,12 @@
     "tipo": "multipla_escolha",
     "pergunta": "A autonomia técnico-científica da perícia oficial serve para garantir:",
     "opcoes": [
-      "A) Que os peritos ganhem o mesmo que os delegados.",
-      "B) Isenção e independência em relação a pressões políticas ou de chefias.",
+      "D) A celeridade no despacho de viaturas.",
       "C) Que a perícia seja subordinada ao Ministério Público.",
-      "D) A celeridade no despacho de viaturas."
+      "B) Isenção e independência em relação a pressões políticas ou de chefias.",
+      "A) Que os peritos ganhem o mesmo que os delegados."
     ],
-    "correta": "B",
+    "correta": "C",
     "comentario": "Garante a idoneidade e a imparcialidade absoluta da prova material [8]."
   },
   {
@@ -110,7 +122,10 @@
     "artigo": "Art. 5",
     "tipo": "verdadeiro_falso",
     "pergunta": "A capacitação integrada inclui o monitoramento da saúde mental e física dos agentes.",
-    "opcoes": ["V", "F"],
+    "opcoes": [
+      "V",
+      "F"
+    ],
     "correta": "V",
     "comentario": "A diretriz traduz o princípio da valorização em ações práticas de saúde [8, 9]."
   },
@@ -133,7 +148,10 @@
     "artigo": "Art. 5",
     "tipo": "verdadeiro_falso",
     "pergunta": "O compartilhamento de dados no SINESP é um dever obrigatório dos entes federados.",
-    "opcoes": ["V", "F"],
+    "opcoes": [
+      "V",
+      "F"
+    ],
     "correta": "V",
     "comentario": "A lei institui o dever cogente de alimentar e cruzar dados [11]."
   },
@@ -143,12 +161,12 @@
     "tipo": "multipla_escolha",
     "pergunta": "O uso de inteligência artificial e drones no combate ao crime é incentivado por qual diretriz?",
     "opcoes": [
-      "A) Padronização de procedimentos.",
       "B) Uso da ciência, tecnologia e pesquisa inovadora.",
       "C) Atendimento imediato.",
-      "D) Celeridade investigativa."
+      "D) Celeridade investigativa.",
+      "A) Padronização de procedimentos."
     ],
-    "correta": "B",
+    "correta": "A",
     "comentario": "Busca modernizar o combate qualificado às organizações criminosas [12]."
   },
   {
@@ -156,7 +174,10 @@
     "artigo": "Governança",
     "tipo": "verdadeiro_falso",
     "pergunta": "O repasse do Fundo Nacional (FNSP) é condicionado ao cumprimento de obrigações legais.",
-    "opcoes": ["V", "F"],
+    "opcoes": [
+      "V",
+      "F"
+    ],
     "correta": "V",
     "comentario": "O SUSP utiliza o recurso financeiro como indutor de conformidade legal [13]."
   },
@@ -166,12 +187,12 @@
     "tipo": "multipla_escolha",
     "pergunta": "Qual órgão atua como o gestor central e coordenador de todo o SUSP no âmbito federal?",
     "opcoes": [
-      "A) Ministério da Defesa.",
-      "B) Ministério da Justiça e Segurança Pública (MJSP).",
+      "D) Polícia Federal.",
       "C) Gabinete de Segurança Institucional.",
-      "D) Polícia Federal."
+      "A) Ministério da Defesa.",
+      "B) Ministério da Justiça e Segurança Pública (MJSP)."
     ],
-    "correta": "B",
+    "correta": "D",
     "comentario": "O MJSP é o órgão central e coordenador global do sistema [13]."
   },
   {
@@ -179,7 +200,10 @@
     "artigo": "Estados",
     "tipo": "verdadeiro_falso",
     "pergunta": "A falta de alimentação de dados no SINESP bloqueia o recebimento de verbas federais pelos Estados.",
-    "opcoes": ["V", "F"],
+    "opcoes": [
+      "V",
+      "F"
+    ],
     "correta": "V",
     "comentario": "A omissão gera sanção imediata de bloqueio de recursos [14]."
   },
@@ -189,12 +213,12 @@
     "tipo": "multipla_escolha",
     "pergunta": "No modelo do SUSP, os Municípios devem focar prioritariamente em:",
     "opcoes": [
-      "A) Investigação interestadual.",
-      "B) Policiamento de fronteiras.",
       "C) Prevenção primária, ordenamento urbano e policiamento comunitário.",
-      "D) Gestão de presídios federais."
+      "D) Gestão de presídios federais.",
+      "B) Policiamento de fronteiras.",
+      "A) Investigação interestadual."
     ],
-    "correta": "C",
+    "correta": "A",
     "comentario": "Os municípios são atores fundamentais na arquitetura preventiva local [14]."
   },
   {
@@ -202,7 +226,10 @@
     "artigo": "MJSP",
     "tipo": "verdadeiro_falso",
     "pergunta": "Cabe ao MJSP estipular metas nacionais anuais de redução de homicídio e roubo.",
-    "opcoes": ["V", "F"],
+    "opcoes": [
+      "V",
+      "F"
+    ],
     "correta": "V",
     "comentario": "O gestor central define metas e realiza auditorias nos repasses [15]."
   },
@@ -212,10 +239,10 @@
     "tipo": "multipla_escolha",
     "pergunta": "Os Conselhos de Segurança possuem natureza:",
     "opcoes": [
-      "A) Apenas punitiva.",
+      "D) Judiciária.",
       "B) Consultiva, deliberativa e fiscalizatória.",
       "C) Exclusivamente militar.",
-      "D) Judiciária."
+      "A) Apenas punitiva."
     ],
     "correta": "B",
     "comentario": "Propõem diretrizes e auditam a aplicação de recursos [16]."
@@ -225,7 +252,10 @@
     "artigo": "PF",
     "tipo": "verdadeiro_falso",
     "pergunta": "A Polícia Federal assume a atribuição estratégica de coordenar a inteligência contraterrorista no SUSP.",
-    "opcoes": ["V", "F"],
+    "opcoes": [
+      "V",
+      "F"
+    ],
     "correta": "V",
     "comentario": "Também combate tráfico internacional e crimes fazendários [16, 17]."
   },
@@ -235,10 +265,10 @@
     "tipo": "multipla_escolha",
     "pergunta": "A atuação da PRF no 'cercamento digital' visa:",
     "opcoes": [
-      "A) Cobrar pedágios.",
+      "D) Monitorar redes sociais.",
       "B) Bloqueio tático de rotas de escoamento de ilícitos.",
-      "C) Substituir as Guardas Municipais.",
-      "D) Monitorar redes sociais."
+      "A) Cobrar pedágios.",
+      "C) Substituir as Guardas Municipais."
     ],
     "correta": "B",
     "comentario": "Foca na interceptação logística em rodovias federais e divisas [17]."
@@ -248,7 +278,10 @@
     "artigo": "Polícia Civil",
     "tipo": "verdadeiro_falso",
     "pergunta": "As Polícias Civis devem alimentar o banco nacional de perfis balísticos e dados biométricos.",
-    "opcoes": ["V", "F"],
+    "opcoes": [
+      "V",
+      "F"
+    ],
     "correta": "V",
     "comentario": "Devem padronizar procedimentos e colaborar em forças-tarefas [18]."
   },
@@ -258,10 +291,10 @@
     "tipo": "multipla_escolha",
     "pergunta": "A principal atuação da Polícia Militar sob o SUSP é:",
     "opcoes": [
-      "A) Investigação cibernética.",
+      "D) Gestão de DNA.",
       "B) Prevenção criminal primária e policiamento comunitário.",
-      "C) Escolta de autoridades federais.",
-      "D) Gestão de DNA."
+      "A) Investigação cibernética.",
+      "C) Escolta de autoridades federais."
     ],
     "correta": "B",
     "comentario": "Atuam na linha de frente e preservação da ordem pública [18, 19]."
@@ -271,7 +304,10 @@
     "artigo": "Polícia Penal",
     "tipo": "verdadeiro_falso",
     "pergunta": "A principal atribuição da Polícia Penal no SUSP é a produção de inteligência prisional.",
-    "opcoes": ["V", "F"],
+    "opcoes": [
+      "V",
+      "F"
+    ],
     "correta": "V",
     "comentario": "Visa neutralizar ordens de lideranças criminosas que emanam dos presídios [19]."
   },
@@ -282,11 +318,11 @@
     "pergunta": "Como os Corpos de Bombeiros se integram ao SUSP?",
     "opcoes": [
       "A) Investigando incêndios.",
-      "B) Integrando o sistema 193 às centrais das polícias.",
       "C) Patrulhando rodovias.",
+      "B) Integrando o sistema 193 às centrais das polícias.",
       "D) Comandando Guardas Municipais."
     ],
-    "correta": "B",
+    "correta": "C",
     "comentario": "A integração otimiza a resposta a desastres e acidentes [19, 20]."
   },
   {
@@ -294,7 +330,10 @@
     "artigo": "Guardas Municipais",
     "tipo": "verdadeiro_falso",
     "pergunta": "As Guardas Municipais atuam no policiamento preventivo no entorno de escolas e praças.",
-    "opcoes": ["V", "F"],
+    "opcoes": [
+      "V",
+      "F"
+    ],
     "correta": "V",
     "comentario": "Assumem papel essencial na segurança cidadã local [20]."
   },
@@ -304,10 +343,10 @@
     "tipo": "multipla_escolha",
     "pergunta": "Qual a importância dos bancos de DNA geridos pela perícia?",
     "opcoes": [
-      "A) Identificar parentesco.",
+      "D) Monitorar a saúde dos agentes.",
       "B) Sustentar cientificamente as investigações penais.",
-      "C) Substituir investigadores.",
-      "D) Monitorar a saúde dos agentes."
+      "A) Identificar parentesco.",
+      "C) Substituir investigadores."
     ],
     "correta": "B",
     "comentario": "A prova técnica garante celeridade e autonomia [20, 21]."
@@ -317,7 +356,10 @@
     "artigo": "Trânsito",
     "tipo": "verdadeiro_falso",
     "pergunta": "Agentes de trânsito contribuem compartilhando câmeras para identificar veículos roubados.",
-    "opcoes": ["V", "F"],
+    "opcoes": [
+      "V",
+      "F"
+    ],
     "correta": "V",
     "comentario": "O suporte ocorre por monitoramento viário em tempo real [21]."
   },
@@ -327,12 +369,12 @@
     "tipo": "multipla_escolha",
     "pergunta": "As Guardas Portuárias cooperam principalmente com:",
     "opcoes": [
-      "A) PM e Bombeiros.",
-      "B) Polícia Federal e Receita Federal.",
+      "D) Guardas Municipais.",
       "C) Marinha e Exército.",
-      "D) Guardas Municipais."
+      "B) Polícia Federal e Receita Federal.",
+      "A) PM e Bombeiros."
     ],
-    "correta": "B",
+    "correta": "C",
     "comentario": "Atuam para impedir o tráfico internacional nos portos [21, 22]."
   },
   {
@@ -340,7 +382,10 @@
     "artigo": "Justiça",
     "tipo": "verdadeiro_falso",
     "pergunta": "A Lei do SUSP estabelece mecanismos de integração com o Poder Judiciário e Ministério Público.",
-    "opcoes": ["V", "F"],
+    "opcoes": [
+      "V",
+      "F"
+    ],
     "correta": "V",
     "comentario": "Busca evitar que o esforço policial seja esvaziado processualmente [22]."
   },
@@ -350,12 +395,12 @@
     "tipo": "multipla_escolha",
     "pergunta": "Sobre o fluxo integrado de justiça, o SUSP atua como:",
     "opcoes": [
-      "A) Substituto do juiz.",
       "B) Engrenagem que conecta a fase pré-processual à processual.",
       "C) Órgão de acusação.",
+      "A) Substituto do juiz.",
       "D) Revisor de sentenças."
     ],
-    "correta": "B",
+    "correta": "A",
     "comentario": "Acelera a transição entre investigação e julgamento [23]."
   },
   {
@@ -363,7 +408,10 @@
     "artigo": "SINESP",
     "tipo": "verdadeiro_falso",
     "pergunta": "Juízes e Promotores passam a ter acesso celerado aos bancos do SINESP.",
-    "opcoes": ["V", "F"],
+    "opcoes": [
+      "V",
+      "F"
+    ],
     "correta": "V",
     "comentario": "Facilita a análise de antecedentes e expedição de mandados [23, 24]."
   },
@@ -373,12 +421,12 @@
     "tipo": "multipla_escolha",
     "pergunta": "As forças-tarefas coordenadas pelo SUSP focam prioritariamente no:",
     "opcoes": [
-      "A) Trânsito.",
       "B) Asfixiamento financeiro e combate à lavagem de dinheiro.",
+      "D) Monitoramento por satélite.",
       "C) Treinamento civil.",
-      "D) Monitoramento por satélite."
+      "A) Trânsito."
     ],
-    "correta": "B",
+    "correta": "A",
     "comentario": "Atacam o lucro das organizações criminosas complexas [24]."
   },
   {
@@ -386,7 +434,10 @@
     "artigo": "Conselhos",
     "tipo": "verdadeiro_falso",
     "pergunta": "Representantes da OAB e Defensoria possuem assento nos Conselhos de Segurança.",
-    "opcoes": ["V", "F"],
+    "opcoes": [
+      "V",
+      "F"
+    ],
     "correta": "V",
     "comentario": "Garante diálogo contínuo e fiscalização mútua [24, 25]."
   },
@@ -396,12 +447,12 @@
     "tipo": "multipla_escolha",
     "pergunta": "A Lei do SUSP foi sancionada em:",
     "opcoes": [
-      "A) 1988.",
-      "B) 11 de junho de 2018.",
       "C) 2021.",
-      "D) 2019."
+      "D) 2019.",
+      "B) 11 de junho de 2018.",
+      "A) 1988."
     ],
-    "correta": "B",
+    "correta": "C",
     "comentario": "Data da sanção da Lei nº 13.675 [1]."
   },
   {
@@ -429,7 +480,10 @@
     "artigo": "Art. 5",
     "tipo": "verdadeiro_falso",
     "pergunta": "O 'Atendimento imediato' prevê unificação de canais de emergência.",
-    "opcoes": ["V", "F"],
+    "opcoes": [
+      "V",
+      "F"
+    ],
     "correta": "V",
     "comentario": "Evita o desamparo do cidadão [9]."
   },
@@ -452,7 +506,10 @@
     "artigo": "Governança",
     "tipo": "verdadeiro_falso",
     "pergunta": "Planos Municipais devem estar em harmonia com o Plano Nacional.",
-    "opcoes": ["V", "F"],
+    "opcoes": [
+      "V",
+      "F"
+    ],
     "correta": "V",
     "comentario": "O sistema deve ser sistêmico e integrado [14]."
   },
@@ -462,12 +519,12 @@
     "tipo": "multipla_escolha",
     "pergunta": "Qual força protege a infraestrutura ferroviária federal?",
     "opcoes": [
-      "A) PRF.",
-      "B) PFF (Polícia Ferroviária Federal).",
       "C) PF.",
-      "D) PM."
+      "A) PRF.",
+      "D) PM.",
+      "B) PFF (Polícia Ferroviária Federal)."
     ],
-    "correta": "B",
+    "correta": "D",
     "comentario": "Atua na prevenção de furtos de cargas em ferrovias [17]."
   },
   {
@@ -475,7 +532,10 @@
     "artigo": "Art. 4",
     "tipo": "verdadeiro_falso",
     "pergunta": "A dilação indevida esvazia a eficácia do sistema de justiça criminal.",
-    "opcoes": ["V", "F"],
+    "opcoes": [
+      "V",
+      "F"
+    ],
     "correta": "V",
     "comentario": "Princípio da celeridade nas investigações [7]."
   },
@@ -485,10 +545,10 @@
     "tipo": "multipla_escolha",
     "pergunta": "Matrizes curriculares nacionais unificadas atendem à diretriz de:",
     "opcoes": [
-      "A) Saúde.",
-      "B) Capacitação integrada e continuada.",
       "C) Transparência.",
-      "D) Tecnologia."
+      "B) Capacitação integrada e continuada.",
+      "D) Tecnologia.",
+      "A) Saúde."
     ],
     "correta": "B",
     "comentario": "Promove treinamentos conjuntos entre forças [8]."
@@ -498,7 +558,10 @@
     "artigo": "Art. 4",
     "tipo": "verdadeiro_falso",
     "pergunta": "O SUSP é inspirado no modelo de descentralização do SUS.",
-    "opcoes": ["V", "F"],
+    "opcoes": [
+      "V",
+      "F"
+    ],
     "correta": "V",
     "comentario": "Utiliza a mesma lógica de arquitetura institucional cooperativa [2]."
   },
@@ -508,12 +571,12 @@
     "tipo": "multipla_escolha",
     "pergunta": "Quem deve instituir Planos e Conselhos Estaduais?",
     "opcoes": [
+      "C) Só Estados em crise.",
       "A) Só a região Norte.",
       "B) Todos os Estados e o DF.",
-      "C) Só Estados em crise.",
       "D) O MJSP."
     ],
-    "correta": "B",
+    "correta": "C",
     "comentario": "Obrigação legal para todos os entes estaduais [10]."
   },
   {
@@ -521,7 +584,10 @@
     "artigo": "Contexto",
     "tipo": "verdadeiro_falso",
     "pergunta": "Antes do SUSP, as forças policiais geravam 'ilhas de informação'.",
-    "opcoes": ["V", "F"],
+    "opcoes": [
+      "V",
+      "F"
+    ],
     "correta": "V",
     "comentario": "Havia fragmentação e desperdício crônico [1, 2]."
   },
@@ -547,10 +613,10 @@
     "tipo": "multipla_escolha",
     "pergunta": "Quais dados são obrigatórios no SINESP?",
     "opcoes": [
-      "A) Só prêmios.",
-      "B) Mandados de prisão, armas e dados biométricos.",
       "C) Endereços de civis sem crime.",
-      "D) Orçamento de saúde."
+      "B) Mandados de prisão, armas e dados biométricos.",
+      "D) Orçamento de saúde.",
+      "A) Só prêmios."
     ],
     "correta": "B",
     "comentario": "Dados essenciais para inteligência criminal em tempo real [11]."
@@ -560,7 +626,10 @@
     "artigo": "Justiça",
     "tipo": "verdadeiro_falso",
     "pergunta": "O fluxo integrado agiliza a análise de reincidência por juízes.",
-    "opcoes": ["V", "F"],
+    "opcoes": [
+      "V",
+      "F"
+    ],
     "correta": "V",
     "comentario": "O acesso unificado facilita a decisão judicial célere [23]."
   },
@@ -583,7 +652,10 @@
     "artigo": "Final",
     "tipo": "verdadeiro_falso",
     "pergunta": "O SUSP substitui as competências do artigo 144 da Constituição.",
-    "opcoes": ["V", "F"],
+    "opcoes": [
+      "V",
+      "F"
+    ],
     "correta": "F",
     "comentario": "As competências constitucionais permanecem intocadas; a lei adiciona deveres de integração [15]."
   },
@@ -593,13 +665,13 @@
     "tipo": "multipla_escolha",
     "pergunta": "A Lei nº 13.675/2018 institui o Sistema Único de Segurança Pública (SUSP) e cria a Política Nacional de Segurança Pública e Defesa Social (PNSPDS) com qual finalidade principal?",
     "opcoes": [
-      "A) Unificar as polícias civis e militares sob uma única administração federal.",
-      "B) Preservação da ordem pública e da incolumidade das pessoas e do patrimônio.",
       "C) Extinguir os conselhos tutelares e municipais de segurança.",
       "D) Centralizar a arrecadação de tributos voltados para as Forças Armadas.",
+      "A) Unificar as polícias civis e militares sob uma única administração federal.",
+      "B) Preservação da ordem pública e da incolumidade das pessoas e do patrimônio.",
       "E) Substituir os códigos penais dos Estados por regulamentos gerais."
     ],
-    "correta": "B",
+    "correta": "D",
     "comentario": "De acordo com o Art. 1º da Lei nº 13.675/2018, a finalidade do SUSP e da PNSPDS é a preservação da ordem pública e da incolumidade das pessoas e do patrimônio por meio da atuação conjunta, coordenada, sistêmica e integrada dos órgãos de segurança pública e defesa social."
   },
   {
@@ -632,13 +704,13 @@
     "tipo": "multipla_escolha",
     "pergunta": "O § 1º do Art. 3º estabelece que a PNSPDS deverá dialogar com o Plano Nacional de Educação. Qual o objetivo primordial desse diálogo intersetorial?",
     "opcoes": [
-      "A) Promover a militarização das escolas públicas municipais.",
-      "B) Reduzir o orçamento da educação para cobrir despesas de segurança pública.",
-      "C) Consolidar uma cultura de paz e prevenção da violência nas escolas.",
       "D) Permitir que policiais civis exerçam o magistério em regime de exclusividade.",
-      "E) Isentar os jovens da aplicação do Estatuto da Criança e do Adolescente."
+      "C) Consolidar uma cultura de paz e prevenção da violência nas escolas.",
+      "E) Isentar os jovens da aplicação do Estatuto da Criança e do Adolescente.",
+      "A) Promover a militarização das escolas públicas municipais.",
+      "B) Reduzir o orçamento da educação para cobrir despesas de segurança pública."
     ],
-    "correta": "C",
+    "correta": "B",
     "comentario": "O Art. 3º, § 1º, prevê que as políticas de segurança devem dialogar com áreas como educação, cultura e saúde, buscando a prevenção da criminalidade e o fortalecimento de uma cultura de paz."
   },
   {
@@ -768,12 +840,12 @@
     "pergunta": "Constitui um dos objetivos primordiais da PNSPDS, previsto expressamente no Art. 5º da Lei nº 13.675/2018:",
     "opcoes": [
       "A) Unificar os tribunais de justiça estaduais em um órgão federal unificado.",
-      "B) Promover a integração e a cooperação entre os órgãos de segurança pública, defesa social e a sociedade civil.",
       "C) Estimular o isolamento informacional das agências de inteligência estaduais.",
-      "D) Extinguir gradativamente a atuação da Polícia Federal nas fronteiras.",
-      "E) Estabelecer penas mínimas aplicáveis aos crimes contra a administração."
+      "B) Promover a integração e a cooperação entre os órgãos de segurança pública, defesa social e a sociedade civil.",
+      "E) Estabelecer penas mínimas aplicáveis aos crimes contra a administração.",
+      "D) Extinguir gradativamente a atuação da Polícia Federal nas fronteiras."
     ],
-    "correta": "B",
+    "correta": "C",
     "comentario": "O inciso I do Art. 5º define como objetivo promover a integração e a cooperação entre os órgãos integrantes do SUSP e com a sociedade civil."
   },
   {
@@ -890,13 +962,13 @@
     "tipo": "multipla_escolha",
     "pergunta": "O Art. 6º da Lei nº 13.675/2018 estabelece as diretrizes da PNSPDS. Assinale a alternativa que apresenta uma diretriz autêntica da referida lei:",
     "opcoes": [
-      "A) Atendimento prioritário e imediato aos cidadãos através de canais unificados.",
-      "B) Omissão planejada de dados estatísticos sensíveis para evitar pânico social.",
-      "C) Centralização total da formação policial em uma única academia federal no DF.",
       "D) Restrição da participação da sociedade civil nos conselhos comunitários.",
-      "E) Desvinculação dos planos estaduais de segurança em relação ao plano nacional."
+      "E) Desvinculação dos planos estaduais de segurança em relação ao plano nacional.",
+      "A) Atendimento prioritário e imediato aos cidadãos através de canais unificados.",
+      "C) Centralização total da formação policial em uma única academia federal no DF.",
+      "B) Omissão planejada de dados estatísticos sensíveis para evitar pânico social."
     ],
-    "correta": "A",
+    "correta": "C",
     "comentario": "O inciso I do Art. 6º prevê o atendimento imediato ao cidadão como diretriz."
   },
   {
@@ -1031,11 +1103,11 @@
     "tipo": "multipla_escolha",
     "pergunta": "Quem exerce a coordenação superior da PNSPDS e do SUSP?",
     "opcoes": [
-      "A) O Ministro da Defesa.",
+      "E) O Secretário de Segurança Pública do Estado mais populoso.",
       "B) O Diretor-Geral da Polícia Federal.",
       "C) O Ministro de Estado da Justiça e Segurança Pública.",
       "D) O Presidente do Supremo Tribunal Federal.",
-      "E) O Secretário de Segurança Pública do Estado mais populoso."
+      "A) O Ministro da Defesa."
     ],
     "correta": "C",
     "comentario": "De acordo com o Art. 7º, caput, a coordenação superior cabe ao Ministério da Justiça e Segurança Pública."
@@ -1142,13 +1214,13 @@
     "tipo": "multipla_escolha",
     "pergunta": "Nos termos do Art. 9º, são integrantes ESTRATÉGICOS do SUSP, EXCETO:",
     "opcoes": [
-      "A) A Polícia Federal e a Polícia Rodoviária Federal.",
       "B) As polícias civis, polícias militares e corpos de bombeiros militares.",
-      "C) As guardas municipais e os agentes penitenciários (policiais penais).",
       "D) As empresas de segurança privada credenciadas pelos municípios.",
+      "A) A Polícia Federal e a Polícia Rodoviária Federal.",
+      "C) As guardas municipais e os agentes penitenciários (policiais penais).",
       "E) Os institutos de perícia oficial de natureza criminal."
     ],
-    "correta": "D",
+    "correta": "B",
     "comentario": "As empresas de segurança privada não fazem parte da composição oficial do SUSP descrita no Art. 9º."
   },
   {
@@ -1272,13 +1344,13 @@
     "tipo": "multipla_escolha",
     "pergunta": "Compete à União, na governança do SUSP:",
     "opcoes": [
-      "A) Apoiar os Estados e Municípios na implementação de seus respectivos planos de segurança.",
-      "B) Comandar diretamente os batalhões de polícia militar estaduais.",
-      "C) Definir os salários de todos os policiais civis do Brasil.",
       "D) Nomear os secretários estaduais de segurança pública.",
-      "E) Fiscalizar o trânsito estritamente municipal nas vias urbanas internas."
+      "E) Fiscalizar o trânsito estritamente municipal nas vias urbanas internas.",
+      "C) Definir os salários de todos os policiais civis do Brasil.",
+      "B) Comandar diretamente os batalhões de polícia militar estaduais.",
+      "A) Apoiar os Estados e Municípios na implementação de seus respectivos planos de segurança."
     ],
-    "correta": "A",
+    "correta": "E",
     "comentario": "A União exerce papel coordenador, de apoio técnico e financeiro, respeitando a autonomia federativa dos Estados e Municípios."
   },
   {
@@ -1396,12 +1468,12 @@
     "pergunta": "As operações conjuntas e integradas no âmbito do SUSP demandam:",
     "opcoes": [
       "A) Extinção prévia das competências específicas de cada corporação.",
-      "B) Planejamento tático unificado, compartilhamento de informações e coordenação em gabinetes de gestão integrada.",
       "C) Autorização expressa e individualizada do Congresso Nacional para cada ação.",
+      "E) Descarte de dados coletados por inteligência eletrônica.",
       "D) Comando único e exclusivo exercido sempre por um oficial do Exército.",
-      "E) Descarte de dados coletados por inteligência eletrônica."
+      "B) Planejamento tático unificado, compartilhamento de informações e coordenação em gabinetes de gestão integrada."
     ],
-    "correta": "B",
+    "correta": "E",
     "comentario": "O SUSP fomenta a integração operacional por meio de gabinetes integrados, respeito mútuo às atribuições e compartilhamento informacional."
   },
   {
@@ -1518,13 +1590,13 @@
     "tipo": "multipla_escolha",
     "pergunta": "O Sistema Nacional de Informações de Segurança Pública, Prisionais, de Rastreabilidade de Armas e Munições, de Material Genético, de Digitais e de Drogas (Sinesp) tem por objetivo:",
     "opcoes": [
-      "A) Centralizar os processos judiciais criminais sigilosos exclusivamente no STF.",
       "B) Subsidiar a formulação, a implementação, a execução, o acompanhamento e a avaliação das políticas de segurança pública.",
-      "C) Fornecer dados abertos irrestritos contendo nomes de agentes disfarçados.",
       "D) Substituir as polícias científicas locais por um único banco de dados estático.",
-      "E) Cobrar tarifas dos cidadãos para consultas criminais básicas."
+      "E) Cobrar tarifas dos cidadãos para consultas criminais básicas.",
+      "A) Centralizar os processos judiciais criminais sigilosos exclusivamente no STF.",
+      "C) Fornecer dados abertos irrestritos contendo nomes de agentes disfarçados."
     ],
-    "correta": "B",
+    "correta": "A",
     "comentario": "O Sinesp é uma ferramenta de gestão governamental voltada à coleta, tratamento e consolidação de dados para formulação de políticas públicas eficazes."
   },
   {
@@ -1648,12 +1720,12 @@
     "pergunta": "O Programa Nacional de Valorização dos Profissionais de Segurança Pública (Pró-Vida) visa ao atendimento dos profissionais em quais dimensões prioritárias?",
     "opcoes": [
       "A) Apenas financeira, com foco em gratificações e bônus.",
+      "E) Fornecimento de armamento militar pesado para uso particular domiciliar.",
       "B) Saúde física, saúde mental, segurança no trabalho e assistência social.",
       "C) Isenção tributária integral e vitalícia em todo o território nacional.",
-      "D) Concessão de imunidade civil e administrativa absoluta.",
-      "E) Fornecimento de armamento militar pesado para uso particular domiciliar."
+      "D) Concessão de imunidade civil e administrativa absoluta."
     ],
-    "correta": "B",
+    "correta": "C",
     "comentario": "O Pró-Vida abrange ações multidimensionais focadas na saúde integral, apoio biopsicossocial, condições seguras de trabalho e valorização humana do profissional."
   },
   {
@@ -1735,12 +1807,12 @@
     "pergunta": "Os Conselhos de Segurança Pública e Defesa Social instituídos nas esferas federal, estadual e municipal possuem qual caráter precípuo?",
     "opcoes": [
       "A) Deliberativo com poder de veto sobre leis federais.",
-      "B) Consultivo, de sugestão, acompanhamento e fiscalização das políticas de segurança.",
-      "C) Judiciário, atuando como tribunais de exceção para crimes de policiais.",
+      "E) Subordinado diretamente ao comando das Forças Armadas.",
       "D) Estritamente sigiloso e sem acesso público.",
-      "E) Subordinado diretamente ao comando das Forças Armadas."
+      "C) Judiciário, atuando como tribunais de exceção para crimes de policiais.",
+      "B) Consultivo, de sugestão, acompanhamento e fiscalização das políticas de segurança."
     ],
-    "correta": "B",
+    "correta": "E",
     "comentario": "Os Conselhos são órgãos colegiados com funções consultivas, de fiscalização, controle social e acompanhamento das políticas públicas da área."
   },
   {
@@ -1809,13 +1881,13 @@
     "tipo": "multipla_escolha",
     "pergunta": "A avaliação anual da implementação dos planos de segurança pública deve ser realizada para garantir:",
     "opcoes": [
+      "D) O fechamento de delegacias que não atingirem metas comerciais.",
+      "C) O aumento linear de impostos federais para o ano subsequente.",
       "A) A punição imediata e exoneração automática de gestores estaduais.",
       "B) A aferição da eficácia das metas, retificação de rumos e transparência na aplicação dos recursos públicos.",
-      "C) O aumento linear de impostos federais para o ano subsequente.",
-      "D) O fechamento de delegacias que não atingirem metas comerciais.",
       "E) A suspensão definitiva do repasse para a área da saúde."
     ],
-    "correta": "B",
+    "correta": "D",
     "comentario": "A avaliação sistemática é uma ferramenta indispensável do SUSP para monitorar indicadores, corrigir distorções de gestão e otimizar as políticas aplicadas."
   },
   {
@@ -1836,13 +1908,13 @@
     "tipo": "multipla_escolha",
     "pergunta": "As disposições finais da Lei nº 13.675/2018 determinam que os entes que não se adequarem às diretrizes estruturais do SUSP em prazos legais:",
     "opcoes": [
-      "A) Sofrerão intervenção federal imediata com tropas militares ordinárias.",
-      "B) Estarão sujeitos a restrições no acesso a incentivos e recursos discricionários da União voltados à área de segurança.",
+      "E) Ficarão isentos de cumprir qualquer outra norma de direito público.",
       "C) Serão dissolvidos administrativamente e anexados a estados vizinhos.",
       "D) Terão seus governantes processados com perda irrevogável de direitos civis.",
-      "E) Ficarão isentos de cumprir qualquer outra norma de direito público."
+      "A) Sofrerão intervenção federal imediata com tropas militares ordinárias.",
+      "B) Estarão sujeitos a restrições no acesso a incentivos e recursos discricionários da União voltados à área de segurança."
     ],
-    "correta": "B",
+    "correta": "E",
     "comentario": "A lei utiliza mecanismos de indução financeira e administrativa, restringindo recursos federais voluntários a fim de assegurar o cumprimento das diretrizes de integração nacional."
   }
 ]
