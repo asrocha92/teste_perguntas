@@ -1,145 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulado</title>
-    <style>
-        :root { --primary: #2c3e50; --accent: #3498db; --light: #ecf0f1; --success: #27ae60; }
-        body { font-family: 'Segoe UI', sans-serif; background-color: var(--light); padding: 20px; }
-        .container { max-width: 800px; margin: auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        .hidden { display: none; }
-        
-        /* Menu de Matérias */
-        .card-materia { background: var(--primary); color: white; padding: 20px; border-radius: 8px; cursor: pointer; margin-bottom: 10px; }
-        
-        /* Navegação e Progresso */
-        .progresso { background: #eee; height: 10px; border-radius: 5px; margin-bottom: 20px; overflow: hidden; }
-        .barra { background: var(--accent); height: 100%; width: 0%; transition: width 0.3s; }
-        .controles { display: flex; justify-content: space-between; margin-top: 20px; }
-        
-        /* Questão */
-        .questao-box { min-height: 300px; }
-        .tag-artigo { background: var(--accent); color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8em; }
-        .opcao-item { display: block; padding: 12px; margin: 8px 0; border: 1px solid #ddd; border-radius: 6px; cursor: pointer; transition: 0.2s; }
-        .opcao-item:hover { background: #f0f7ff; }
-        
-        .comentario { margin-top: 15px; padding: 15px; background: #e8f4fd; border-left: 5px solid var(--accent); display: none; }
-        button { padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
-        .btn-nav { background: var(--primary); color: white; }
-        .btn-check { background: var(--success); color: white; }
-        .btn-voltar { background: #95a5a6; color: white; margin-bottom: 20px; }
-    </style>
-</head>
-<body>
-
+<html lang="pt-br"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Simulado</title>
+<style>
+body{font-family:Arial;background:#ecf0f1;margin:0;padding:20px}.container{max-width:900px;margin:auto;background:#fff;padding:20px;border-radius:10px}
+.hidden{display:none}.card{background:#2c3e50;color:#fff;padding:15px;margin:10px 0;cursor:pointer;border-radius:8px}
+.opcao{display:block;border:1px solid #ccc;padding:10px;margin:8px 0;border-radius:6px;cursor:pointer}
+.barra{height:10px;background:#3498db;width:0}.prog{background:#ddd}.coment{display:none;background:#eef;padding:10px;margin-top:10px}
+button{padding:10px 16px;margin:5px}
+</style></head><body>
 <div class="container">
-    <!-- SELEÇÃO DE MATÉRIAS -->
-    <div id="view-menu">
-        <h1>Simulado SUSP</h1>
-        <div id="lista-materias"></div>
-    </div>
-
-    <!-- ÁREA DO SIMULADO (UMA POR UMA) -->
-    <div id="view-simulado" class="hidden">
-        <button class="btn-voltar" onclick="irParaMenu()">← Voltar</button>
-        
-        <div class="progresso"><div id="barra-progresso" class="barra"></div></div>
-        <p>Questão <span id="num-atual">0</span> de <span id="total-questoes">0</span></p>
-
-        <div id="questao-atual" class="questao-box">
-            <!-- Conteúdo dinâmico -->
-        </div>
-
-        <div class="controles">
-            <button class="btn-nav" id="btn-anterior" onclick="mudarQuestao(-1)">Anterior</button>
-            <button class="btn-check" onclick="toggleComentario()">Ver Resposta</button>
-            <button class="btn-nav" id="btn-proxima" onclick="mudarQuestao(1)">Próxima</button>
-        </div>
-    </div>
-</div>
-
+<div id="menu"><h2>Simulados</h2><div id="lista"></div></div>
+<div id="sim" class="hidden">
+<button onclick="voltar()">Voltar</button>
+<div class="prog"><div id="barra" class="barra"></div></div>
+<p><span id="atual"></span>/<span id="total"></span> | Acertos: <span id="ac">0</span> Erros: <span id="er">0</span></p>
+<div id="q"></div>
+<button onclick="ant()">Anterior</button><button onclick="corrigir()">Responder</button><button onclick="prox()">Próxima</button>
+</div></div>
 <script>
-    let dadosQuestoes = [];
-    let indiceAtual = 0;
-
-    // Carrega o menu inicial
-    async function carregarMenu() {
-        const res = await fetch('materias.json');
-        const materias = await res.json();
-        document.getElementById('lista-materias').innerHTML = materias.map(m => `
-            <div class="card-materia" onclick="iniciarSimulado('${m.id}')">
-                <h3>${m.materia}</h3>
-            </div>
-        `).join('');
-    }
-
-    // Inicia o simulado da matéria escolhida
-    async function iniciarSimulado(id) {
-        const res = await fetch(`questoes_${id}.json`);
-        dadosQuestoes = await res.json();
-        indiceAtual = 0;
-        
-        document.getElementById('view-menu').classList.add('hidden');
-        document.getElementById('view-simulado').classList.remove('hidden');
-        mostrarQuestao();
-    }
-
-    // Exibe a questão baseada no índice atual
-    function mostrarQuestao() {
-        const q = dadosQuestoes[indiceAtual];
-        const container = document.getElementById('questao-atual');
-        const total = dadosQuestoes.length;
-
-        // Atualiza Progresso
-        document.getElementById('num-atual').innerText = indiceAtual + 1;
-        document.getElementById('total-questoes').innerText = total;
-        document.getElementById('barra-progresso').style.width = ((indiceAtual + 1) / total * 100) + "%";
-
-        // Renderiza Questão
-        let htmlOpcoes = q.opcoes.map((opt, i) => `
-            <label class="opcao-item">
-                <input type="radio" name="resposta" value="${i}"> ${opt}
-            </label>
-        `).join('');
-
-        container.innerHTML = `
-            <span class="tag-artigo">Artigo: ${q.artigo || 'Geral'}</span>
-            <h3>${q.pergunta}</h3>
-            <div id="opcoes">${htmlOpcoes}</div>
-            <div id="feedback" class="comentario">
-                <strong>Gabarito: ${q.correta}</strong><br>
-                ${q.comentario}
-            </div>
-        `;
-
-        // Ajusta botões
-        document.getElementById('btn-anterior').disabled = (indiceAtual === 0);
-        document.getElementById('btn-proxima').innerText = (indiceAtual === total - 1) ? "Finalizar" : "Próxima";
-    }
-
-    function mudarQuestao(direcao) {
-        const novoIndice = indiceAtual + direcao;
-        if (novoIndice >= 0 && novoIndice < dadosQuestoes.length) {
-            indiceAtual = novoIndice;
-            mostrarQuestao();
-        } else if (novoIndice >= dadosQuestoes.length) {
-            alert("Simulado concluído!");
-            irParaMenu();
-        }
-    }
-
-    function toggleComentario() {
-        const f = document.getElementById('feedback');
-        f.style.display = (f.style.display === 'block') ? 'none' : 'block';
-    }
-
-    function irParaMenu() {
-        document.getElementById('view-simulado').classList.add('hidden');
-        document.getElementById('view-menu').classList.remove('hidden');
-    }
-
-    window.onload = carregarMenu;
-</script>
-</body>
-</html>
+let questoes=[],i=0,ac=0,er=0;
+async function init(){
+let m=await fetch('materias.json').then(r=>r.json());
+lista.innerHTML=m.map(x=>`<div class=card onclick="abrir('${x.id}')">${x.materia}</div>`).join('');
+}
+async function abrir(id){
+let arq=id.endsWith('.json')?id:`questoes_${id}.json`;
+questoes=await fetch(arq).then(r=>r.json());
+i=0;ac=0;er=0;
+menu.classList.add('hidden');sim.classList.remove('hidden');mostrar();
+}
+function mostrar(){
+let x=questoes[i],ops=x.opcoes||['V','F'];
+atual.textContent=i+1;total.textContent=questoes.length;
+barra.style.width=((i+1)/questoes.length*100)+'%';
+q.innerHTML=`<h3>${x.pergunta}</h3>`+
+ops.map(o=>`<label class=opcao><input type=radio name=r value="${o}"> ${o}</label>`).join('')+
+`<div id=f class=coment></div>`;
+ac.textContent=ac;er.textContent=er;
+}
+function corrigir(){
+let r=document.querySelector('input[name=r]:checked');if(!r){alert('Escolha uma resposta');return;}
+let x=questoes[i],c=String(x.correta);
+let ok=r.value===c;if(ok)ac++;else er++;
+document.getElementById('ac').textContent=ac;
+document.getElementById('er').textContent=er;
+let f=document.getElementById('f');
+f.style.display='block';
+f.innerHTML=`<b>${ok?'✔ Acertou':'✘ Errou'}</b><br>Resposta: ${c}<br><br>${x.comentario||''}`;
+}
+function prox(){if(i<questoes.length-1){i++;mostrar()}else alert('Fim');}
+function ant(){if(i>0){i--;mostrar();}}
+function voltar(){sim.classList.add('hidden');menu.classList.remove('hidden');}
+window.onload=init;
+</script></body></html>
