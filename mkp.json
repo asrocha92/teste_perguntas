@@ -1,1202 +1,972 @@
 [
   {
     "id": 1,
-    "artigo": "Marketing Institucional",
+    "artigo": "Etiqueta Social",
+    "nivel": "Fácil",
+    "pontos": 2,
     "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 1)",
+    "pergunta": "A etiqueta social teve origem nas cortes europeias e buscava organizar a convivência.",
     "opcoes": [
       "V",
       "F"
     ],
     "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "comentario": "Verdadeiro. Sua origem está ligada às cortes europeias dos séculos XVII e XVIII."
   },
   {
     "id": 2,
-    "artigo": "Etiqueta",
+    "artigo": "Marketing Pessoal",
+    "nivel": "Fácil",
+    "pontos": 2,
     "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 2)",
+    "pergunta": "Na atividade policial, marketing pessoal é sinônimo de autopromoção.",
     "opcoes": [
       "V",
       "F"
     ],
     "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "comentario": "Falso. O foco é a construção de credibilidade por postura, comportamento e comunicação."
   },
   {
     "id": 3,
-    "artigo": "Comunicação",
+    "artigo": "Imagem Institucional",
+    "nivel": "Fácil",
+    "pontos": 2,
     "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 3)",
+    "pergunta": "A conduta individual do policial pode afetar a imagem da PMPR.",
     "opcoes": [
       "V",
       "F"
     ],
     "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "comentario": "Verdadeiro. Cada contato com a sociedade influencia confiança e credibilidade."
   },
   {
     "id": 4,
-    "artigo": "Reputação",
+    "artigo": "Etiqueta Profissional",
+    "nivel": "Fácil",
+    "pontos": 2,
     "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 4)",
+    "pergunta": "Na Polícia Militar, a etiqueta possui finalidade apenas estética.",
     "opcoes": [
       "V",
       "F"
     ],
     "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "comentario": "Falso. Ela promove organização, respeito, disciplina e padronização."
   },
   {
     "id": 5,
-    "artigo": "PMPR",
+    "artigo": "Comunicação",
+    "nivel": "Médio",
+    "pontos": 2,
     "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 5)",
+    "pergunta": "Gestos, postura e expressão facial fazem parte da comunicação não verbal.",
     "opcoes": [
       "V",
       "F"
     ],
     "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "comentario": "Verdadeiro. Esses elementos influenciam a percepção inicial do cidadão."
   },
   {
     "id": 6,
-    "artigo": "Marketing Pessoal",
+    "artigo": "Valor Percebido",
+    "nivel": "Médio",
+    "pontos": 2,
     "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 6)",
+    "pergunta": "O cidadão avalia somente o resultado técnico da ocorrência.",
     "opcoes": [
       "V",
       "F"
     ],
     "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "comentario": "Falso. Ele também avalia a experiência, o respeito e a forma de comunicação."
   },
   {
     "id": 7,
-    "artigo": "Marketing Institucional",
+    "artigo": "Representação Institucional",
+    "nivel": "Médio",
+    "pontos": 2,
     "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 7)",
+    "pergunta": "Mesmo fora do serviço, a conduta do policial pode repercutir sobre a corporação.",
     "opcoes": [
       "V",
       "F"
     ],
     "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "comentario": "Verdadeiro. A imagem pessoal permanece associada à instituição."
   },
   {
     "id": 8,
-    "artigo": "Etiqueta",
+    "artigo": "Redes Sociais",
+    "nivel": "Médio",
+    "pontos": 2,
     "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 8)",
+    "pergunta": "Em perfil particular, o policial pode ignorar completamente as normas institucionais.",
     "opcoes": [
       "V",
       "F"
     ],
     "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "comentario": "Falso. A responsabilidade institucional também alcança a conduta digital."
   },
   {
     "id": 9,
-    "artigo": "Comunicação",
+    "artigo": "Credibilidade",
+    "nivel": "Médio",
+    "pontos": 2,
     "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 9)",
+    "pergunta": "A credibilidade é construída por coerência, responsabilidade e constância.",
     "opcoes": [
       "V",
       "F"
     ],
     "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "comentario": "Verdadeiro. A confiança depende de condutas coerentes ao longo do tempo."
   },
   {
     "id": 10,
-    "artigo": "Reputação",
+    "artigo": "Interesse Institucional",
+    "nivel": "Médio",
+    "pontos": 2,
     "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 10)",
+    "pergunta": "O interesse pessoal pode se sobrepor ao institucional quando não houver uso de farda.",
     "opcoes": [
       "V",
       "F"
     ],
     "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "comentario": "Falso. O interesse pessoal não deve ferir nem superar o interesse da corporação."
   },
   {
     "id": 11,
-    "artigo": "PMPR",
+    "artigo": "Apresentação Pessoal",
+    "nivel": "Fácil",
+    "pontos": 2,
     "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 11)",
+    "pergunta": "Uniforme correto, higiene e asseio contribuem para transmitir profissionalismo.",
     "opcoes": [
       "V",
       "F"
     ],
     "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "comentario": "Verdadeiro. A apresentação pessoal comunica disciplina e respeito."
   },
   {
     "id": 12,
-    "artigo": "Marketing Pessoal",
+    "artigo": "Comunicação Institucional",
+    "nivel": "Difícil",
+    "pontos": 2,
     "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 12)",
+    "pergunta": "A autorização institucional elimina a necessidade de preparo para entrevistas.",
     "opcoes": [
       "V",
       "F"
     ],
     "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "comentario": "Falso. Mesmo autorizado, o policial deve dominar o tema e manter autocontrole."
   },
   {
     "id": 13,
-    "artigo": "Marketing Institucional",
+    "artigo": "Entrevistas",
+    "nivel": "Difícil",
+    "pontos": 2,
     "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 13)",
+    "pergunta": "Em entrevistas, o policial deve evitar opiniões pessoais e conhecer os fatos.",
     "opcoes": [
       "V",
       "F"
     ],
     "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "comentario": "Verdadeiro. Isso preserva neutralidade, confiança e credibilidade."
   },
   {
     "id": 14,
-    "artigo": "Etiqueta",
+    "artigo": "Pós-modernidade",
+    "nivel": "Médio",
+    "pontos": 2,
     "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 14)",
+    "pergunta": "A rapidez das informações reduz a exposição pública do policial.",
     "opcoes": [
       "V",
       "F"
     ],
     "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "comentario": "Falso. A rapidez das informações aumenta a exposição e o julgamento imediato."
   },
   {
     "id": 15,
-    "artigo": "Comunicação",
+    "artigo": "Rizzo",
+    "nivel": "Médio",
+    "pontos": 2,
     "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 15)",
+    "pergunta": "Segundo Rizzo, marketing pessoal é estratégia e não mera aparência.",
     "opcoes": [
       "V",
       "F"
     ],
     "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "comentario": "Verdadeiro. A percepção é construída por coerência e comportamento."
   },
   {
     "id": 16,
-    "artigo": "Reputação",
+    "artigo": "Marketing Institucional",
+    "nivel": "Médio",
+    "pontos": 2,
     "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 16)",
+    "pergunta": "O marketing institucional prioriza exclusivamente os interesses pessoais do policial.",
     "opcoes": [
       "V",
       "F"
     ],
     "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "comentario": "Falso. Seu foco é a imagem, a legitimidade e a confiança na organização."
   },
   {
     "id": 17,
-    "artigo": "PMPR",
+    "artigo": "Etiqueta Contemporânea",
+    "nivel": "Médio",
+    "pontos": 2,
     "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 17)",
+    "pergunta": "A etiqueta moderna valoriza respeito, empatia e adequação ao contexto.",
     "opcoes": [
       "V",
       "F"
     ],
     "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "comentario": "Verdadeiro. Ela deixou de ser apenas um conjunto rígido de regras."
   },
   {
     "id": 18,
-    "artigo": "Marketing Pessoal",
+    "artigo": "Redes Sociais",
+    "nivel": "Difícil",
+    "pontos": 2,
     "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 18)",
+    "pergunta": "Divulgar informações sigilosas pode comprometer a imagem e gerar responsabilização.",
     "opcoes": [
       "V",
       "F"
     ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "correta": "V",
+    "comentario": "Verdadeiro. Também pode afetar segurança, disciplina e credibilidade."
   },
   {
     "id": 19,
-    "artigo": "Marketing Institucional",
+    "artigo": "4 Ps",
+    "nivel": "Médio",
+    "pontos": 2,
     "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 19)",
+    "pergunta": "Na aplicação policial dos 4 Ps, praça corresponde ao local onde o policial atua.",
     "opcoes": [
       "V",
       "F"
     ],
     "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "comentario": "Verdadeiro. Pode ser rua, quartel, abordagem ou ambiente digital."
   },
   {
     "id": 20,
-    "artigo": "Etiqueta",
+    "artigo": "Planejamento Estratégico",
+    "nivel": "Difícil",
+    "pontos": 2,
     "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 20)",
+    "pergunta": "A postura diária do policial não interfere nos objetivos estratégicos da PMPR.",
     "opcoes": [
       "V",
       "F"
     ],
     "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "comentario": "Falso. Cada atendimento e manifestação pública pode favorecer ou prejudicar esses objetivos."
   },
   {
     "id": 21,
-    "artigo": "Comunicação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 21)",
+    "artigo": "Fundamentos",
+    "nivel": "Fácil",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Segundo Kotler e Armstrong, marketing envolve principalmente:",
     "opcoes": [
-      "V",
-      "F"
+      "Criação de valor e relacionamento.",
+      "Apenas venda de produtos.",
+      "Somente publicidade.",
+      "Autopromoção profissional."
     ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "correta": "A",
+    "comentario": "O material relaciona marketing à criação de valor e construção de relacionamentos."
   },
   {
     "id": 22,
-    "artigo": "Reputação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 22)",
+    "artigo": "Comunicação",
+    "nivel": "Fácil",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Qual alternativa representa comunicação não verbal?",
     "opcoes": [
-      "V",
-      "F"
+      "Texto escrito.",
+      "Expressão facial e postura.",
+      "Tom técnico de relatório.",
+      "Argumentação jurídica."
     ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "correta": "B",
+    "comentario": "Postura, gestos, olhar e expressão facial são elementos não verbais."
   },
   {
     "id": 23,
-    "artigo": "PMPR",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 23)",
+    "artigo": "4 Ps",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Na aplicação dos 4 Ps à PMPR, 'promoção' corresponde a:",
     "opcoes": [
-      "V",
-      "F"
+      "Fardamento.",
+      "Impacto emocional.",
+      "Comunicação e comportamento.",
+      "Local de atuação."
     ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "correta": "C",
+    "comentario": "Promoção é adaptada para a forma como o policial se comunica."
   },
   {
     "id": 24,
-    "artigo": "Marketing Pessoal",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 24)",
+    "artigo": "Valor Percebido",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Uma ocorrência tecnicamente correta pode gerar percepção negativa quando há:",
     "opcoes": [
-      "V",
-      "F"
+      "Clareza e respeito.",
+      "Escuta ativa.",
+      "Equilíbrio emocional.",
+      "Arrogância e comunicação inadequada."
     ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "correta": "D",
+    "comentario": "O cidadão avalia toda a experiência, não apenas o resultado."
   },
   {
     "id": 25,
-    "artigo": "Marketing Institucional",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 25)",
+    "artigo": "Bordin",
+    "nivel": "Fácil",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Qual é a primeira etapa da construção da imagem profissional segundo Bordin?",
     "opcoes": [
-      "V",
-      "F"
+      "Autoconhecimento.",
+      "Aparência.",
+      "Credibilidade.",
+      "Relacionamento."
     ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "correta": "A",
+    "comentario": "O primeiro passo é conhecer qualidades, limitações, emoções e comportamentos."
   },
   {
     "id": 26,
-    "artigo": "Etiqueta",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 26)",
+    "artigo": "Relacionamento Interpessoal",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "O relacionamento interpessoal adequado se baseia em:",
     "opcoes": [
-      "V",
-      "F"
+      "Distanciamento e rigidez.",
+      "Empatia, respeito e cordialidade.",
+      "Competição interna.",
+      "Exposição pessoal."
     ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "correta": "B",
+    "comentario": "Esses elementos favorecem cooperação e confiança."
   },
   {
     "id": 27,
-    "artigo": "Comunicação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 27)",
+    "artigo": "Imagem Profissional",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Para a comunidade, muitas vezes a postura do policial é percebida:",
     "opcoes": [
-      "V",
-      "F"
+      "Somente após a análise jurídica.",
+      "Apenas no ambiente digital.",
+      "Antes da técnica.",
+      "Somente em cerimônias."
     ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "correta": "C",
+    "comentario": "A percepção inicial é formada pelo que o cidadão vê e vivencia."
   },
   {
     "id": 28,
-    "artigo": "Reputação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 28)",
+    "artigo": "Marketing Institucional",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "O principal foco do marketing institucional é:",
     "opcoes": [
-      "V",
-      "F"
+      "Aumentar seguidores pessoais.",
+      "Gerar lucro.",
+      "Promover interesses particulares.",
+      "Fortalecer a imagem e a confiança na corporação."
     ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "correta": "D",
+    "comentario": "Seu foco é legitimidade, reputação e confiança social."
   },
   {
     "id": 29,
-    "artigo": "PMPR",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 29)",
+    "artigo": "Redes Sociais",
+    "nivel": "Difícil",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Antes de publicar fotos ou vídeos, o policial deve verificar principalmente:",
     "opcoes": [
-      "V",
-      "F"
+      "Se o conteúdo preserva a imagem e respeita as normas.",
+      "Somente a qualidade da câmera.",
+      "A quantidade de seguidores.",
+      "O horário de postagem."
     ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "correta": "A",
+    "comentario": "Autorização, sigilo e compatibilidade institucional são essenciais."
   },
   {
     "id": 30,
-    "artigo": "Marketing Pessoal",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 30)",
+    "artigo": "Entrevistas",
+    "nivel": "Difícil",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Durante entrevista, o policial deve:",
     "opcoes": [
-      "V",
-      "F"
+      "Improvisar opiniões pessoais.",
+      "Manter autocontrole e dominar o tema.",
+      "Evitar preparo para parecer espontâneo.",
+      "Falar em nome próprio mesmo representando a PMPR."
     ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "correta": "B",
+    "comentario": "Autocontrole, preparo e neutralidade preservam a imagem institucional."
   },
   {
     "id": 31,
-    "artigo": "Marketing Institucional",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 31)",
+    "artigo": "Princípios Administrativos",
+    "nivel": "Difícil",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "O uso da farda para autopromoção comercial pode violar especialmente:",
     "opcoes": [
-      "V",
-      "F"
+      "Legalidade e publicidade comercial.",
+      "Somente eficiência.",
+      "Impessoalidade e moralidade.",
+      "Apenas hierarquia."
     ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "correta": "C",
+    "comentario": "A personalização da função pública pode afrontar impessoalidade e moralidade."
   },
   {
     "id": 32,
-    "artigo": "Etiqueta",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 32)",
+    "artigo": "Apresentação Profissional",
+    "nivel": "Fácil",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "O uniforme corretamente utilizado simboliza:",
     "opcoes": [
-      "V",
-      "F"
+      "Apenas estética.",
+      "Liberdade individual.",
+      "Marketing comercial.",
+      "Autoridade do Estado, disciplina e legitimidade."
     ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "correta": "D",
+    "comentario": "O uniforme comunica autoridade, organização e profissionalismo."
   },
   {
     "id": 33,
-    "artigo": "Comunicação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 33)",
+    "artigo": "Comunicação Não Verbal",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Qual comportamento pode transmitir desatenção ou arrogância?",
     "opcoes": [
-      "V",
-      "F"
+      "Braços cruzados e olhar disperso.",
+      "Escuta ativa.",
+      "Contato visual adequado.",
+      "Postura firme e respeitosa."
     ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "correta": "A",
+    "comentario": "Esses sinais podem comprometer a percepção da autoridade policial."
   },
   {
     "id": 34,
-    "artigo": "Reputação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 34)",
+    "artigo": "Marketing Pessoal",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Marketing pessoal na atividade policial refere-se à forma como o profissional é percebido por meio de:",
     "opcoes": [
-      "V",
-      "F"
+      "Apenas aparência.",
+      "Postura, comportamento e comunicação.",
+      "Somente desempenho técnico.",
+      "Publicidade institucional."
     ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "correta": "B",
+    "comentario": "A imagem profissional é construída de forma ampla e contínua."
   },
   {
     "id": 35,
-    "artigo": "PMPR",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 35)",
+    "artigo": "Etiqueta Militar",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "No contexto militar, a etiqueta contribui para:",
     "opcoes": [
-      "V",
-      "F"
+      "Eliminar a hierarquia.",
+      "Aumentar a informalidade.",
+      "Padronizar comportamentos e prevenir conflitos.",
+      "Substituir normas internas."
     ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "correta": "C",
+    "comentario": "Ela reforça organização, disciplina, hierarquia e eficiência."
   },
   {
     "id": 36,
-    "artigo": "Marketing Pessoal",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 36)",
+    "artigo": "Caso Prático",
+    "nivel": "Difícil",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Um policial resolve corretamente a ocorrência, mas usa tom agressivo. O efeito mais provável é:",
     "opcoes": [
-      "V",
-      "F"
+      "Fortalecimento automático da imagem.",
+      "Nenhum efeito.",
+      "Promoção da autoridade legítima.",
+      "Percepção negativa apesar do acerto técnico."
     ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "correta": "D",
+    "comentario": "A experiência negativa pode reduzir confiança e credibilidade."
   },
   {
     "id": 37,
-    "artigo": "Marketing Institucional",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 37)",
+    "artigo": "Autorização Institucional",
+    "nivel": "Difícil",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "A autorização formal para entrevistas busca:",
     "opcoes": [
-      "V",
-      "F"
+      "Garantir alinhamento e evitar exposição inadequada.",
+      "Permitir opiniões político-partidárias.",
+      "Aumentar a popularidade individual.",
+      "Dispensar o conhecimento do tema."
     ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "correta": "A",
+    "comentario": "Ela preserva o controle e a coerência da comunicação institucional."
   },
   {
     "id": 38,
-    "artigo": "Etiqueta",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 38)",
+    "artigo": "Marketing Digital",
+    "nivel": "Difícil",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Qual postagem mais compromete a credibilidade da PMPR?",
     "opcoes": [
-      "V",
-      "F"
+      "Conteúdo educativo autorizado.",
+      "Informação sigilosa e comportamento antiético.",
+      "Mensagem institucional aprovada.",
+      "Orientação preventiva oficial."
     ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "correta": "B",
+    "comentario": "Conteúdo sigiloso ou antiético pode gerar graves danos institucionais."
   },
   {
     "id": 39,
-    "artigo": "Comunicação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 39)",
+    "artigo": "Liberdade e Responsabilidade",
+    "nivel": "Difícil",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Nas redes sociais, a liberdade pessoal do policial:",
     "opcoes": [
-      "V",
-      "F"
+      "É absoluta.",
+      "Só existe durante as férias.",
+      "Deve considerar a associação de sua imagem à PMPR.",
+      "Elimina a responsabilidade institucional."
     ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "correta": "C",
+    "comentario": "Mesmo em perfil particular, a conduta deve respeitar valores e disciplina."
   },
   {
     "id": 40,
-    "artigo": "Reputação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 40)",
+    "artigo": "Caso Prático",
+    "nivel": "Difícil",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Um policial usa a farda para divulgar produto privado. A avaliação correta é:",
     "opcoes": [
-      "V",
-      "F"
+      "É sempre permitido.",
+      "É adequado se houver muitos seguidores.",
+      "É irrelevante para a PMPR.",
+      "Pode haver conflito entre autopromoção e interesse institucional."
     ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "correta": "D",
+    "comentario": "A imagem institucional não deve ser usada para promoção pessoal incompatível."
   },
   {
     "id": 41,
-    "artigo": "PMPR",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 41)",
+    "artigo": "Kotler",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Na PMPR, o valor pode ser representado por:",
     "opcoes": [
-      "V",
-      "F"
+      "Segurança e respeito.",
+      "Lucro e vendas.",
+      "Popularidade e engajamento.",
+      "Estilo pessoal e individualidade."
     ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "correta": "A",
+    "comentario": "O material associa valor à segurança e ao respeito."
   },
   {
     "id": 42,
-    "artigo": "Marketing Pessoal",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 42)",
+    "artigo": "Bordin",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Qual etapa de Bordin está diretamente ligada a agir sob pressão?",
     "opcoes": [
-      "V",
-      "F"
+      "Aparência.",
+      "Controle emocional.",
+      "Planejamento.",
+      "Objetivos."
     ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "correta": "B",
+    "comentario": "O controle emocional permite equilíbrio e domínio dos impulsos."
   },
   {
     "id": 43,
-    "artigo": "Marketing Institucional",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 43)",
+    "artigo": "Rizzo",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "A expressão 'PM = produto social' indica que:",
     "opcoes": [
-      "V",
-      "F"
+      "O policial é uma mercadoria.",
+      "A corporação busca lucro.",
+      "Cada atitude pode construir ou destruir a imagem institucional.",
+      "O policial deve fazer propaganda."
     ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "correta": "C",
+    "comentario": "O policial é percebido como representante da instituição."
   },
   {
     "id": 44,
-    "artigo": "Etiqueta",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 44)",
+    "artigo": "Valores Compartilhados",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Qual é um valor compartilhado pelo marketing pessoal e institucional?",
     "opcoes": [
-      "V",
-      "F"
+      "Autopromoção.",
+      "Interesse próprio.",
+      "Estilo pessoal.",
+      "Credibilidade."
     ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "correta": "D",
+    "comentario": "Credibilidade, ética, respeito e responsabilidade são valores comuns."
   },
   {
     "id": 45,
-    "artigo": "Comunicação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 45)",
+    "artigo": "Valores Não Compartilhados",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Qual elemento pertence prioritariamente ao âmbito institucional?",
     "opcoes": [
-      "V",
-      "F"
+      "Imagem coletiva.",
+      "Individualidade.",
+      "Estilo pessoal.",
+      "Autopromoção."
     ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "correta": "A",
+    "comentario": "A instituição prioriza padronização, disciplina e imagem coletiva."
   },
   {
     "id": 46,
-    "artigo": "Reputação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 46)",
+    "artigo": "Caso Digital",
+    "nivel": "Difícil",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Publicar imagens de armamentos e ambientes internos sem autorização pode:",
     "opcoes": [
-      "V",
-      "F"
+      "Fortalecer automaticamente a reputação.",
+      "Gerar risco de segurança e responsabilização.",
+      "Ser irrelevante.",
+      "Aumentar a neutralidade institucional."
     ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "correta": "B",
+    "comentario": "O conteúdo pode expor informações sensíveis e violar normas."
   },
   {
     "id": 47,
-    "artigo": "PMPR",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 47)",
+    "artigo": "Carreira Profissional",
+    "nivel": "Difícil",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Marketing pessoal inadequado pode provocar:",
     "opcoes": [
-      "V",
-      "F"
+      "Somente queda de seguidores.",
+      "Promoção funcional.",
+      "Perda de credibilidade e sanções disciplinares.",
+      "Nenhum impacto profissional."
     ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "correta": "C",
+    "comentario": "A reputação negativa pode prejudicar confiança e progressão."
   },
   {
     "id": 48,
-    "artigo": "Marketing Pessoal",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 48)",
+    "artigo": "Comunicação Institucional",
+    "nivel": "Difícil",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Expressar opinião pessoal em nome da corporação pode:",
     "opcoes": [
-      "V",
-      "F"
+      "Fortalecer a impessoalidade.",
+      "Eliminar riscos disciplinares.",
+      "Ser sempre permitido.",
+      "Comprometer a neutralidade institucional."
     ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "correta": "D",
+    "comentario": "A fala pode ser confundida com posicionamento oficial."
   },
   {
     "id": 49,
-    "artigo": "Marketing Institucional",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 49)",
+    "artigo": "Imagem Institucional",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Qual conjunto fortalece a imagem da PMPR?",
     "opcoes": [
-      "V",
-      "F"
+      "Ética, disciplina, respeito e boa comunicação.",
+      "Exposição excessiva e autopromoção.",
+      "Informalidade e opiniões pessoais.",
+      "Desrespeito e agressividade."
     ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "correta": "A",
+    "comentario": "Esses comportamentos fortalecem confiança e legitimidade."
   },
   {
     "id": 50,
-    "artigo": "Etiqueta",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 50)",
+    "artigo": "Síntese",
+    "nivel": "Difícil",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Qual conduta melhor integra marketing pessoal e institucional?",
     "opcoes": [
-      "V",
-      "F"
+      "Buscar exposição constante.",
+      "Agir com ética, equilíbrio e responsabilidade digital.",
+      "Priorizar interesses particulares.",
+      "Evitar contato com a comunidade."
     ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "correta": "B",
+    "comentario": "A imagem individual e institucional se fortalecem por condutas responsáveis."
   },
   {
     "id": 51,
-    "artigo": "Comunicação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 51)",
-    "opcoes": [
-      "V",
-      "F"
+    "artigo": "4 Ps",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "relacionar",
+    "pergunta": "Relacione os 4 Ps tradicionais à aplicação policial.",
+    "coluna_a": [
+      "Produto",
+      "Preço",
+      "Praça",
+      "Promoção"
     ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "coluna_b": [
+      "Como se comunica",
+      "Impacto emocional",
+      "Onde atua",
+      "Atuação e postura"
+    ],
+    "correta": "1D, 2B, 3C, 4A",
+    "comentario": "Produto corresponde à atuação; preço ao impacto; praça ao local; promoção à comunicação."
   },
   {
     "id": 52,
-    "artigo": "Reputação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 52)",
-    "opcoes": [
-      "V",
-      "F"
+    "artigo": "Autores",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "relacionar",
+    "pergunta": "Relacione os autores aos conceitos.",
+    "coluna_a": [
+      "Kotler e Armstrong",
+      "Bordin",
+      "Rizzo"
     ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "coluna_b": [
+      "Percepção e coerência",
+      "Valor e relacionamento",
+      "Construção da imagem em etapas"
+    ],
+    "correta": "1B, 2C, 3A",
+    "comentario": "Cada autor destaca um aspecto complementar do marketing pessoal."
   },
   {
     "id": 53,
-    "artigo": "PMPR",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 53)",
-    "opcoes": [
-      "V",
-      "F"
+    "artigo": "Comunicação",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "relacionar",
+    "pergunta": "Relacione cada elemento à forma de comunicação.",
+    "coluna_a": [
+      "Comunicação verbal",
+      "Comunicação não verbal"
     ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "coluna_b": [
+      "Gestos e postura",
+      "Clareza e objetividade",
+      "Expressão facial",
+      "Adequação do discurso"
+    ],
+    "correta": "1B e 1D; 2A e 2C",
+    "comentario": "A verbal envolve palavras; a não verbal envolve sinais corporais."
   },
   {
     "id": 54,
-    "artigo": "Marketing Pessoal",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 54)",
-    "opcoes": [
-      "V",
-      "F"
+    "artigo": "Bordin",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "relacionar",
+    "pergunta": "Relacione as etapas às descrições.",
+    "coluna_a": [
+      "Autoconhecimento",
+      "Planejamento",
+      "Credibilidade",
+      "Controle emocional"
     ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "coluna_b": [
+      "Confiança construída",
+      "Conhecer qualidades e limitações",
+      "Agir sob pressão",
+      "Construção consciente da reputação"
+    ],
+    "correta": "1B, 2D, 3A, 4C",
+    "comentario": "As etapas estruturam a construção diária da imagem profissional."
   },
   {
     "id": 55,
-    "artigo": "Marketing Institucional",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 55)",
-    "opcoes": [
-      "V",
-      "F"
+    "artigo": "Marketing Pessoal e Institucional",
+    "nivel": "Difícil",
+    "pontos": 5,
+    "tipo": "relacionar",
+    "pergunta": "Relacione as características aos respectivos ramos.",
+    "coluna_a": [
+      "Marketing pessoal",
+      "Marketing institucional"
     ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "coluna_b": [
+      "Reputação profissional",
+      "Confiança pública",
+      "Competências individuais",
+      "Imagem organizacional"
+    ],
+    "correta": "1A e 1C; 2B e 2D",
+    "comentario": "O pessoal foca o indivíduo; o institucional foca a organização."
   },
   {
     "id": 56,
-    "artigo": "Etiqueta",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 56)",
-    "opcoes": [
-      "V",
-      "F"
+    "artigo": "Apresentação Profissional",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "relacionar",
+    "pergunta": "Relacione cada elemento ao que comunica.",
+    "coluna_a": [
+      "Higiene e asseio",
+      "Uniforme",
+      "Postura corporal"
     ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "coluna_b": [
+      "Autoridade e legitimidade",
+      "Cuidado e disciplina",
+      "Prontidão e equilíbrio"
+    ],
+    "correta": "1B, 2A, 3C",
+    "comentario": "A apresentação pessoal influencia a percepção de competência e confiabilidade."
   },
   {
     "id": 57,
-    "artigo": "Comunicação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 57)",
-    "opcoes": [
-      "V",
-      "F"
+    "artigo": "Valores",
+    "nivel": "Difícil",
+    "pontos": 5,
+    "tipo": "relacionar",
+    "pergunta": "Relacione os grupos aos valores.",
+    "coluna_a": [
+      "Compartilhados",
+      "Pessoais",
+      "Institucionais"
     ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "coluna_b": [
+      "Individualidade e estilo",
+      "Ética e credibilidade",
+      "Padronização e imagem coletiva"
+    ],
+    "correta": "1B, 2A, 3C",
+    "comentario": "Há valores comuns e outros prioritários de cada dimensão."
   },
   {
     "id": 58,
-    "artigo": "Reputação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 58)",
-    "opcoes": [
-      "V",
-      "F"
+    "artigo": "Redes Sociais",
+    "nivel": "Difícil",
+    "pontos": 5,
+    "tipo": "relacionar",
+    "pergunta": "Relacione a conduta ao efeito.",
+    "coluna_a": [
+      "Divulgar sigilo",
+      "Usar farda para propaganda privada",
+      "Publicar conteúdo autorizado",
+      "Falar opinião pessoal em nome da PMPR"
     ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "coluna_b": [
+      "Fortalecimento institucional",
+      "Risco à neutralidade",
+      "Comprometimento da segurança",
+      "Confusão entre interesse pessoal e institucional"
+    ],
+    "correta": "1C, 2D, 3A, 4B",
+    "comentario": "Responsabilidade digital exige sigilo, autorização e neutralidade."
   },
   {
     "id": 59,
-    "artigo": "PMPR",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 59)",
-    "opcoes": [
-      "V",
-      "F"
+    "artigo": "Etiqueta Militar",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "relacionar",
+    "pergunta": "Relacione a função da etiqueta ao resultado.",
+    "coluna_a": [
+      "Padronizar comportamentos",
+      "Reforçar hierarquia",
+      "Prevenir conflitos",
+      "Fortalecer a imagem"
     ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
+    "coluna_b": [
+      "Maior previsibilidade",
+      "Disciplina institucional",
+      "Melhor convivência",
+      "Credibilidade social"
+    ],
+    "correta": "1A, 2B, 3C, 4D",
+    "comentario": "A etiqueta contribui para organização e eficiência."
   },
   {
     "id": 60,
-    "artigo": "Marketing Pessoal",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 60)",
-    "opcoes": [
-      "V",
-      "F"
+    "artigo": "Experiência do Cidadão",
+    "nivel": "Difícil",
+    "pontos": 5,
+    "tipo": "relacionar",
+    "pergunta": "Relacione a experiência ao efeito provável.",
+    "coluna_a": [
+      "Experiência positiva",
+      "Experiência negativa",
+      "Comunicação respeitosa",
+      "Excesso de agressividade"
     ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
-  },
-  {
-    "id": 61,
-    "artigo": "Marketing Institucional",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 61)",
-    "opcoes": [
-      "V",
-      "F"
+    "coluna_b": [
+      "Resistência",
+      "Confiança",
+      "Fortalecimento da legitimidade",
+      "Percepção negativa"
     ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
-  },
-  {
-    "id": 62,
-    "artigo": "Etiqueta",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 62)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
-  },
-  {
-    "id": 63,
-    "artigo": "Comunicação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 63)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
-  },
-  {
-    "id": 64,
-    "artigo": "Reputação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 64)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
-  },
-  {
-    "id": 65,
-    "artigo": "PMPR",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 65)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
-  },
-  {
-    "id": 66,
-    "artigo": "Marketing Pessoal",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 66)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
-  },
-  {
-    "id": 67,
-    "artigo": "Marketing Institucional",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 67)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
-  },
-  {
-    "id": 68,
-    "artigo": "Etiqueta",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 68)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
-  },
-  {
-    "id": 69,
-    "artigo": "Comunicação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 69)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
-  },
-  {
-    "id": 70,
-    "artigo": "Reputação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 70)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
-  },
-  {
-    "id": 71,
-    "artigo": "PMPR",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 71)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
-  },
-  {
-    "id": 72,
-    "artigo": "Marketing Pessoal",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 72)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
-  },
-  {
-    "id": 73,
-    "artigo": "Marketing Institucional",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 73)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
-  },
-  {
-    "id": 74,
-    "artigo": "Etiqueta",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 74)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
-  },
-  {
-    "id": 75,
-    "artigo": "Comunicação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 75)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
-  },
-  {
-    "id": 76,
-    "artigo": "Reputação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 76)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
-  },
-  {
-    "id": 77,
-    "artigo": "PMPR",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 77)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
-  },
-  {
-    "id": 78,
-    "artigo": "Marketing Pessoal",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 78)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
-  },
-  {
-    "id": 79,
-    "artigo": "Marketing Institucional",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 79)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
-  },
-  {
-    "id": 80,
-    "artigo": "Etiqueta",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 80)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
-  },
-  {
-    "id": 81,
-    "artigo": "Comunicação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 81)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
-  },
-  {
-    "id": 82,
-    "artigo": "Reputação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 82)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
-  },
-  {
-    "id": 83,
-    "artigo": "PMPR",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 83)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
-  },
-  {
-    "id": 84,
-    "artigo": "Marketing Pessoal",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 84)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
-  },
-  {
-    "id": 85,
-    "artigo": "Marketing Institucional",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 85)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
-  },
-  {
-    "id": 86,
-    "artigo": "Etiqueta",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 86)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
-  },
-  {
-    "id": 87,
-    "artigo": "Comunicação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 87)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
-  },
-  {
-    "id": 88,
-    "artigo": "Reputação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 88)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
-  },
-  {
-    "id": 89,
-    "artigo": "PMPR",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 89)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
-  },
-  {
-    "id": 90,
-    "artigo": "Marketing Pessoal",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 90)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
-  },
-  {
-    "id": 91,
-    "artigo": "Marketing Institucional",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 91)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
-  },
-  {
-    "id": 92,
-    "artigo": "Etiqueta",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 92)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
-  },
-  {
-    "id": 93,
-    "artigo": "Comunicação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 93)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
-  },
-  {
-    "id": 94,
-    "artigo": "Reputação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 94)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
-  },
-  {
-    "id": 95,
-    "artigo": "PMPR",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 95)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
-  },
-  {
-    "id": 96,
-    "artigo": "Marketing Pessoal",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 96)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
-  },
-  {
-    "id": 97,
-    "artigo": "Marketing Institucional",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 97)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
-  },
-  {
-    "id": 98,
-    "artigo": "Etiqueta",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 98)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
-  },
-  {
-    "id": 99,
-    "artigo": "Comunicação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O marketing pessoal e a postura profissional influenciam diretamente a imagem institucional da PMPR. (Questão 99)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "V",
-    "comentario": "Verdadeiro. Conforme o material, a conduta individual impacta a reputação e a confiança na corporação."
-  },
-  {
-    "id": 100,
-    "artigo": "Reputação",
-    "tipo": "verdadeiro_falso",
-    "pergunta": "O policial militar deixa de representar a PMPR quando está fora do serviço. (Questão 100)",
-    "opcoes": [
-      "V",
-      "F"
-    ],
-    "correta": "F",
-    "comentario": "Falso. O material destaca que o policial continua associado à imagem institucional mesmo fora do serviço."
+    "correta": "1B, 2A, 3C, 4D",
+    "comentario": "A forma de atendimento influencia diretamente a percepção da corporação."
   }
 ]
