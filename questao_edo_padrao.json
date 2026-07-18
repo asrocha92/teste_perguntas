@@ -1,0 +1,333 @@
+[
+  {
+    "id": 1,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A tramitação ordinária ocorre quando a tramitação, o estudo e a solução podem ocorrer normalmente, sem prazo peremptório.",
+    "correta": "V",
+    "comentario": "Verdadeiro. A tramitação ordinária é utilizada quando o expediente pode seguir o fluxo normal, sem exigência de prazo peremptório.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "artigo": "ICO-PMPR"
+  },
+  {
+    "id": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Os documentos de tramitação urgente são identificados pela sigla UU.",
+    "correta": "F",
+    "comentario": "Falso. A tramitação urgente é identificada por U; UU corresponde à tramitação urgentíssima.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "artigo": "ICO-PMPR"
+  },
+  {
+    "id": 3,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Na tramitação urgentíssima, a tramitação, o estudo e a solução devem receber providência imediata.",
+    "correta": "V",
+    "comentario": "Verdadeiro. A natureza urgentíssima exige providência imediata.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "artigo": "ICO-PMPR"
+  },
+  {
+    "id": 4,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Os recursos em geral e os expedientes relativos aos direitos dos militares estaduais são considerados de tramitação urgente.",
+    "correta": "V",
+    "comentario": "Verdadeiro. Esses expedientes estão entre as situações indicadas para tramitação urgente.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "artigo": "ICO-PMPR"
+  },
+  {
+    "id": 5,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Documentos oriundos do Poder Judiciário, como Mandado de Segurança e Habeas Corpus, possuem tramitação ordinária.",
+    "correta": "F",
+    "comentario": "Falso. Documentos dessa natureza exigem tratamento prioritário, conforme as regras de tramitação estudadas.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "artigo": "ICO-PMPR"
+  },
+  {
+    "id": 6,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "O prazo para tramitação ordinária é de até oito dias úteis.",
+    "correta": "V",
+    "comentario": "Verdadeiro. O prazo indicado para a tramitação ordinária é de até oito dias úteis.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "artigo": "ICO-PMPR"
+  },
+  {
+    "id": 7,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "O prazo para tramitação urgente é de até dois dias úteis.",
+    "correta": "V",
+    "comentario": "Verdadeiro. A tramitação urgente deve ocorrer em até dois dias úteis.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "artigo": "ICO-PMPR"
+  },
+  {
+    "id": 8,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A tramitação urgentíssima requer providência imediata.",
+    "correta": "V",
+    "comentario": "Verdadeiro. O caráter urgentíssimo determina atuação imediata.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "artigo": "ICO-PMPR"
+  },
+  {
+    "id": 9,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A numeração dos documentos inicia-se em 1º de janeiro e encerra-se em 31 de dezembro de cada ano.",
+    "correta": "V",
+    "comentario": "Verdadeiro. A numeração segue o período anual.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "artigo": "ICO-PMPR"
+  },
+  {
+    "id": 10,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A numeração dos documentos deve possuir obrigatoriamente três algarismos, não sendo admitida quantidade superior.",
+    "correta": "F",
+    "comentario": "Falso. A regra de apresentação com três algarismos não impede que a numeração ultrapasse três dígitos quando necessário.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "artigo": "ICO-PMPR"
+  },
+  {
+    "id": 11,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Quando não houver algarismos significativos suficientes, a numeração normalmente é completada com zeros à esquerda, como em 010.",
+    "correta": "V",
+    "comentario": "Verdadeiro. O preenchimento com zeros à esquerda mantém o padrão de apresentação da numeração.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "artigo": "ICO-PMPR"
+  },
+  {
+    "id": 12,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Após a numeração do documento, seguem-se uma barra simples e a sigla da seção, diretoria, unidade ou gabinete em que o expediente foi estudado e elaborado.",
+    "correta": "V",
+    "comentario": "Verdadeiro. Essa identificação complementa a numeração do expediente.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "artigo": "ICO-PMPR"
+  },
+  {
+    "id": 13,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A expressão 'Respeitosamente' é utilizada quando o expediente se destina à autoridade superior.",
+    "correta": "V",
+    "comentario": "Verdadeiro. 'Respeitosamente' é o fecho empregado para autoridade superior.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "artigo": "ICO-PMPR"
+  },
+  {
+    "id": 14,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A expressão 'Atenciosamente' é utilizada exclusivamente quando o documento é destinado à autoridade superior.",
+    "correta": "F",
+    "comentario": "Falso. Para autoridade superior utiliza-se 'Respeitosamente'; 'Atenciosamente' é empregado nas demais relações previstas.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "artigo": "ICO-PMPR"
+  },
+  {
+    "id": 15,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "O despacho é uma decisão proferida pela autoridade competente, podendo ser favorável ou desfavorável à pretensão apresentada.",
+    "correta": "V",
+    "comentario": "Verdadeiro. O despacho formaliza a decisão da autoridade sobre matéria submetida à sua apreciação.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "artigo": "ICO-PMPR"
+  },
+  {
+    "id": 16,
+    "tipo": "multipla_escolha",
+    "pergunta": "Qual é a sigla utilizada para indicar tramitação urgente?",
+    "correta": "B",
+    "comentario": "A alternativa correta é B) U. A sigla U identifica a tramitação urgente.",
+    "opcoes": [
+      "TU",
+      "U",
+      "UU",
+      "UR",
+      "T"
+    ],
+    "artigo": "ICO-PMPR"
+  },
+  {
+    "id": 17,
+    "tipo": "multipla_escolha",
+    "pergunta": "Qual é a sigla utilizada para tramitação urgentíssima?",
+    "correta": "D",
+    "comentario": "A alternativa correta é D) UU. A duplicação da letra U identifica a tramitação urgentíssima.",
+    "opcoes": [
+      "U",
+      "UGT",
+      "TU",
+      "UU",
+      "URG"
+    ],
+    "artigo": "ICO-PMPR"
+  },
+  {
+    "id": 18,
+    "tipo": "multipla_escolha",
+    "pergunta": "O prazo da tramitação ordinária é de até:",
+    "correta": "D",
+    "comentario": "A alternativa correta é D) 8 dias úteis.",
+    "opcoes": [
+      "2 dias úteis",
+      "4 dias úteis",
+      "5 dias úteis",
+      "8 dias úteis",
+      "10 dias corridos"
+    ],
+    "artigo": "ICO-PMPR"
+  },
+  {
+    "id": 19,
+    "tipo": "multipla_escolha",
+    "pergunta": "A tramitação urgente deve ocorrer em até:",
+    "correta": "B",
+    "comentario": "A alternativa correta é B) 2 dias úteis. A providência imediata está associada à tramitação urgentíssima.",
+    "opcoes": [
+      "24 horas",
+      "2 dias úteis",
+      "5 dias úteis",
+      "8 dias úteis",
+      "Imediatamente"
+    ],
+    "artigo": "ICO-PMPR"
+  },
+  {
+    "id": 20,
+    "tipo": "multipla_escolha",
+    "pergunta": "Qual documento é utilizado para solicitar a uma autoridade a tomada de providência, execução de ato ou satisfação de interesse ou pretensão?",
+    "correta": "C",
+    "comentario": "A alternativa correta é C) Requerimento.",
+    "opcoes": [
+      "Despacho",
+      "Diretriz",
+      "Requerimento",
+      "Boletim",
+      "Cautela"
+    ],
+    "artigo": "ICO-PMPR"
+  },
+  {
+    "id": 21,
+    "tipo": "relacionar",
+    "pergunta": "Relacione os tipos de tramitação com suas características.",
+    "coluna_a": [
+      "Tramitação ordinária",
+      "Tramitação urgente (U)",
+      "Tramitação urgentíssima (UU)"
+    ],
+    "coluna_b": [
+      "Requer providência imediata",
+      "Prazo de até oito dias úteis",
+      "Prazo de até dois dias úteis"
+    ],
+    "correta": "3, 1, 2",
+    "comentario": "Urgentíssima exige providência imediata; ordinária tem prazo de até oito dias úteis; urgente tem prazo de até dois dias úteis.",
+    "artigo": "ICO-PMPR"
+  },
+  {
+    "id": 22,
+    "tipo": "relacionar",
+    "pergunta": "Relacione as partes gerais de um documento com suas características.",
+    "coluna_a": [
+      "Cabeçalho",
+      "Texto",
+      "Fecho"
+    ],
+    "coluna_b": [
+      "Parte principal do documento, onde o assunto é desenvolvido",
+      "Parte inicial, cuja composição varia conforme a espécie documental",
+      "Parte final do documento"
+    ],
+    "correta": "2, 1, 3",
+    "comentario": "O cabeçalho é a parte inicial; o texto desenvolve o assunto; e o fecho encerra formalmente o documento.",
+    "artigo": "ICO-PMPR"
+  },
+  {
+    "id": 23,
+    "tipo": "relacionar",
+    "pergunta": "Relacione as partes do boletim com o conteúdo correspondente.",
+    "coluna_a": [
+      "Primeira parte",
+      "Segunda parte",
+      "Terceira parte",
+      "Quarta parte"
+    ],
+    "coluna_b": [
+      "Justiça e disciplina",
+      "Serviços diários",
+      "Assuntos gerais e administrativos",
+      "Instrução"
+    ],
+    "correta": "4, 1, 3, 2",
+    "comentario": "A sequência é: primeira parte — serviços diários; segunda — instrução; terceira — assuntos gerais e administrativos; quarta — justiça e disciplina.",
+    "artigo": "ICO-PMPR"
+  },
+  {
+    "id": 24,
+    "tipo": "relacionar",
+    "pergunta": "Relacione os documentos às suas respectivas finalidades.",
+    "coluna_a": [
+      "Despacho",
+      "Requerimento",
+      "Cautela",
+      "Boletim"
+    ],
+    "coluna_b": [
+      "Documento pelo qual a autoridade competente divulga ordens e fatos que a OPM deva conhecer",
+      "Documento pelo qual se solicita providência, execução de ato ou satisfação de interesse ou pretensão",
+      "Decisão proferida pela autoridade competente sobre caso submetido à sua apreciação",
+      "Documento em forma de recibo utilizado para individualizar o recebimento de material ou quantia"
+    ],
+    "correta": "4, 2, 1, 3",
+    "comentario": "Boletim divulga ordens e fatos; requerimento formula uma solicitação; despacho registra decisão; cautela individualiza o recebimento de material ou quantia.",
+    "artigo": "ICO-PMPR"
+  }
+]
