@@ -1,5 +1,5 @@
 [
-  {
+  /**{
     "id": "susp",
     "materia": "SUSP - Lei 13.675/2018"
   },
@@ -11,6 +11,7 @@
     "id": "mkp",
     "materia": "MktP - Marketing Pessoal"
   },
+  */
   {
     "id": "edo",
     "materia": "EDO - Instruções de Comunicação Oficial da PMPR"
