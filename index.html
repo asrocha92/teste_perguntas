@@ -297,7 +297,8 @@
         susp: 'questoes_susp.json',
         historia: 'questoes_historia.json',
         mkp: 'mkp.json',
-        edo: 'questoes_edo.json'
+        edo: 'questao_edo.json',
+        criminologia: 'questao_criminologia.json'
     };
 
     const letras = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -314,6 +315,7 @@
         const valor = String(tipo || 'multipla_escolha').toLowerCase().replaceAll('-', '_');
         if (['vf', 'verdadeiro/falso', 'verdadeiro_falso'].includes(valor)) return 'verdadeiro_falso';
         if (['relacionar', 'associar', 'correlacionar'].includes(valor)) return 'relacionar';
+        if (['resposta_curta', 'dissertativa', 'aberta'].includes(valor)) return 'resposta_curta';
         return 'multipla_escolha';
     }
 
@@ -415,11 +417,14 @@
         const tipoLabel =
             tipo === 'verdadeiro_falso' ? 'Verdadeiro/Falso' :
             tipo === 'relacionar' ? 'Relacionar' :
+            tipo === 'resposta_curta' ? 'Resposta curta' :
             'Múltipla Escolha';
 
         let htmlOpcoes = tipo === 'relacionar'
             ? montarRelacionar(q, estado)
-            : montarAlternativas(q, estado);
+            : tipo === 'resposta_curta'
+                ? montarRespostaCurta(q, estado)
+                : montarAlternativas(q, estado);
 
         let feedback = '';
 
@@ -539,6 +544,66 @@
         `;
     }
 
+
+    function montarRespostaCurta(q, estado) {
+        const valor = estado.resposta || '';
+        let modelo = '';
+
+        if (estado.respondida) {
+            modelo = `
+                <div style="margin-top:12px; padding:12px; background:#f5f5f5; border-radius:6px;">
+                    <strong>Resposta esperada:</strong><br>
+                    ${escapar(q.resposta_modelo || q.correta || 'Consulte a justificativa.')}
+                </div>
+            `;
+        }
+
+        return `
+            <label style="display:block; font-weight:bold; margin-bottom:8px;">
+                Digite sua resposta:
+            </label>
+            <textarea id="resposta-curta"
+                rows="7"
+                ${estado.respondida ? 'disabled' : ''}
+                oninput="salvarRespostaCurta(this.value)"
+                style="width:100%; padding:12px; border:2px solid #ddd; border-radius:6px; resize:vertical;">${escapar(valor)}</textarea>
+            ${modelo}
+        `;
+    }
+
+    function salvarRespostaCurta(valor) {
+        if (respostas[indiceAtual].respondida) return;
+        respostas[indiceAtual].resposta = valor;
+    }
+
+    function normalizarTextoResposta(texto) {
+        return String(texto || '')
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .toLowerCase()
+            .replace(/[^a-z0-9\s]/g, ' ')
+            .replace(/\s+/g, ' ')
+            .trim();
+    }
+
+    function avaliarRespostaCurta(q, resposta) {
+        const texto = normalizarTextoResposta(resposta);
+        const aceitas = q.respostas_aceitas || [];
+
+        if (!texto || !aceitas.length) return false;
+
+        return aceitas.some(modelo => {
+            const palavras = normalizarTextoResposta(modelo)
+                .split(' ')
+                .filter(p => p.length > 3);
+
+            if (!palavras.length) return false;
+
+            const encontradas = palavras.filter(p => texto.includes(p)).length;
+            return encontradas >= Math.max(2, Math.ceil(palavras.length * 0.45));
+        });
+    }
+
     function selecionarOpcao(index) {
         if (respostas[indiceAtual].respondida) return;
 
@@ -575,6 +640,13 @@
             estado.acertou = estado.resposta.every(
                 (valor, i) => Number(valor) === Number(gabarito[i])
             );
+        } else if (tipo === 'resposta_curta') {
+            if (!estado.resposta || !String(estado.resposta).trim()) {
+                alert('Digite uma resposta antes de corrigir.');
+                return;
+            }
+
+            estado.acertou = avaliarRespostaCurta(q, estado.resposta);
         } else {
             if (estado.resposta === null || estado.resposta === undefined) {
                 alert('Selecione uma alternativa antes de responder.');
