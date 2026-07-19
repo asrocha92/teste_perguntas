@@ -1,16 +1,16 @@
 [
   /**{
-    "id": "susp",
-    "materia": "SUSP - Lei 13.675/2018"
-  },
-  {
-    "id": "historia",
-    "materia": "História"
-  },
-  {
-    "id": "mkp",
-    "materia": "MktP - Marketing Pessoal"
-  },
+  *  "id": "susp",
+  *  "materia": "SUSP - Lei 13.675/2018"
+  *},
+  *{
+  *  "id": "historia",
+  *  "materia": "História"
+  *},
+  *{
+  *  "id": "mkp",
+  *  "materia": "MktP - Marketing Pessoal"
+  *},
   */
   {
     "id": "edo",
