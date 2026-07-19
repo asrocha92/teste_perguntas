@@ -1,0 +1,627 @@
+[
+  {
+    "artigo": "UD I — Conceito de Criminologia",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A criminologia é uma ciência empírica porque observa a realidade, fatos, experiências, dados e fenômenos sociais, e também é interdisciplinar por integrar conhecimentos de áreas como direito, sociologia, psicologia, biologia, medicina legal e estatística.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A criminologia trabalha com a observação concreta da realidade criminal e utiliza conhecimentos de diferentes áreas, razão pela qual é classificada como empírica e interdisciplinar.",
+    "id": 1
+  },
+  {
+    "artigo": "UD I — Criminologia e Direito Penal",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A criminologia é uma ciência normativa do dever-ser, pois sua função principal é definir quais condutas são crimes e estabelecer as respectivas sanções.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "Quem define crimes e sanções é o Direito Penal. A criminologia estuda empiricamente o fenômeno criminal, suas causas, efeitos, sujeitos e formas de controle.",
+    "id": 2
+  },
+  {
+    "artigo": "UD I — Direito Penal",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "O Direito Penal é apresentado como uma ciência normativa do dever-ser, voltada à definição de condutas proibidas e das sanções aplicáveis.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "O Direito Penal estabelece normas, crimes e penas, atuando no plano do dever-ser.",
+    "id": 3
+  },
+  {
+    "artigo": "UD I — Política Criminal",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A política criminal corresponde às estratégias adotadas pelo Estado para responder ao crime, selecionando meios de prevenção e controle.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A política criminal transforma conhecimentos criminológicos e jurídicos em escolhas concretas de prevenção, repressão e controle.",
+    "id": 4
+  },
+  {
+    "artigo": "UD I — Relação entre as Ciências",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A criminologia substitui o Direito Penal e impede a aplicação da lei penal, pois suas explicações sociais tornam desnecessária qualquer sanção jurídica.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "A criminologia não substitui o Direito Penal. As áreas possuem funções distintas e complementares.",
+    "id": 5
+  },
+  {
+    "artigo": "UD I — Objeto da Criminologia",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "O objeto de estudo da criminologia compreende o crime, o criminoso, a vítima e o controle social.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Esses quatro elementos formam o núcleo tradicional do objeto criminológico.",
+    "id": 6
+  },
+  {
+    "artigo": "UD I — Controle Social",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "O controle social informal é exercido principalmente pela polícia, pelo Ministério Público, pelo Poder Judiciário e pelo sistema penitenciário.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "Essas instituições integram o controle social formal. O informal é exercido por família, escola, religião, profissão, comunidade e outros grupos sociais.",
+    "id": 7
+  },
+  {
+    "artigo": "UD I — Violência",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "De acordo com quem pratica a violência, ela pode ser classificada em três grandes categorias: autodirigida, interpessoal e coletiva.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Essa divisão considera o sujeito ou grupo que pratica a violência.",
+    "id": 8
+  },
+  {
+    "artigo": "UD I — Criminologia, Direito Penal e Política Criminal",
+    "nivel": "Médio",
+    "pontos": 10,
+    "tipo": "relacionar",
+    "pergunta": "Relacione cada área do conhecimento à função que melhor a caracteriza.",
+    "coluna_a": [
+      "Criminologia",
+      "Direito Penal",
+      "Política Criminal"
+    ],
+    "coluna_b": [
+      "Define juridicamente condutas criminosas e estabelece sanções.",
+      "Estuda a realidade, as causas e os efeitos do fenômeno criminal.",
+      "Seleciona estratégias e meios de controle e prevenção da criminalidade."
+    ],
+    "correta": "2, 1, 3",
+    "comentario": "A criminologia estuda empiricamente o fenômeno criminal; o Direito Penal define crimes e sanções; e a política criminal escolhe estratégias estatais de prevenção e controle.",
+    "id": 9
+  },
+  {
+    "artigo": "UD I — Objetos da Criminologia",
+    "nivel": "Médio",
+    "pontos": 10,
+    "tipo": "relacionar",
+    "pergunta": "Relacione cada objeto da criminologia à descrição correspondente.",
+    "coluna_a": [
+      "Delito ou crime",
+      "Criminoso ou delinquente",
+      "Vítima",
+      "Controle social"
+    ],
+    "coluna_b": [
+      "Mecanismos formais e informais que orientam comportamentos e reagem ao crime.",
+      "Fenômeno social, comunitário e humano, analisado para além da definição legal.",
+      "Pessoa atingida diretamente ou indiretamente pelo fenômeno criminal.",
+      "Ser histórico, real e complexo, sujeito a influências individuais, sociais e culturais."
+    ],
+    "correta": "4, 1, 3, 2",
+    "comentario": "O crime é um fenômeno social; o criminoso é analisado como sujeito complexo; a vítima é a pessoa atingida; e o controle social reúne mecanismos formais e informais.",
+    "id": 10
+  },
+  {
+    "artigo": "UD I — Vitimização",
+    "nivel": "Difícil",
+    "pontos": 10,
+    "tipo": "relacionar",
+    "pergunta": "Relacione os tipos de vitimização às respectivas manifestações.",
+    "coluna_a": [
+      "Vitimização primária",
+      "Vitimização secundária",
+      "Vitimização terciária",
+      "Vitimização quaternária"
+    ],
+    "coluna_b": [
+      "Medo ou insegurança produzidos pela exposição midiática e pela percepção social do crime.",
+      "Dano direto causado pela prática criminosa.",
+      "Sofrimento adicional produzido pela resposta institucional inadequada.",
+      "Estigmatização, abandono ou exclusão social após o fato."
+    ],
+    "correta": "4, 1, 2, 3",
+    "comentario": "A primária decorre do crime; a secundária, da atuação institucional; a terciária, da reação e exclusão social; e a quaternária, da amplificação do medo e da insegurança.",
+    "id": 11
+  },
+  {
+    "artigo": "UD I — Controle Social",
+    "nivel": "Médio",
+    "pontos": 10,
+    "tipo": "relacionar",
+    "pergunta": "Relacione cada forma de controle social aos agentes que normalmente a exercem.",
+    "coluna_a": [
+      "Controle social informal",
+      "Controle social formal"
+    ],
+    "coluna_b": [
+      "Família, escola, religião, profissão, comunidade e redes de convivência.",
+      "Polícia, Ministério Público, Poder Judiciário, administração penitenciária e sistema legal."
+    ],
+    "correta": "1, 2",
+    "comentario": "O controle informal decorre das relações sociais cotidianas; o formal é exercido pelas instituições estatais e pelo sistema jurídico.",
+    "id": 12
+  },
+  {
+    "artigo": "UD I — Natureza da Violência",
+    "nivel": "Médio",
+    "pontos": 10,
+    "tipo": "relacionar",
+    "pergunta": "Relacione cada natureza de violência à descrição correspondente.",
+    "coluna_a": [
+      "Violência física",
+      "Violência sexual",
+      "Violência psicológica",
+      "Privação ou negligência"
+    ],
+    "coluna_b": [
+      "Dano ou sofrimento de ordem emocional ou mental.",
+      "Ausência de cuidado, proteção ou atendimento necessário.",
+      "Uso direto de força contra o corpo.",
+      "Violação de natureza sexual."
+    ],
+    "correta": "3, 4, 1, 2",
+    "comentario": "A violência física atinge o corpo; a sexual viola a liberdade sexual; a psicológica causa sofrimento emocional; e a negligência resulta da falta de cuidado ou proteção.",
+    "id": 13
+  },
+  {
+    "artigo": "UD I — Objetos da Criminologia",
+    "nivel": "Difícil",
+    "pontos": 10,
+    "tipo": "resposta_curta",
+    "pergunta": "Enumere e explique, com suas palavras, os quatro objetos da criminologia.",
+    "respostas_aceitas": [
+      "crime criminoso vítima controle social",
+      "delito delinquente vítima controle social"
+    ],
+    "resposta_modelo": "Crime ou delito: fenômeno social, comunitário e humano. Criminoso ou delinquente: autor do comportamento delitivo, compreendido como ser histórico e complexo. Vítima: pessoa atingida pelo fenômeno criminal e pelos processos de vitimização. Controle social: mecanismos formais e informais que orientam comportamentos e reagem ao crime.",
+    "comentario": "A resposta deve mencionar e explicar crime, criminoso, vítima e controle social.",
+    "id": 14
+  },
+  {
+    "artigo": "UD I — Fatores Sociais da Criminalidade",
+    "nivel": "Médio",
+    "pontos": 10,
+    "tipo": "resposta_curta",
+    "pergunta": "Cite pelo menos três fatores sociais que podem influenciar a criminalidade, conforme o material estudado.",
+    "respostas_aceitas": [
+      "infância abandonada pobreza desemprego",
+      "subemprego mídia violência",
+      "habitação precária favelização migração",
+      "crescimento urbano preconceito discriminação educação"
+    ],
+    "resposta_modelo": "Exemplos: infância abandonada; pobreza; desemprego ou subemprego; mídia e banalização da violência; habitação precária e favelização; migração e adaptação cultural; crescimento urbano desordenado; preconceito e discriminação; deficiência educacional.",
+    "comentario": "São aceitos quaisquer três fatores sociais presentes no material.",
+    "id": 15
+  },
+  {
+    "artigo": "UD II — Escola Clássica",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A Escola Clássica surgiu como reação ao arbítrio penal, às penas cruéis e ao poder punitivo ilimitado do Estado.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A Escola Clássica buscou racionalizar e limitar o poder de punir, defendendo legalidade, proporcionalidade e humanização das penas.",
+    "id": 16
+  },
+  {
+    "artigo": "UD II — Escola Clássica",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Para a Escola Clássica, o crime era explicado principalmente por fatores biológicos e por características físicas do criminoso.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "Essa explicação está ligada à Escola Positivista, especialmente às ideias de Cesare Lombroso.",
+    "id": 17
+  },
+  {
+    "artigo": "UD II — Escola Positivista",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A Escola Positivista inaugurou o paradigma etiológico ao buscar as causas da criminalidade por meio de observação e investigação empírica.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "O paradigma etiológico procura identificar fatores causais relacionados ao comportamento criminoso.",
+    "id": 18
+  },
+  {
+    "artigo": "UD II — Cesare Lombroso",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Cesare Lombroso é associado à antropologia criminal, à teoria do criminoso nato, ao atavismo e ao uso do método empírico.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Esses conceitos caracterizam a contribuição lombrosiana à Escola Positivista.",
+    "id": 19
+  },
+  {
+    "artigo": "UD II — Enrico Ferri",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Enrico Ferri explicou o crime exclusivamente por fatores biológicos, sem considerar fatores sociais ou ambientais.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "Ferri ampliou a análise para fatores antropológicos, físicos e sociais.",
+    "id": 20
+  },
+  {
+    "artigo": "UD II — Raffaele Garófalo",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Raffaele Garófalo desenvolveu ideias como delito natural, piedade, probidade, periculosidade e defesa social.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Esses conceitos são centrais em sua contribuição à criminologia positivista.",
+    "id": 21
+  },
+  {
+    "artigo": "UD II — Terza Scuola",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A Terza Scuola procurou conciliar elementos da Escola Clássica e da Escola Positivista.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A Terza Scuola apresenta posição intermediária, combinando aspectos de ambas as correntes.",
+    "id": 22
+  },
+  {
+    "artigo": "UD II — Labelling Approach",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "O labelling approach entende que a criminalidade é uma qualidade natural e imutável da pessoa, independentemente da reação social.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "A teoria da reação social destaca os processos de rotulação, etiquetamento, estigmatização e seleção penal.",
+    "id": 23
+  },
+  {
+    "artigo": "UD II — Escola Clássica",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Para a Escola Clássica, o ser humano é racional, livre e capaz de escolher entre agir conforme ou contra a lei. Por isso, a responsabilidade penal está diretamente relacionada a qual fundamento?",
+    "opcoes": [
+      "Determinismo biológico.",
+      "Periculosidade social.",
+      "Livre-arbítrio.",
+      "Atavismo.",
+      "Rotulação social."
+    ],
+    "correta": "C",
+    "comentario": "A Escola Clássica fundamenta a responsabilidade penal no livre-arbítrio.",
+    "id": 24
+  },
+  {
+    "artigo": "UD II — Escola Positivista",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "A Escola Positivista deslocou o foco do crime entendido apenas como ente jurídico para o estudo prioritário de qual elemento?",
+    "opcoes": [
+      "A vítima exclusivamente.",
+      "O criminoso ou delinquente.",
+      "A pena abstrata.",
+      "A decisão judicial.",
+      "A norma constitucional."
+    ],
+    "correta": "B",
+    "comentario": "A Escola Positivista concentrou a análise no autor do delito e nas causas de seu comportamento.",
+    "id": 25
+  },
+  {
+    "artigo": "UD II — Cesare Lombroso",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "A teoria segundo a qual alguns indivíduos nasceriam predispostos ao crime, em razão de características atávicas, ficou conhecida como teoria:",
+    "opcoes": [
+      "Da associação diferencial.",
+      "Da anomia.",
+      "Do criminoso nato.",
+      "Da prevenção situacional.",
+      "Da justiça restaurativa."
+    ],
+    "correta": "C",
+    "comentario": "A teoria do criminoso nato é atribuída a Cesare Lombroso.",
+    "id": 26
+  },
+  {
+    "artigo": "UD II — Enrico Ferri",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Para Enrico Ferri, o crime deveria ser estudado considerando quais grupos de fatores?",
+    "opcoes": [
+      "Somente jurídicos e processuais.",
+      "Apenas econômicos.",
+      "Antropológicos, físicos e sociais.",
+      "Exclusivamente morais.",
+      "Somente psicológicos e religiosos."
+    ],
+    "correta": "C",
+    "comentario": "Ferri ampliou a análise criminológica para fatores antropológicos, físicos e sociais.",
+    "id": 27
+  },
+  {
+    "artigo": "UD II — Reação Social",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Na teoria da reação social, o processo pelo qual uma pessoa passa a ser identificada e tratada socialmente como criminosa recebe qual denominação?",
+    "opcoes": [
+      "Prevenção geral.",
+      "Neutralização.",
+      "Rotulação ou etiquetamento.",
+      "Atavismo.",
+      "Defesa social."
+    ],
+    "correta": "C",
+    "comentario": "O labelling approach enfatiza rotulação, etiquetamento e estigmatização.",
+    "id": 28
+  },
+  {
+    "artigo": "UD II — Escolas Criminológicas",
+    "nivel": "Difícil",
+    "pontos": 10,
+    "tipo": "relacionar",
+    "pergunta": "Relacione cada escola criminológica à sua ideia central.",
+    "coluna_a": [
+      "Escola Clássica",
+      "Escola Positivista",
+      "Escola Sociológica",
+      "Criminologia crítica ou contemporânea"
+    ],
+    "coluna_b": [
+      "O crime deve ser analisado em relação ao meio e às relações sociais.",
+      "A criminalidade é compreendida a partir da seleção penal, da reação social e da estigmatização.",
+      "O crime é visto como escolha racional relacionada ao livre-arbítrio.",
+      "O crime deve ser explicado por causas biológicas, psicológicas e sociais."
+    ],
+    "correta": "3, 4, 1, 2",
+    "comentario": "A Escola Clássica enfatiza o livre-arbítrio; a Positivista, as causas; a Sociológica, o meio social; e a Crítica, a seleção e a reação do sistema penal.",
+    "id": 29
+  },
+  {
+    "artigo": "UD II — Autores Criminológicos",
+    "nivel": "Difícil",
+    "pontos": 10,
+    "tipo": "relacionar",
+    "pergunta": "Relacione cada autor à contribuição criminológica correspondente.",
+    "coluna_a": [
+      "Cesare Beccaria",
+      "Cesare Lombroso",
+      "Raffaele Garófalo",
+      "Gabriel Tarde"
+    ],
+    "coluna_b": [
+      "Crime compreendido como fenômeno de imitação.",
+      "Crítica à tortura e à crueldade penal, com defesa da proporcionalidade.",
+      "Antropologia criminal e estudo empírico do criminoso.",
+      "Delito natural, piedade e probidade."
+    ],
+    "correta": "4, 1, 2, 3",
+    "comentario": "Tarde relaciona crime e imitação; Beccaria critica abusos penais; Lombroso desenvolve a antropologia criminal; Garófalo formula o delito natural.",
+    "id": 30
+  },
+  {
+    "artigo": "UD II — Tendências Contemporâneas",
+    "nivel": "Difícil",
+    "pontos": 10,
+    "tipo": "relacionar",
+    "pergunta": "Relacione cada tendência atual da criminologia aos temas que normalmente investiga.",
+    "coluna_a": [
+      "Criminologia crítica",
+      "Criminologia cultural",
+      "Criminologia ambiental",
+      "Justiça restaurativa"
+    ],
+    "coluna_b": [
+      "Mídia, medo social, consumo, identidade e representação do crime.",
+      "Seletividade penal e funcionamento do sistema penal.",
+      "Responsabilização, reparação do dano e recomposição social.",
+      "Oportunidade, ambiente, alvo, autor e prevenção situacional."
+    ],
+    "correta": "2, 1, 4, 3",
+    "comentario": "A criminologia crítica examina seletividade; a cultural, mídia e significados; a ambiental, oportunidades e espaços; e a justiça restaurativa, reparação e recomposição.",
+    "id": 31
+  },
+  {
+    "artigo": "UD II — Formação Policial",
+    "nivel": "Difícil",
+    "pontos": 10,
+    "tipo": "resposta_curta",
+    "pergunta": "Explique, com suas palavras, por que o estudo das escolas criminológicas é importante para a formação e a atuação policial.",
+    "respostas_aceitas": [
+      "diferentes perspectivas crime escolha individual causas sociais reação social sistema penal atuação técnica crítica legal",
+      "compreender crime criminoso vítima sociedade atuação policial técnica legal"
+    ],
+    "resposta_modelo": "O estudo das escolas criminológicas permite compreender que o crime pode ser analisado por diferentes perspectivas, como livre-arbítrio, fatores biológicos e sociais, influência do meio, reação social, estigmatização e funcionamento do sistema penal. Esse conhecimento favorece uma atuação policial mais técnica, crítica, legal e adequada à realidade social.",
+    "comentario": "A resposta deve relacionar pluralidade de explicações criminológicas e melhoria da atuação policial.",
+    "id": 32
+  },
+  {
+    "artigo": "UD I — Controle Social",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Qual alternativa apresenta apenas exemplos de controle social informal?",
+    "opcoes": [
+      "Polícia, Ministério Público e Judiciário.",
+      "Família, escola, religião e comunidade.",
+      "Sistema penitenciário, polícia e família.",
+      "Judiciário, escola e Ministério Público.",
+      "Polícia, profissão e administração penitenciária."
+    ],
+    "correta": "B",
+    "comentario": "Família, escola, religião e comunidade exercem controle social informal.",
+    "id": 33
+  },
+  {
+    "artigo": "UD I — Vitimização",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Uma vítima que, além do dano do crime, sofre tratamento desrespeitoso ou repetitivo por parte das instituições de atendimento experimenta qual modalidade de vitimização?",
+    "opcoes": [
+      "Primária.",
+      "Secundária.",
+      "Terciária.",
+      "Quaternária.",
+      "Coletiva."
+    ],
+    "correta": "B",
+    "comentario": "A vitimização secundária é produzida pela resposta institucional inadequada.",
+    "id": 34
+  },
+  {
+    "artigo": "UD I — Violência",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Qual alternativa descreve corretamente a violência coletiva?",
+    "opcoes": [
+      "Aquela dirigida pelo indivíduo contra si próprio.",
+      "Aquela praticada apenas entre familiares.",
+      "Aquela praticada por grupos, organizações ou estruturas coletivas.",
+      "Aquela limitada ao uso de força física.",
+      "Aquela que ocorre somente no ambiente escolar."
+    ],
+    "correta": "C",
+    "comentario": "A violência coletiva envolve grupos, organizações ou estruturas sociais.",
+    "id": 35
+  },
+  {
+    "artigo": "UD II — Escola Clássica",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Qual princípio está mais diretamente associado à Escola Clássica?",
+    "opcoes": [
+      "Determinismo absoluto.",
+      "Livre-arbítrio e responsabilidade moral.",
+      "Atavismo biológico.",
+      "Etiquetamento social.",
+      "Seleção penal institucional."
+    ],
+    "correta": "B",
+    "comentario": "A Escola Clássica entende o indivíduo como racional e livre para escolher.",
+    "id": 36
+  },
+  {
+    "artigo": "UD II — Escola Positivista",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Qual método distingue a Escola Positivista da abordagem predominantemente abstrata da Escola Clássica?",
+    "opcoes": [
+      "Método exclusivamente dogmático.",
+      "Método empírico baseado em observação e investigação.",
+      "Método puramente teológico.",
+      "Método de interpretação literal da lei.",
+      "Método de conciliação processual."
+    ],
+    "correta": "B",
+    "comentario": "A Escola Positivista valorizou a observação empírica e a busca de causas.",
+    "id": 37
+  },
+  {
+    "artigo": "UD II — Criminologia Cultural",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "Qual conjunto de temas está mais relacionado à criminologia cultural?",
+    "opcoes": [
+      "Somente anatomia e características físicas.",
+      "Mídia, medo social, consumo, identidade e representação do crime.",
+      "Apenas cálculo de penas.",
+      "Exclusivamente legislação penitenciária.",
+      "Somente reparação patrimonial."
+    ],
+    "correta": "B",
+    "comentario": "A criminologia cultural estuda significados, representações, mídia, identidade e emoções relacionadas ao crime.",
+    "id": 38
+  }
+]
