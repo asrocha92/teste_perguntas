@@ -1,0 +1,37 @@
+{
+  "arquivo_origem": "questoes_eam.json",
+  "arquivo_gerado": "questoes_ema.json",
+  "quantidade_questoes": 50,
+  "formato_app": {
+    "campos": [
+      "artigo",
+      "nivel",
+      "pontos",
+      "tipo",
+      "pergunta",
+      "opcoes",
+      "correta",
+      "comentario",
+      "id"
+    ],
+    "tipo": "multipla_escolha",
+    "opcoes_convertidas_para_array": true,
+    "resposta_correta_convertida_para_correta": true,
+    "explicacao_convertida_para_comentario": true
+  },
+  "materia_adicionada": {
+    "id": "ema",
+    "materia": "EAM — Especialização em Armamento, Tiro e Doutrina de Emprego — 50 questões"
+  },
+  "mapeamento_index": "ema: 'questoes_ema.json'",
+  "ids_unicos": true,
+  "perguntas_exatamente_repetidas": [],
+  "todas_com_comentario": true,
+  "distribuicao_gabarito": {
+    "A": 13,
+    "B": 13,
+    "C": 12,
+    "D": 12
+  },
+  "alternativas_balanceadas": true
+}
