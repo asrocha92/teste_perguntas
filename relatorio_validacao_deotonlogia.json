@@ -1,0 +1,22 @@
+{
+  "arquivo": "questao_deotonlogia.json",
+  "total_questoes": 50,
+  "questoes_transcritas_das_imagens": 17,
+  "questoes_adicionais_dos_pdfs": 33,
+  "tipos": {
+    "verdadeiro_falso": 50
+  },
+  "gabarito": {
+    "V": 25,
+    "F": 25
+  },
+  "comentarios_preenchidos": 50,
+  "ids_sequenciais": true,
+  "questoes_exatamente_repetidas": 0,
+  "pares_muito_semelhantes_acima_de_0_88": [],
+  "alteracoes_projeto": [
+    "Criado questao_deotonlogia.json",
+    "Adicionada a matéria deotonlogia em materias.json",
+    "Adicionado o mapeamento do arquivo em index.html"
+  ]
+}
