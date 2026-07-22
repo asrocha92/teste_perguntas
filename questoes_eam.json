@@ -1,0 +1,606 @@
+{
+  "materia": "Especialização em Armamento, Tiro e Doutrina de Emprego",
+  "codigo_materia": "EAM",
+  "questoes": [
+    {
+      "id": 1,
+      "enunciado": "O que é o 'passo de raia' em uma arma de fogo de cano raiado?",
+      "alternativas": {
+        "A": "É a distância entre uma raia e outra no interior do cano.",
+        "B": "É o comprimento total da parte raiada do cano.",
+        "C": "É o espaço que o projétil percorre dentro do cano até dar uma volta completa em torno do seu próprio eixo.",
+        "D": "É a velocidade com que o projétil gira dentro do cano."
+      },
+      "resposta_correta": "C",
+      "explicacao": "O passo de raia é a distância percorrida pelo projétil no interior do cano para completar uma rotação de 360° no próprio eixo."
+    },
+    {
+      "id": 2,
+      "enunciado": "Quanto ao sistema de funcionamento dos fuzis e carabinas de alta velocidade (5,56 mm e 7,62 mm) utilizados na PMPR, assinale a alternativa correta:",
+      "alternativas": {
+        "A": "Todos funcionam por ação direta de gases sobre o ferrolho.",
+        "B": "Nenhum funciona por ação direta de gases; todos funcionam por ação indireta (seja por tubo condutor ou por êmbolo).",
+        "C": "As carabinas T4 funcionam por ação direta e os fuzis IA2 funcionam por ação indireta.",
+        "D": "O sistema varia conforme o tamanho do carregador utilizado."
+      },
+      "resposta_correta": "B",
+      "explicacao": "Nenhum armamento longo de alta velocidade da PMPR funciona por ação direta. A T4/DDM4 V7S funciona por ação indireta por tubo e o IA2/FAL por ação indireta por êmbolo."
+    },
+    {
+      "id": 3,
+      "enunciado": "Diferencie os conceitos de Municiar, Alimentar e Carregar:",
+      "alternativas": {
+        "A": "Municiar é colocar a munição na câmara; Alimentar é colocar no carregador; Carregar é acionar o gatilho.",
+        "B": "Municiar é colocar as munições no carregador; Alimentar é introduzir o carregador/munição na arma; Carregar é introduzir a munição na câmara de explosão.",
+        "C": "Municiar e Alimentar são sinônimos e significam colocar a arma em condição de tiro.",
+        "D": "Carregar significa colocar munição no carregador; Alimentar é passar a munição para a câmara."
+      },
+      "resposta_correta": "B",
+      "explicacao": "Municiar = Carregador; Alimentar = Inserir o carregador/munição na arma; Carregar = Inserir munição na câmara de explosão."
+    },
+    {
+      "id": 4,
+      "enunciado": "Na execução das Medidas Preliminares de Segurança (MPS), qual das opções representa um erro grave de procedimento?",
+      "alternativas": {
+        "A": "Realizar a inspeção visual e tátil da câmara após dar dois golpes de segurança.",
+        "B": "Retirar o carregador antes de manobrar o ferrolho.",
+        "C": "Pular a inspeção tátil/visual por ter ciculado o ferrolho mais de duas vezes e não ter saído munição.",
+        "D": "Manter o dedo fora do gatilho e a arma apontada para local seguro durante todo o processo."
+      },
+      "resposta_correta": "C",
+      "explicacao": "A inspeção visual e tátil é obrigatória e inegociável, pois a munição pode estar presa na câmara devido a extrator quebrado ou culote danificado."
+    },
+    {
+      "id": 5,
+      "enunciado": "A espingarda calibre 12 utilizada no serviço operacional da Polícia Militar pertence a qual geração e possui qual tipo de choque (choke)?",
+      "alternativas": {
+        "A": "1ª Geração; Choque Pleno.",
+        "B": "2ª Geração; Choque Cilíndrico (sem estreitamento).",
+        "C": "3ª Geração; Choque Modificado.",
+        "D": "4ª Geração; Choque Cambiável."
+      },
+      "resposta_correta": "B",
+      "explicacao": "Espingardas da PM são de 2ª Geração (Pump Action) e possuem choque cilíndrico (sem afunilamento/estreitamento no cano)."
+    },
+    {
+      "id": 6,
+      "enunciado": "Por que o choque da espingarda calibre 12 da PMPR é cilíndrico?",
+      "alternativas": {
+        "A": "Para aumentar o alcance útil dos projéteis de chumbo.",
+        "B": "Para diminuir o recuo (recoil) da arma durante o disparo.",
+        "C": "Para permitir o disparo seguro de diferentes tipos de munição, como munições de impacto controlado e balote.",
+        "D": "Porque armas de bomba (pump action) não suportam choque estreitado."
+      },
+      "resposta_correta": "C",
+      "explicacao": "Sem estreitamento, é possível disparar projéteis sólidos (balote, borracha/impacto controlado) de forma segura."
+    },
+    {
+      "id": 7,
+      "enunciado": "Quais são os três critérios doutrinários da incapacitação balística fisiológica (doutrina 'Tio Ed')?",
+      "alternativas": {
+        "A": "Stopping power, calibre e velocidade.",
+        "B": "Penetração, diâmetro da lesão e localização.",
+        "C": "Massa do projétil, alcance útil e energia cinética.",
+        "D": "Expansão, cavidade temporária e choque térmico."
+      },
+      "resposta_correta": "B",
+      "explicacao": "A incapacitação balística é fundamentada em Penetração, Diâmetro da Lesão e Localização."
+    },
+    {
+      "id": 8,
+      "enunciado": "O que acontece quando o projétil da munição de pistola 9 mm ou .40 Gold Hex / EXPO (Hollow Point) atinge o alvo?",
+      "alternativas": {
+        "A": "Ele capota e se fragmenta em vários pedaços.",
+        "B": "Ele se expande, aumentando o diâmetro da lesão e diminuindo a profundidade de penetração.",
+        "C": "Ele atravessa o alvo mantendo seu formato original intacto.",
+        "D": "Ele perde velocidade antes do impacto devido ao furo na ponta."
+      },
+      "resposta_correta": "B",
+      "explicacao": "Munições expansivas (ponta oca) abrem em formato de cogumelo no impacto, retendo energia e aumentando o diâmetro da lesão sem transpassar."
+    },
+    {
+      "id": 9,
+      "enunciado": "Qual dos escalões de manutenção de armamento é de responsabilidade do operador/atirador e qual a sua característica principal?",
+      "alternativas": {
+        "A": "2º Escalão; exige o uso de ferramentas específicas.",
+        "B": "1º Escalão; não exige e não utiliza ferramentas.",
+        "C": "3º Escalão; substitui peças internas do mecanismo do gatilho.",
+        "D": "1º Escalão; exige desmontagem total da arma com chaves de fenda."
+      },
+      "resposta_correta": "B",
+      "explicacao": "O operador realiza a manutenção de 1º Escalão (orgânica e de rotina), a qual nunca utiliza ferramentas."
+    },
+    {
+      "id": 10,
+      "enunciado": "Qual a diferença técnica entre Alcance Útil e Alcance Máximo?",
+      "alternativas": {
+        "A": "Alcance útil é a distância máxima que o projétil voa; alcance máximo é até onde o atirador enxerga.",
+        "B": "Alcance útil é a distância em que o disparo é eficiente e incapacita o alvo (mín. 100 Joules); alcance máximo é onde o projétil chega antes de cair.",
+        "C": "Ambos os conceitos são iguais na doutrina moderna.",
+        "D": "Alcance útil refere-se a armas curtas e alcance máximo a armas longas."
+      },
+      "resposta_correta": "B",
+      "explicacao": "Alcance Útil envolve precisão e energia incapacitante mínima (100J). Alcance Máximo é a maior distância percorrida pelo projétil antes de cair."
+    },
+    {
+      "id": 11,
+      "enunciado": "A nomenclatura oficial da munição utilizada na carabina T4 V7S é 5,56 x 45 mm. O que cada um desses numerais representa, respectivamente?",
+      "alternativas": {
+        "A": "Diâmetro do estojo e comprimento do projétil.",
+        "B": "Comprimento do cano e quantidade de pólvora em gramas.",
+        "C": "Diâmetro do projétil e comprimento do estojo.",
+        "D": "Diâmetro da câmara e comprimento total do cartucho montado."
+      },
+      "resposta_correta": "C",
+      "explicacao": "O primeiro número indica o calibre nominal do projétil (5,56 mm) e o segundo indica o comprimento do estojo em milímetros (45 mm)."
+    },
+    {
+      "id": 12,
+      "enunciado": "Em uma questão de prova, afirma-se que a munição padrão de fuzil de alta velocidade da PMPR é a 7,62 x 51 mm. O número 51 refere-se a:",
+      "alternativas": {
+        "A": "A quantidade de raiamentos do cano.",
+        "B": "O comprimento do estojo da munição expresso em milímetros.",
+        "C": "A velocidade inicial do projétil em metros por segundo.",
+        "D": "O diâmetro da base da espoleta."
+      },
+      "resposta_correta": "B",
+      "explicacao": "No padrão métrico, o segundo número após o 'x' indica o comprimento da cápsula/estojo em milímetros."
+    },
+    {
+      "id": 13,
+      "enunciado": "Assinale a alternativa que apresenta a grafia incorreta ou inexistente no padrão de dotação oficial de armas de alta velocidade tratadas na aula:",
+      "alternativas": {
+        "A": "5,56 x 45 mm",
+        "B": "7,62 x 51 mm",
+        "C": "5,56 x 40 mm",
+        "D": "9 x 19 mm"
+      },
+      "resposta_correta": "C",
+      "explicacao": "A munição de 5,56 mm possui estojo de 45 mm (5,56 x 45 mm). A medida 5,56 x 40 mm não existe na dotação."
+    },
+    {
+      "id": 14,
+      "enunciado": "O termo 'Gauge' (como no calibre 12 da espingarda) difere da medição em milímetros. A definição correta de gauge no calibre 12 é:",
+      "alternativas": {
+        "A": "Um cano com diâmetro interno exato de 12 mm.",
+        "B": "O diâmetro de uma esfera de chumbo feita a partir de 1/12 de uma libra.",
+        "C": "O comprimento do estojo de plástico medindo 12 cm.",
+        "D": "A capacidade máxima de 12 balotes dentro do tubo do carregador."
+      },
+      "resposta_correta": "B",
+      "explicacao": "Gauge representa a quantidade de esferas iguais que podem ser moldadas a partir de 1 libra de chumbo. No gauge 12, a esfera tem 1/12 de libra."
+    },
+    {
+      "id": 15,
+      "enunciado": "Durante a aula, o instrutor destacou que NENHUMA carabina ou fuzil de alta velocidade (5,56 mm ou 7,62 mm) da PMPR funciona por ação direta de gases. Essas armas funcionam por:",
+      "alternativas": {
+        "A": "Ação muscular exclusiva do atirador.",
+        "B": "Ação indireta de gases (por tubo condutor ou por êmbolo).",
+        "C": "Ação por mola recuperadora sem interferência dos gases.",
+        "D": "Recuo curto do cano com trancamento por roletes."
+      },
+      "resposta_correta": "B",
+      "explicacao": "Armas longas de alta velocidade da PMPR operam por ação indireta de gases."
+    },
+    {
+      "id": 16,
+      "enunciado": "A carabina Taurus T4 V7S opera por meio de qual sistema específico de funcionamento?",
+      "alternativas": {
+        "A": "Ação direta de gases no ferrolho.",
+        "B": "Ação indireta de gases por tubo condutor.",
+        "C": "Ação indireta de gases por êmbolo pistão.",
+        "D": "Ação muscular do atirador (pump action)."
+      },
+      "resposta_correta": "B",
+      "explicacao": "A T4 V7S utiliza o sistema de tubo condutor de gases (ação indireta)."
+    },
+    {
+      "id": 17,
+      "enunciado": "O fuzil IA2 (ou FAL) diferencia-se no funcionamento em relação à carabina T4 V7S porque seu sistema de ação indireta de gases ocorre por meio de:",
+      "alternativas": {
+        "A": "Tubo condutor direto.",
+        "B": "Êmbolo (pistão).",
+        "C": "Alavanca de manejo de acionamento manual.",
+        "D": "Inércia do percursor flutuante."
+      },
+      "resposta_correta": "B",
+      "explicacao": "Fuzis IA2 e FAL utilizam pistão/êmbolo para acionar o ferrolho (ação indireta)."
+    },
+    {
+      "id": 18,
+      "enunciado": "Quais das seguintes armas tratadas em aula funcionam por ação DIRETA de gases?",
+      "alternativas": {
+        "A": "Fuzil 7,62 mm e Espingarda Calibre 12.",
+        "B": "Carabina T4 e Fuzil IA2.",
+        "C": "Pistola e Submetralhadora (SMT).",
+        "D": "Espingarda Calibre 12 e Revólver .38."
+      },
+      "resposta_correta": "C",
+      "explicacao": "Pistolas e submetralhotas (SMT) utilizam ação direta de gases."
+    },
+    {
+      "id": 19,
+      "enunciado": "A alma do cano pode ser classificada em lisa ou raiada. O que há no interior do cano de alma lisa de uma espingarda?",
+      "alternativas": {
+        "A": "Raias helicoidais para a esquerda.",
+        "B": "Micro-raias paralelas.",
+        "C": "NADA (é totalmente liso).",
+        "D": "Um estreitamento helicoidal na câmara."
+      },
+      "resposta_correta": "C",
+      "explicacao": "Canos de alma lisa não possuem raiamento."
+    },
+    {
+      "id": 20,
+      "enunciado": "Qual a principal função das raias existentes no interior do cano de uma arma de fogo?",
+      "alternativas": {
+        "A": "Aumentar o recuo e a força do estampido.",
+        "B": "Fazer o projétil rotacionar sobre seu próprio eixo, dando estabilidade giroscópica na trajetória.",
+        "C": "Retalhar o estojo para facilitar a ejeção.",
+        "D": "Reduzir o aquecimento do cano durante tiros em rajada."
+      },
+      "resposta_correta": "B",
+      "explicacao": "A rotação no próprio eixo fornece estabilidade giroscópica ao projétil durante o voo."
+    },
+    {
+      "id": 21,
+      "enunciado": "A distância que o projétil percorre no interior do cano para dar UMA volta completa em torno do seu próprio eixo chama-se:",
+      "alternativas": {
+        "A": "Alcance útil.",
+        "B": "Velocidade angular.",
+        "C": "Passo de raia.",
+        "D": "Comprimento de alma."
+      },
+      "resposta_correta": "C",
+      "explicacao": "Passo de raia é a definição técnica para a distância percorrida para completar 1 volta completa no próprio eixo."
+    },
+    {
+      "id": 22,
+      "enunciado": "O ato físico de inserir munições dentro do carregador destacável de uma pistola é denominado:",
+      "alternativas": {
+        "A": "Alimentar.",
+        "B": "Municiar.",
+        "C": "Carregar.",
+        "D": "Engatilhar."
+      },
+      "resposta_correta": "B",
+      "explicacao": "Colocar munições no carregador = Municiar."
+    },
+    {
+      "id": 23,
+      "enunciado": "Quando o policial insere o carregador municiado na pistola (ou coloca o cartucho no tubo depósito da calibre 12), ele está executando o procedimento de:",
+      "alternativas": {
+        "A": "Carregar.",
+        "B": "Municiar.",
+        "C": "Alimentar.",
+        "D": "Ciclar."
+      },
+      "resposta_correta": "C",
+      "explicacao": "Acoplar o carregador ou inserir munição na arma = Alimentar."
+    },
+    {
+      "id": 24,
+      "enunciado": "O procedimento de manobrar o ferrolho (ou a telha da 12) fazendo com que a munição saia do carregador e vá para a câmara de explosão, deixando a arma pronta para o disparo, é o:",
+      "alternativas": {
+        "A": "Municiar.",
+        "B": "Carregar.",
+        "C": "Alimentar.",
+        "D": "Travar."
+      },
+      "resposta_correta": "B",
+      "explicacao": "Posicionar a munição na câmara de explosão pronta para disparo = Carregar."
+    },
+    {
+      "id": 25,
+      "enunciado": "Diferente da pistola, a Espingarda Calibre 12 de bomba (pump action) NÃO possui o passo de:",
+      "alternativas": {
+        "A": "Carregar.",
+        "B": "Alimentar.",
+        "C": "Municiar (pois não utiliza carregador destacável convencional).",
+        "D": "Disparar."
+      },
+      "resposta_correta": "C",
+      "explicacao": "A espingarda calibre 12 opera apenas pelos passos de Alimentar e Carregar."
+    },
+    {
+      "id": 26,
+      "enunciado": "A espingarda calibre 12 utilizada pela PMPR no policiamento ostensivo é classificada como uma arma de:",
+      "alternativas": {
+        "A": "1ª Geração (Ação simples).",
+        "B": "2ª Geração (Ação por bomba / pump action).",
+        "C": "3ª Geração (Semi-automática pura).",
+        "D": "4ª Geração (Ação seletiva automática)."
+      },
+      "resposta_correta": "B",
+      "explicacao": "Arma de 2ª Geração com acionamento manual por telha/bomba."
+    },
+    {
+      "id": 27,
+      "enunciado": "O choque (choke) das espingardas calibre 12 da PMPR é do tipo Cilíndrico. Isso significa que:",
+      "alternativas": {
+        "A": "O cano possui um forte estreitamento na ponta para fechar o chumbo.",
+        "B": "O cano não possui estreitamento, mantendo o diâmetro constante.",
+        "C": "A arma só aceita munição do tipo projétil único (balote).",
+        "D": "É proibido usar munições de borracha/impacto controlado."
+      },
+      "resposta_correta": "B",
+      "explicacao": "Choque cilíndrico indica que o diâmetro da alma do cano é uniforme em toda extensão."
+    },
+    {
+      "id": 28,
+      "enunciado": "Qual a capacidade da espingarda calibre 12 ao utilizar munições de 3 polegadas e munições de 2 3/4 polegadas, respectivamente?",
+      "alternativas": {
+        "A": "5+1 e 4+1.",
+        "B": "4+1 e 5+1.",
+        "C": "6+1 e 7+1.",
+        "D": "3+1 e 4+1."
+      },
+      "resposta_correta": "B",
+      "explicacao": "Munição maior (3''): 4 no tubo + 1 na câmara. Munição menor (2 3/4''): 5 no tubo + 1 na câmara."
+    },
+    {
+      "id": 29,
+      "enunciado": "Quais são os TRÊS critérios oficiais da incapacitação balística fisiológica doutrinados pela escola do 'Tio Ed'?",
+      "alternativas": {
+        "A": "Energia, cavidade temporária e choque neurogênico.",
+        "B": "Calibre, peso do projétil e velocidade inicial.",
+        "C": "Penetração, diâmetro da lesão e localização.",
+        "D": "Stopping power, massa e distância."
+      },
+      "resposta_correta": "C",
+      "explicacao": "Triade da incapacitação balística: Penetração, Diâmetro da Lesão e Localização."
+    },
+    {
+      "id": 30,
+      "enunciado": "O que ocorre quando um projétil de alta velocidade (como o 5,56 x 45 mm) atinge o corpo humano?",
+      "alternativas": {
+        "A": "Ele passa direto em linha reta sem sofrer deformação.",
+        "B": "Ele capota e se fragmenta, aumentando significativamente a área de dano.",
+        "C": "Ele expande em formato de cogumelo sem se quebrar.",
+        "D": "Ele para imediatamente na pele devido à baixa densidade."
+      },
+      "resposta_correta": "B",
+      "explicacao": "O projétil 5,56 mm perde estabilidade mecânica ao entrar no tecido, tombando (capotando) e se fragmentando."
+    },
+    {
+      "id": 31,
+      "enunciado": "A munição de arma curta 9 mm ou .40 do tipo Hollow Point / Gold Hex (EXPO) tem como característica no impacto:",
+      "alternativas": {
+        "A": "Capotar e quebrar em três partes.",
+        "B": "Perfurar blindagens pesadas devido à ponta de aço.",
+        "C": "Abrir-se (expandir), aumentando o diâmetro da lesão e reduzindo a chance de transpassar o alvo.",
+        "D": "Incendiar o tecido muscular."
+      },
+      "resposta_correta": "C",
+      "explicacao": "Munição expansiva abre a ponta no fluido corporal, freando e ampliando a cavidade permanente."
+    },
+    {
+      "id": 32,
+      "enunciado": "Em relação à teoria do Stopping Power (Poder de Parada), assinale a afirmativa correta de acordo com a aula:",
+      "alternativas": {
+        "A": "É o critério mais moderno e científico utilizado pela PMPR.",
+        "B": "É um conceito considerado mito/ultrapassado pela doutrina moderna e caiu em desuso.",
+        "C": "É a fórmula matemática que calcula o choque térmico do disparo.",
+        "D": "Aplica-se exclusivamente para munições de fuzil 7,62 mm."
+      },
+      "resposta_correta": "B",
+      "explicacao": "Stopping Power é considerado um mito obsoleto pela doutrina científica balística atual."
+    },
+    {
+      "id": 33,
+      "enunciado": "Qual é a ordem CORRETA e inegociável das Medidas Preliminares de Segurança antes de qualquer manutenção ou desmontagem?",
+      "alternativas": {
+        "A": "Dar 2 golpes -> Retirar carregador -> Dedo no gatilho -> Abrir e olhar.",
+        "B": "Dedo fora do gatilho/arma para local seguro -> Retirar carregador -> Dar 2 golpes -> Inspecionar visual/tátil a câmara -> Fechar a arma.",
+        "C": "Olhar a câmara -> Retirar o carregador -> Desarmar o cão -> Dar 1 golpe.",
+        "D": "Retirar a munição da câmara -> Tirar o carregador -> Guardar a arma no cofre."
+      },
+      "resposta_correta": "B",
+      "explicacao": "Protocolo padrão inegociável para garantir a segurança no manuseio do armamento."
+    },
+    {
+      "id": 34,
+      "enunciado": "Por que NÃO se deve confiar apenas no procedimento de ciclar o ferrolho duas vezes para declarar uma arma descarregada?",
+      "alternativas": {
+        "A": "Porque a munição pode ser invisível a olho nu.",
+        "B": "Porque o extrator da arma ou o culote da munição podem estar quebrados, mantendo o cartucho preso na câmara.",
+        "C": "Porque o percursor pode disparar a arma sozinho ao ciclar.",
+        "D": "Porque o carregador pode se municiar sozinho."
+      },
+      "resposta_correta": "B",
+      "explicacao": "Falhas mecânicas no extrator ou culote podem impedem a extração do cartucho durante o golpe de ferrolho."
+    },
+    {
+      "id": 35,
+      "enunciado": "Onde fica localizado o 'culote' de uma munição?",
+      "alternativas": {
+        "A": "Na ponta do projétil de chumbo.",
+        "B": "Na parte traseira do estojo, na ranhura onde a garra do extrator se aloja para puxá-lo.",
+        "C": "Na mistura química contida dentro da espoleta.",
+        "D": "No meio da pólvora propulsoras."
+      },
+      "resposta_correta": "B",
+      "explicacao": "Anel/ranhura na base do estojo onde o extrator engata para ejetar a munição."
+    },
+    {
+      "id": 36,
+      "enunciado": "Ao puxar o gatilho, o percursor da arma de fogo atinge diretamente qual componente do cartucho para iniciar o disparo?",
+      "alternativas": {
+        "A": "A pólvora química.",
+        "B": "O projétil de chumbo.",
+        "C": "A espoleta.",
+        "D": "O tubo de gases."
+      },
+      "resposta_correta": "C",
+      "explicacao": "O percursor percute a espoleta para acender a carga iniciadora e detonar a pólvora."
+    },
+    {
+      "id": 37,
+      "enunciado": "A pólvora utilizada no armamento leve militar moderno é:",
+      "alternativas": {
+        "A": "Pólvora negra.",
+        "B": "Pólvora química (sem fumaça / nitrocelulósica).",
+        "C": "Pólvora orgânica vegetal.",
+        "D": "Pólvora fulminante de mercúrio."
+      },
+      "resposta_correta": "B",
+      "explicacao": "Pólvora negra é usada para pirotecnia; munições modernas usam pólvora química."
+    },
+    {
+      "id": 38,
+      "enunciado": "O operador/policial militar na ponta da linha é responsável por qual escalão de manutenção e com qual limitação?",
+      "alternativas": {
+        "A": "2º Escalão, usando chaves de fenda e martelo.",
+        "B": "1º Escalão, SEM a utilização de ferramentas.",
+        "C": "3º Escalão, fazendo a troca de cano e ferrolho.",
+        "D": "6º Escalão, realizando pintura e usinagem."
+      },
+      "resposta_correta": "B",
+      "explicacao": "O atirador executa apenas a limpeza e verificação do 1º escalão sem ferramentas."
+    },
+    {
+      "id": 39,
+      "enunciado": "Defina Alcance Útil de um armamento:",
+      "alternativas": {
+        "A": "A distância máxima que o projétil voa até tocar o solo.",
+        "B": "A distância na qual o atirador consegue acertar e incapacitar o alvo com eficiência e energia suficiente (no mínimo 100 Joules).",
+        "C": "O limite do alcance da visão humana a olho nu.",
+        "D": "A distância máxima em que o estampido do tiro pode ser ouvido."
+      },
+      "resposta_correta": "B",
+      "explicacao": "Alcance Útil alia precisão técnica do atirador com energia terminal capaz de incapacitar o alvo."
+    },
+    {
+      "id": 40,
+      "enunciado": "Quanto à classificação das armas pelo porte, qual a principal diferença de uma Arma Portátil para uma Arma Não-Portátil?",
+      "alternativas": {
+        "A": "A portátil exige duas pessoas para carregar; a não-portátil exige apenas uma.",
+        "B": "A portátil pode ser transportada por apenas um homem; a não-portátil exige suporte/fixação ou mais de uma pessoa para transporte e operação.",
+        "C": "A portátil é só pistola; a não-portátil inclui as carabinas e espingardas.",
+        "D": "A não-portátil não utiliza munição real."
+      },
+      "resposta_correta": "B",
+      "explicacao": "Armas portáteis são transportadas individualmente por um operador; não-portáteis requerem reparos/suportes ou equipes."
+    },
+    {
+      "id": 41,
+      "enunciado": "A respeito da carabina/fuzil plataforma AR-15 (como os modelos DDM4 V7S ou Taurus T4 V7S) e sua munição 5,56 x 45 mm, assinale a alternativa correta sobre seu funcionamento e efeito balístico:",
+      "alternativas": {
+        "A": "Opera por ação direta de gases sobre o ferrolho e dispara projéteis que mantêm a trajetória reta sem se deformar dentro do alvo.",
+        "B": "Opera por ação indireta de gases (via tubo condutor de gases) e seu projétil de alta velocidade tende a capotar e fragmentar no corpo, aumentando a área de lesão.",
+        "C": "É uma arma de cano de alma lisa que utiliza munição com estojo de 40 mm de comprimento.",
+        "D": "Opera por ação muscular do atirador em regime exclusivamente automático."
+      },
+      "resposta_correta": "B",
+      "explicacao": "DDM4 V7S e T4 V7S operam por ação indireta via tubo condutor de gases e usam munição 5,56 x 45 mm de alta velocidade."
+    },
+    {
+      "id": 42,
+      "enunciado": "A pistola Beretta APX (calibre 9 x 19 mm) é um armamento de dotação individual. Quanto ao seu sistema de funcionamento e ação do gatilho, assinale a alternativa correta:",
+      "alternativas": {
+        "A": "Opera por ação indireta de gases por êmbolo e possui gatilho de ação simples pura.",
+        "B": "Opera por ação direta de gases (recuo do ferrolho) e utiliza o sistema de gatilho com ação semitensionada (striker fired).",
+        "C": "É uma arma de repetição por action muscular do atirador, exigindo ciclar o ferrolho a cada disparo.",
+        "D": "Possui cano de alma lisa e utiliza munição 9 x 21 mm."
+      },
+      "resposta_correta": "B",
+      "explicacao": "Beretta APX é uma pistola acionada por percursor lançado (striker fired) de ação semitensionada."
+    },
+    {
+      "id": 43,
+      "enunciado": "Em relação à incapacitação balística fisiológica, qual a diferença entre a incapacitação imediata e a mediata?",
+      "alternativas": {
+        "A": "A imediata ocorre por choque térmico; a mediata ocorre por choque acústico.",
+        "B": "A imediata ocorre por lesão direta ao Sistema Nervoso Central (SNC); a mediata ocorre por hemorragia grave e colapso circulatório ao longo do tempo.",
+        "C": "A imediata é provocada por munições de baixa velocidade; a mediata por munições de borracha.",
+        "D": "A imediata é o Stopping Power; a mediata é o poder de perfuração da munição."
+      },
+      "resposta_correta": "B",
+      "explicacao": "A incapacitação imediata exige o comprometimento do SNC (cérebro/coluna). A mediata decorre da perda severa de sangue (hipóxia/hemorragia) levando minutos ou segundos."
+    },
+    {
+      "id": 44,
+      "enunciado": "O que diferencia o regime de tiro das armas de 3ª Geração das de 4ª Geração no universo das espingardas?",
+      "alternativas": {
+        "A": "As de 3ª geração são manuais por bomba; as de 4ª geração são exclusivamente fuzis.",
+        "B": "As de 3ª geração operam puramente em regime semi-automático; as de 4ª geração possuem seleção dupla de acionamento (semi-automático ou bomba/ação muscular).",
+        "C": "As de 3ª geração utilizam chumbo SG; as de 4ª geração aceitam apenas balote.",
+        "D": "As de 3ª geração são de alma lisa; as de 4ª geração possuem raias em todo o cano."
+      },
+      "resposta_correta": "B",
+      "explicacao": "Espingardas de 3ª geração são semiautomáticas puras. As de 4ª geração contam com seletor para trocar entre semiautomático e ação muscular (pump action)."
+    },
+    {
+      "id": 45,
+      "enunciado": "Durante uma instrução prática, se o percursor atinge a espoleta mas a munição não dispara, a falha ocorrida é classificada como:",
+      "alternativas": {
+        "A": "Nega da munição (falha de percussão/nega).",
+        "B": "Falha de ejetor.",
+        "C": "Duplo engrampamento.",
+        "D": "Ação Indireta."
+      },
+      "resposta_correta": "A",
+      "explicacao": "A nega ocorre quando o percursor atinge com força suficiente a espoleta e não há a deflagração da carga propelente."
+    },
+    {
+      "id": 46,
+      "enunciado": "O que significa a sigla RTS presente nos seletores de tiro das submetralhadoras e fuzis modernos?",
+      "alternativas": {
+        "A": "Recuo Total Seguro.",
+        "B": "Regime de Tiro e Segurança.",
+        "C": "Raiamento Técnico Superior.",
+        "D": "Retenção Tática de Salva."
+      },
+      "resposta_correta": "B",
+      "explicacao": "RTS representa as posições do seletor do armamento: Regime de Tiro (Semiautomático/Automático/Burst) e Segurança."
+    },
+    {
+      "id": 47,
+      "enunciado": "Qual a munição letal de serviço padrão da espingarda calibre 12 composta por múltiplos balins de chumbo médio?",
+      "alternativas": {
+        "A": "Balote Cilíndrico.",
+        "B": "Munição de Impacto Controlado (borracha).",
+        "C": "Munição SG.",
+        "D": "Munição Hollow Point EXPO."
+      },
+      "resposta_correta": "C",
+      "explicacao": "A munição SG é o cartucho padrão da calibre 12 que contém balins múltiplos de chumbo."
+    },
+    {
+      "id": 48,
+      "enunciado": "Considere o revólver calibre .38 e a pistola Beretta APX. Em relação ao mecanismo de acionamento do disparo, o revólver opera por:",
+      "alternativas": {
+        "A": "Ação muscular do atirador (podendo ser ação simples ou ação dupla).",
+        "B": "Ação indireta de gases por êmbolo.",
+        "C": "Ação semitensionada exclusiva (striker fired).",
+        "D": "Ação por bomba (pump action)."
+      },
+      "resposta_correta": "A",
+      "explicacao": "O revólver depende exclusivamente da força muscular do atirador no gatilho/cão para ciclar e operar em Ação Simples ou Dupla."
+    },
+    {
+      "id": 49,
+      "enunciado": "Na balística terminal de munições de fuzil, a cavidade temporária formada pela passagem do projétil de alta velocidade é gerada principalmente por:",
+      "alternativas": {
+        "A": "Expansão da ponta oca do projétil.",
+        "B": "Transferência rápida de energia cinética aos tecidos adjacentes devido à alta velocidade e capotamento do projétil.",
+        "C": "Queimadura térmica provocada pela pólvora negra.",
+        "D": "Pelo tamanho do estojo de 19 mm."
+      },
+      "resposta_correta": "B",
+      "explicacao": "A alta velocidade aliada ao capotamento/fragmentação transfere energia com tanta intensidade que estica elasticamente os tecidos ao redor, formando a cavidade temporária."
+    },
+    {
+      "id": 50,
+      "enunciado": "A respeito do calibre $9 \times 19\text{ mm}$, o número 19 se refere a:",
+      "alternativas": {
+        "A": "Comprimento do projétil de chumbo.",
+        "B": "Diâmetro interno do tubo do carregador.",
+        "C": "Comprimento do estojo em milímetros.",
+        "D": "Quantidade de raias do cano da pistola."
+      },
+      "resposta_correta": "C",
+      "explicacao": "O numeral $19$ indica o comprimento da cápsula/estojo metálico em milímetros ($9\text{ mm}$ de diâmetro $\times 19\text{ mm}$ de estojo)."
+    }
+  ]
+}
