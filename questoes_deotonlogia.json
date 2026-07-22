@@ -1,0 +1,702 @@
+[
+  {
+    "artigo": "Hierarquia e disciplina",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A disciplina e o respeito à hierarquia devem ser mantidos somente pelos militares na ativa.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "A disciplina e o respeito à hierarquia não se limitam aos militares da ativa. Esses valores institucionais permanecem exigíveis aos militares estaduais nos termos aplicáveis à sua situação funcional.",
+    "id": 1
+  },
+  {
+    "artigo": "Garantias institucionais",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Ao policial militar do Estado do Paraná é garantido o julgamento por foro privilegiado.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "No contexto do material, a afirmação refere-se ao julgamento perante o órgão jurisdicional competente, especialmente a Justiça Militar nos crimes militares definidos em lei. Isso não representa impunidade nem privilégio pessoal absoluto.",
+    "id": 2
+  },
+  {
+    "artigo": "Dignidade da pessoa humana",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Embora a Constituição Federal de 1988 respeite a dignidade da pessoa humana, a Constituição do Estado do Paraná não faz referência a esse direito em seu texto.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "A Constituição do Estado do Paraná também acolhe a dignidade da pessoa humana e os direitos fundamentais. Por isso, não é correto afirmar que o texto estadual ignora esse princípio.",
+    "id": 3
+  },
+  {
+    "artigo": "Hierarquia e obediência",
+    "nivel": "Difícil",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Hierarquia significa obediência e submissão às regras, preceitos ou regulamentos, enquanto obediência significa a ordenação sequencial de pessoas ou coisas em uma ordem escolhida.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "Os conceitos foram trocados. Hierarquia é a ordenação da autoridade em níveis; obediência é o ato concreto de acatar e cumprir uma determinação legal da autoridade competente.",
+    "id": 4
+  },
+  {
+    "artigo": "Deveres militares",
+    "nivel": "Difícil",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "É dever do militar cumprir e fazer cumprir leis, regulamentos, instruções e ordens de autoridades competentes somente quando ele as julgar convenientes, além de ser obediente aos superiores e leal em todas as circunstâncias.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "O cumprimento do dever não depende da conveniência pessoal do militar. As ordens devem ser legais e emanadas de autoridade competente; ordens manifestamente ilegais não devem ser executadas.",
+    "id": 5
+  },
+  {
+    "artigo": "Constituição Federal — segurança pública",
+    "nivel": "Difícil",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "O art. 144 da Constituição Federal afirma que a segurança pública é exercida para a manutenção da ordem pública e da incolumidade das pessoas e do patrimônio.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "O texto constitucional utiliza a expressão preservação da ordem pública, e não manutenção. O art. 144 também afirma que a segurança pública é dever do Estado, direito e responsabilidade de todos.",
+    "id": 6
+  },
+  {
+    "artigo": "Competência da Polícia Militar",
+    "nivel": "Difícil",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "O art. 48 da Constituição Federal estabelece que à Polícia Militar, força estadual permanente e regular, organizada com base na hierarquia e disciplina militares, cabe a polícia ostensiva, a manutenção da ordem pública e outras funções definidas em lei.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "A referência normativa está incorreta. A Constituição Federal trata das polícias militares no art. 144; a redação apresentada corresponde a disciplina própria de norma estadual, não ao art. 48 da Constituição Federal.",
+    "id": 7
+  },
+  {
+    "artigo": "Fundamentos da República",
+    "nivel": "Fácil",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A soberania, a cidadania e a dignidade da pessoa humana estão entre os fundamentos da República Federativa do Brasil previstos na Constituição Federal de 1988.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "O art. 1º da Constituição Federal inclui soberania, cidadania e dignidade da pessoa humana entre os fundamentos da República.",
+    "id": 8
+  },
+  {
+    "artigo": "Dignidade e direitos sociais",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A dignidade humana pode ser concretizada pelo acesso à educação, saúde, alimentação, trabalho, moradia, transporte, lazer, segurança, previdência social, proteção à maternidade e à infância e assistência aos desamparados.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Esses direitos sociais contribuem para condições mínimas de existência digna e estão previstos no art. 6º da Constituição Federal.",
+    "id": 9
+  },
+  {
+    "artigo": "Civilidade e disciplina",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Segundo o Regulamento Disciplinar do Exército, a civilidade é de interesse vital para a disciplina consciente.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A civilidade fortalece o respeito, a correção das relações militares e a disciplina consciente no ambiente institucional.",
+    "id": 10
+  },
+  {
+    "artigo": "Moralidade e probidade",
+    "nivel": "Difícil",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "O compromisso com a moralidade e a probidade está apenas subentendido na Constituição do Estado do Paraná, sem aparecer expressamente em seu texto.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "Moralidade e probidade aparecem de forma expressa no ordenamento e orientam a conduta dos agentes públicos. Não são apenas valores implícitos.",
+    "id": 11
+  },
+  {
+    "artigo": "Ordens ilegais e responsabilidade",
+    "nivel": "Difícil",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "No cumprimento de ordem emanada de autoridade superior, o executante fica totalmente isento de responsabilidade pela prática de qualquer crime.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "A obediência hierárquica não elimina automaticamente a responsabilidade. O subordinado deve cumprir ordens legais e pode responder por ordem manifestamente ilegal ou pelos excessos praticados.",
+    "id": 12
+  },
+  {
+    "artigo": "Regulamento Disciplinar do Exército",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "O Regulamento Disciplinar do Exército (R-4) tem por finalidade especificar transgressões disciplinares e estabelecer normas relativas a punições, comportamento militar das praças, recursos e recompensas.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Essa é a finalidade geral atribuída ao RDE: disciplinar transgressões, punições, comportamento, recursos e recompensas no âmbito militar.",
+    "id": 13
+  },
+  {
+    "artigo": "Obediência",
+    "nivel": "Fácil",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Obediência é o ato concreto de acatar, seguir ou realizar o que foi determinado por quem detém autoridade.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A obediência representa o cumprimento concreto de uma determinação, desde que ela seja legal e provenha de autoridade competente.",
+    "id": 14
+  },
+  {
+    "artigo": "Normas internacionais",
+    "nivel": "Difícil",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A Resolução nº 34/169, de 17 de dezembro de 1979, e os princípios aprovados no Oitavo Congresso das Nações Unidas, realizado em Havana entre 27 de agosto e 7 de setembro de 1990, integram referências internacionais relacionadas à atuação dos agentes responsáveis pela aplicação da lei.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A Resolução nº 34/169 aprovou o Código de Conduta para os Funcionários Responsáveis pela Aplicação da Lei, e o Congresso de Havana aprovou princípios sobre o uso da força e de armas de fogo.",
+    "id": 15
+  },
+  {
+    "artigo": "Subordinação",
+    "nivel": "Fácil",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Subordinação é um vínculo formal ou posicional entre integrantes de uma estrutura hierarquizada.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A subordinação decorre da posição ocupada na estrutura hierárquica e estabelece relações formais de autoridade e responsabilidade.",
+    "id": 16
+  },
+  {
+    "artigo": "Direitos políticos dos militares",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Ao militar são vedadas a sindicalização e a greve, mas o militar da ativa pode manter filiação a partido político.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "Além da proibição de sindicalização e greve, o militar da ativa não pode estar filiado a partido político, conforme as limitações constitucionais aplicáveis.",
+    "id": 17
+  },
+  {
+    "artigo": "Moral — conceito",
+    "nivel": "Fácil",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A palavra moral deriva do latim mos ou mores, relacionado a costume, e representa a prática concreta de normas escritas ou não escritas.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A moral corresponde aos costumes e às condutas efetivamente praticadas em determinado grupo social.",
+    "id": 18
+  },
+  {
+    "artigo": "Moral — características",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A moral é universal, imutável e independente da cultura e do período histórico.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "A moral é temporal, cultural e variável, pois se forma por hábitos e experiências sociais de cada comunidade.",
+    "id": 19
+  },
+  {
+    "artigo": "Ética — conceito",
+    "nivel": "Fácil",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A ética é a reflexão filosófica e científica sobre a moralidade, tendo a moral como objeto de estudo.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A ética examina criticamente os valores, princípios e comportamentos morais, buscando fundamentos para o dever-ser.",
+    "id": 20
+  },
+  {
+    "artigo": "Ética e moral",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Ética e moral são expressões rigorosamente idênticas: ambas designam somente costumes práticos e variáveis.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "A moral diz respeito à prática e aos costumes; a ética é a reflexão teórica e crítica sobre essa prática.",
+    "id": 21
+  },
+  {
+    "artigo": "Deontologia — origem e sentido",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "O termo deontologia foi associado a Jeremy Bentham e ganhou relevância na ética moderna com a filosofia do dever de Immanuel Kant.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A deontologia trata dos deveres e das obrigações profissionais; o material relaciona sua formulação a Bentham e sua consolidação ética a Kant.",
+    "id": 22
+  },
+  {
+    "artigo": "Deontologia Policial Militar",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A deontologia policial militar limita-se a indicar punições disciplinares, sem tratar de valores, compromissos ou obrigações profissionais.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "A deontologia policial militar sistematiza valores, deveres, compromissos e obrigações que orientam o agir do militar estadual.",
+    "id": 23
+  },
+  {
+    "artigo": "Ética Policial Militar",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A ética policial militar orienta o agente a agir pelo sentimento do dever, pela honra pessoal, pelo pundonor militar e pelo decoro da classe.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Esses elementos sustentam uma conduta moral irrepreensível e fortalecem a legitimidade da autoridade policial perante a sociedade.",
+    "id": 24
+  },
+  {
+    "artigo": "Consciência profissional",
+    "nivel": "Difícil",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Para a ética policial militar, basta obedecer mecanicamente a qualquer ordem, ainda que ela seja ilegal ou contrária à dignidade humana.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "A consciência profissional exige legalidade, retidão e respeito à dignidade humana. A obediência militar não autoriza o cumprimento de ordem manifestamente ilegal.",
+    "id": 25
+  },
+  {
+    "artigo": "Profissão",
+    "nivel": "Fácil",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Profissão é uma atividade especializada e relativamente estável dentro da divisão social do trabalho, voltada ao atendimento de necessidades da comunidade.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A profissão corresponde a trabalho humano especializado, exercido com conhecimentos, responsabilidades e finalidade social.",
+    "id": 26
+  },
+  {
+    "artigo": "Tríplice dimensão — econômica",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Na profissão policial militar, a dimensão econômica significa exclusivamente a busca de lucro e remuneração, sem qualquer ideia de sacerdócio ou gratificação interior.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "O material apresenta a profissão policial militar também como sacerdócio, marcada por nobreza, coragem, espírito de sacrifício e gratificação interior.",
+    "id": 27
+  },
+  {
+    "artigo": "Tríplice dimensão — técnica",
+    "nivel": "Fácil",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A dimensão técnica da profissão policial militar envolve conhecimentos, habilidades, competência de execução e observância de padrões operacionais.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A técnica permite que o policial execute o ofício de forma profissional, segura e coerente com os procedimentos operacionais.",
+    "id": 28
+  },
+  {
+    "artigo": "Tríplice dimensão — ética",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A dimensão ética da profissão policial militar corresponde apenas ao domínio de equipamentos e técnicas operacionais.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "O domínio técnico pertence à dimensão técnica. A dimensão ética exige licitude, honestidade e retidão de caráter.",
+    "id": 29
+  },
+  {
+    "artigo": "Valor e dever",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "O material admite compreender o valor pelo preço, pela importância ou sentimento e pela conduta, e apresenta os valores pessoais como princípios que não devem ser negociados diante de pressões externas.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Valores orientam escolhas e condutas. O dever, por sua vez, obriga a agir corretamente mesmo diante do medo ou de inclinações pessoais.",
+    "id": 30
+  },
+  {
+    "artigo": "Dever",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "O dever é opcional quando o policial sente medo ou quando o cumprimento da lei contraria uma preferência pessoal.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "O dever é um imperativo prático e jurídico: exige atuação correta apesar do medo, das pressões e das inclinações particulares.",
+    "id": 31
+  },
+  {
+    "artigo": "Valor determinante — justiça",
+    "nivel": "Fácil",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Justiça exige que ações e decisões institucionais sejam fundamentadas em valores éticos, morais e no ordenamento jurídico vigente.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A justiça impede decisões arbitrárias e vincula a atuação policial à ética, à moral e à legalidade.",
+    "id": 32
+  },
+  {
+    "artigo": "Valor determinante — lealdade",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Lealdade significa fidelidade exclusiva ao superior hierárquico, ainda que isso implique abandonar os compromissos com a sociedade e com a lei.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "A lealdade alcança Pátria, Corporação, superiores, pares, subordinados e população, sempre subordinada à legalidade e ao interesse público.",
+    "id": 33
+  },
+  {
+    "artigo": "Valor determinante — espírito de corpo",
+    "nivel": "Fácil",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Espírito de corpo é o orgulho legítimo de pertencer à instituição, acompanhado de identificação institucional e camaradagem.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "O espírito de corpo fortalece a coesão, mas não pode ser usado para encobrir ilegalidades ou proteger desvios de conduta.",
+    "id": 34
+  },
+  {
+    "artigo": "Valor determinante — dignidade",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Dignidade autoriza o policial a respeitar apenas pessoas consideradas merecedoras, podendo tratar suspeitos de forma degradante.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "A dignidade envolve autorrespeito e respeito indistinto aos semelhantes, inclusive suspeitos, presos e pessoas em situação de vulnerabilidade.",
+    "id": 35
+  },
+  {
+    "artigo": "Valor determinante — coragem",
+    "nivel": "Fácil",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Coragem é o destemor diante do perigo real, com devotamento à proteção das pessoas e do patrimônio.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Coragem não é imprudência: deve ser exercida com técnica, equilíbrio, legalidade e consciência do risco.",
+    "id": 36
+  },
+  {
+    "artigo": "Aristóteles — virtude",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Para Aristóteles, a virtude nasce de um ato isolado e espontâneo, dispensando prática constante e formação de hábitos.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "A virtude é uma excelência adquirida pelo hábito e pela prática constante, orientada ao justo meio e à eudaimonia.",
+    "id": 37
+  },
+  {
+    "artigo": "Aristóteles — coragem",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Na ética aristotélica, a coragem representa o justo meio entre a covardia, que é falta, e a temeridade, que é excesso.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A coragem equilibrada permite agir apesar do medo, sem omissão covarde nem exposição temerária e desnecessária.",
+    "id": 38
+  },
+  {
+    "artigo": "Aristóteles — virtudes e vícios",
+    "nivel": "Difícil",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A temperança é o meio entre falta de brio e ira, enquanto a mansidão é o meio entre insensibilidade e autoindulgência.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "Os pares foram trocados: temperança fica entre insensibilidade e autoindulgência; mansidão, entre falta de brio ou submissão e ira. A modéstia fica entre sem-vergonhice e timidez excessiva.",
+    "id": 39
+  },
+  {
+    "artigo": "Estoicismo",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Para os estóicos, a virtude é o único bem absoluto, e prudência, coragem, justiça e temperança são virtudes cardeais.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "O estoicismo recomenda viver conforme a razão e a natureza, concentrando-se no que pode ser controlado e mantendo serenidade diante das adversidades.",
+    "id": 40
+  },
+  {
+    "artigo": "Estoicismo — bens externos",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Segundo o estoicismo apresentado no material, riqueza, prestígio e conforto são o bem absoluto e a fonte necessária da felicidade.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "Para os estóicos, o bem absoluto é a virtude. Bens externos não garantem felicidade nem devem controlar a conduta moral.",
+    "id": 41
+  },
+  {
+    "artigo": "Kant — dever",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Para Immanuel Kant, a virtude é a força moral da vontade para cumprir o dever pelo dever, orientada pela razão e pelo imperativo categórico.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A ação moral deve ser praticada porque é correta, e não apenas por medo de punição, interesse ou vantagem pessoal.",
+    "id": 42
+  },
+  {
+    "artigo": "Kant — intenção moral",
+    "nivel": "Difícil",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Na concepção kantiana, uma ação somente é moral quando produz vantagem pessoal para quem a pratica.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "A moralidade kantiana não depende de vantagem pessoal. O agente deve fazer o certo porque é o certo a ser feito.",
+    "id": 43
+  },
+  {
+    "artigo": "Hierarquia e disciplina — função",
+    "nivel": "Difícil",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Hierarquia e disciplina promovem coesão, previsibilidade e controle legítimo do uso da força, contribuindo para a preservação da instituição e do Estado Democrático de Direito.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Esses pilares organizam a autoridade e vinculam a atuação militar a leis, regulamentos e ordens legais, evitando ações individuais arbitrárias.",
+    "id": 44
+  },
+  {
+    "artigo": "Investidura militar",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A investidura militar é uma formalidade sem conteúdo ético, pois não atribui responsabilidade especial ao agente que passa a exercer parcela do poder estatal.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "A investidura possui solenidade e significado jurídico e moral, pois o militar assume deveres, responsabilidades e poderes que devem ser exercidos em favor da sociedade.",
+    "id": 45
+  },
+  {
+    "artigo": "Quebra de valores éticos",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A quebra grave de valores éticos pode gerar apuração disciplinar, afastamento, perda da função e exclusão a bem da disciplina, conforme a gravidade do caso e o devido processo.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A responsabilização pode ocorrer nas esferas disciplinar, administrativa, civil e penal, sem afastar contraditório e ampla defesa.",
+    "id": 46
+  },
+  {
+    "artigo": "Fraudes em intervenções policiais",
+    "nivel": "Difícil",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A fraude processual ou o forjamento de confronto prejudica somente o policial diretamente envolvido, sem afetar a legitimidade ou a imagem da Corporação.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "Fraudes contaminam a imagem institucional, aumentam o controle externo, enfraquecem a confiança social e podem gerar responsabilização criminal e disciplinar dos envolvidos.",
+    "id": 47
+  },
+  {
+    "artigo": "Corrupção policial",
+    "nivel": "Difícil",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A corrupção policial destrói a confiança na autoridade legítima, pois o cidadão pode passar a obedecer por medo ou acreditar que o agente público pode ser comprado.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A corrupção compromete a legitimidade institucional, viola a honra profissional e prejudica a relação entre polícia e sociedade.",
+    "id": 48
+  },
+  {
+    "artigo": "Consequências pessoais da corrupção",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "As consequências da corrupção policial são apenas financeiras e não costumam alcançar a carreira, a liberdade, a honra ou a vida familiar do militar.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "A corrupção pode provocar processos criminais e administrativos, prisão, exclusão, perda da carreira, gastos elevados, destruição da reputação e graves impactos familiares.",
+    "id": 49
+  },
+  {
+    "artigo": "Reflexão e trajetória profissional",
+    "nivel": "Fácil",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Os slides finais propõem refletir sobre a identidade e a conduta do policial e organizar uma apresentação pessoal com origens, bagagem, situação familiar, diferencial e metas para os próximos anos.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "O slide 95 trabalha a pergunta sobre quem o policial é; o slide 96 estrutura o briefing da vida em origens, bagagem, QG atual, diferencial e próxima missão.",
+    "id": 50
+  }
+]
