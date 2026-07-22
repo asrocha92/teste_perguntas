@@ -1,0 +1,32 @@
+{
+  "original_count": 38,
+  "added_count": 34,
+  "final_count": 72,
+  "skipped_exact_count": 0,
+  "comments_added_to_preexisting_or_new": 0,
+  "all_have_comments": true,
+  "ids_sequential": true,
+  "near_similarity_pairs_0_78_or_more": [
+    {
+      "ratio": 0.815,
+      "id1": 10,
+      "id2": 58,
+      "q1": "Relacione cada objeto da criminologia à descrição correspondente.",
+      "q2": "Relacione cada teoria criminológica à ideia central correspondente."
+    },
+    {
+      "ratio": 0.803,
+      "id1": 10,
+      "id2": 13,
+      "q1": "Relacione cada objeto da criminologia à descrição correspondente.",
+      "q2": "Relacione cada natureza de violência à descrição correspondente."
+    },
+    {
+      "ratio": 0.793,
+      "id1": 29,
+      "id2": 58,
+      "q1": "Relacione cada escola criminológica à sua ideia central.",
+      "q2": "Relacione cada teoria criminológica à ideia central correspondente."
+    }
+  ]
+}
