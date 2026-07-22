@@ -623,5 +623,508 @@
     "correta": "B",
     "comentario": "A criminologia cultural estuda significados, representações, mídia, identidade e emoções relacionadas ao crime.",
     "id": 38
+  },
+  {
+    "artigo": "UD III — Política Criminal e Direito Penal",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A política criminal e o Direito Penal possuem exatamente a mesma função, pois ambos se limitam a definir crimes e penas.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "O Direito Penal define crimes, penas e medidas de segurança; a política criminal orienta escolhas e estratégias de prevenção, repressão e controle da criminalidade.",
+    "id": 39
+  },
+  {
+    "artigo": "UD III — Criminologia e Política Criminal",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A criminologia estuda o fenômeno criminal na realidade, enquanto a política criminal utiliza esse conhecimento para orientar decisões e estratégias públicas.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A criminologia produz conhecimento empírico sobre o crime; a política criminal transforma esse conhecimento em diretrizes e ações estatais.",
+    "id": 40
+  },
+  {
+    "artigo": "UD III — Formulação da Política Criminal",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Uma política criminal eficiente deve ser formulada somente com base no clamor social e na sensação de insegurança da população.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "Além da percepção social, a política criminal deve considerar dados, diagnóstico, limites constitucionais, finalidade pública e avaliação de resultados.",
+    "id": 41
+  },
+  {
+    "artigo": "UD III — Sistema de Justiça Criminal",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "O sistema de justiça criminal é formado apenas pela Polícia Militar e pelo Poder Judiciário.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "O sistema é mais amplo e envolve polícias, Ministério Público, Poder Judiciário, defesa técnica, execução penal e outras instituições ligadas ao fluxo penal.",
+    "id": 42
+  },
+  {
+    "artigo": "UD III — Atuação Policial",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A atuação policial é uma das portas de entrada do sistema de justiça criminal, pois o registro da ocorrência, a preservação de provas e a legalidade da intervenção influenciam as fases posteriores.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Uma atuação policial legal e tecnicamente registrada preserva provas, direitos e a validade dos atos que serão analisados nas etapas seguintes.",
+    "id": 43
+  },
+  {
+    "artigo": "UD III — Ministério Público",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "O Ministério Público promove a ação penal pública e exerce o controle externo da atividade policial.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Essas são funções constitucionais do Ministério Público dentro do sistema de justiça criminal.",
+    "id": 44
+  },
+  {
+    "artigo": "UD III — Defesa Técnica",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A defesa técnica constitui um obstáculo ilegítimo ao sistema penal, pois sua função é apenas dificultar a punição dos autores de crimes.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "A defesa técnica assegura contraditório, ampla defesa e devido processo legal, contribuindo para a legitimidade da decisão penal.",
+    "id": 45
+  },
+  {
+    "artigo": "UD III — Controle Social Informal",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Família, escola e comunidade podem atuar como mecanismos de controle social informal antes que determinado conflito chegue ao sistema penal.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Esses grupos orientam comportamentos e solucionam ou reduzem conflitos por meio das relações sociais cotidianas, sem atuação estatal formal.",
+    "id": 46
+  },
+  {
+    "artigo": "UD III — Controle Social Formal",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "O controle social formal é exercido por instituições oficiais que atuam com competência legal, procedimentos, registros e possibilidade de aplicação de sanções.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Polícia, Ministério Público, Judiciário e sistema prisional são exemplos de instituições formais submetidas a regras e competências legais.",
+    "id": 47
+  },
+  {
+    "artigo": "UD III — Repressão Penal",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A repressão penal é sempre ilegítima, mesmo quando prevista em lei, necessária e proporcional à proteção da sociedade.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "A repressão penal pode ser legítima quando respeita legalidade, necessidade, proporcionalidade, controle e finalidade pública.",
+    "id": 48
+  },
+  {
+    "artigo": "UD III — Seletividade Penal",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Seletividade penal é o fenômeno pelo qual o sistema penal incide de forma mais intensa sobre determinados crimes, grupos, territórios ou pessoas.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A seletividade demonstra que a atuação do sistema penal não alcança todas as condutas e pessoas de maneira uniforme.",
+    "id": 49
+  },
+  {
+    "artigo": "UD III — Cifra Negra",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A cifra negra corresponde às infrações que ocorrem, mas não chegam ao conhecimento oficial ou não são registradas pelo sistema de justiça criminal.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A cifra negra representa a criminalidade real que permanece fora das estatísticas oficiais por falta de comunicação ou registro.",
+    "id": 50
+  },
+  {
+    "artigo": "UD III — Direitos Fundamentais",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Os direitos fundamentais impedem a atuação policial eficiente e, por isso, devem ser tratados como obstáculos à segurança pública.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "Os direitos fundamentais funcionam como limites e parâmetros que legitimam a atuação policial e protegem o cidadão, o policial e a validade da ocorrência.",
+    "id": 51
+  },
+  {
+    "artigo": "UD III — Legalidade da Intervenção Policial",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Abordagens, buscas pessoais, prisões e uso da força devem ser justificáveis por critérios objetivos, legalidade, necessidade, proporcionalidade e registro técnico.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A intervenção policial precisa ser tecnicamente explicável e respeitar os limites jurídicos aplicáveis ao caso concreto.",
+    "id": 52
+  },
+  {
+    "artigo": "UD III — Órgãos do Sistema de Justiça Criminal",
+    "nivel": "Difícil",
+    "pontos": 10,
+    "tipo": "relacionar",
+    "pergunta": "Relacione cada órgão ou instituição do sistema de justiça criminal à sua função principal.",
+    "coluna_a": [
+      "Polícia Militar",
+      "Polícia Civil",
+      "Ministério Público",
+      "Poder Judiciário",
+      "Defesa técnica",
+      "Sistema prisional ou execução penal"
+    ],
+    "coluna_b": [
+      "Controla a legalidade, julga processos e acompanha a execução penal.",
+      "Atua no policiamento ostensivo, na preservação da ordem pública, na prevenção e na resposta imediata.",
+      "Assegura o contraditório, a ampla defesa e o controle da acusação.",
+      "Executa a custódia, o cumprimento da pena e as medidas relacionadas à execução penal.",
+      "Atua na investigação criminal e na apuração de infrações penais.",
+      "Promove a ação penal pública e exerce o controle externo da atividade policial."
+    ],
+    "correta": "4, 1, 5, 6, 2, 3",
+    "comentario": "Cada instituição possui função própria e complementar: prevenção e resposta imediata, investigação, acusação, julgamento, defesa e execução penal.",
+    "id": 53
+  },
+  {
+    "artigo": "UD III — Relação entre Criminologia, Política Criminal e Direito Penal",
+    "nivel": "Médio",
+    "pontos": 5,
+    "tipo": "multipla_escolha",
+    "pergunta": "A política criminal funciona como elo entre quais áreas do conhecimento?",
+    "opcoes": [
+      "Medicina Legal e Direito Civil.",
+      "Criminologia, que estuda o fenômeno criminal, e Direito Penal, que define crimes e penas.",
+      "Sociologia e Direito Tributário.",
+      "Psicologia e Direito Empresarial.",
+      "Estatística e Direito Eleitoral."
+    ],
+    "correta": "B",
+    "comentario": "A política criminal utiliza o conhecimento produzido pela criminologia e orienta escolhas que se relacionam com a intervenção jurídico-penal.",
+    "id": 54
+  },
+  {
+    "artigo": "UD IV — Prevenção e Atuação Policial",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A prevenção da criminalidade integra a atuação policial, não se limitando a polícia à repressão após a ocorrência do delito.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A atividade policial também possui dimensão preventiva, por meio de presença ostensiva, análise de riscos, orientação comunitária e intervenção sobre problemas recorrentes.",
+    "id": 55
+  },
+  {
+    "artigo": "UD IV — Teoria das Atividades Rotineiras",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A teoria das atividades rotineiras considera a oportunidade como elemento relevante para a ocorrência do crime.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A teoria analisa a convergência entre autor motivado, alvo adequado e ausência de guardião capaz, destacando a oportunidade delitiva.",
+    "id": 56
+  },
+  {
+    "artigo": "UD IV — Policiamento Orientado por Problemas",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "O policiamento orientado por problemas busca exclusivamente reprimir crimes já ocorridos, sem analisar causas, padrões ou soluções preventivas.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "Essa estratégia identifica problemas recorrentes, analisa suas causas e desenvolve respostas preventivas e avaliáveis, indo além da repressão imediata.",
+    "id": 57
+  },
+  {
+    "artigo": "UD IV — Teorias Criminológicas Ambientais",
+    "nivel": "Difícil",
+    "pontos": 10,
+    "tipo": "relacionar",
+    "pergunta": "Relacione cada teoria criminológica à ideia central correspondente.",
+    "coluna_a": [
+      "Desorganização social",
+      "Atividades rotineiras",
+      "Janelas Quebradas"
+    ],
+    "coluna_b": [
+      "Oportunidade para o crime decorrente da convergência de condições favoráveis.",
+      "Influência de sinais de abandono e degradação do ambiente.",
+      "Fragilidade dos vínculos comunitários e da capacidade de controle social local."
+    ],
+    "correta": "2, 3, 1",
+    "comentario": "Atividades rotineiras enfatizam oportunidade; Janelas Quebradas relacionam desordem visível e insegurança; desorganização social destaca vínculos comunitários enfraquecidos.",
+    "id": 58
+  },
+  {
+    "artigo": "UD IV — Prevenção Terciária",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A prevenção terciária busca evitar a reincidência criminal por meio da ressocialização e da reintegração do infrator à sociedade.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A prevenção terciária atua após o delito e a responsabilização, procurando reduzir a reincidência e favorecer a reinserção social.",
+    "id": 59
+  },
+  {
+    "artigo": "UD IV — Hot Spots",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A teoria dos hot spots afirma que a criminalidade se distribui de maneira uniforme por toda a cidade.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "Os hot spots são pontos ou áreas com concentração elevada de ocorrências, demonstrando que a criminalidade não se distribui uniformemente.",
+    "id": 60
+  },
+  {
+    "artigo": "UD IV — Teoria das Janelas Quebradas",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Segundo a teoria das Janelas Quebradas, pequenos sinais de desordem e abandono não exercem influência alguma sobre a percepção de insegurança ou a criminalidade.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "A teoria sustenta que sinais persistentes de desordem podem transmitir ausência de controle, aumentar o medo e favorecer novas incivilidades ou delitos.",
+    "id": 61
+  },
+  {
+    "artigo": "UD IV — Função Social da Segurança Pública",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A finalidade da segurança pública restringe-se ao combate ao crime e à prisão de infratores.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "A segurança pública também busca proteger a sociedade, garantir direitos, prevenir conflitos e reduzir condições que favorecem a criminalidade.",
+    "id": 62
+  },
+  {
+    "artigo": "UD IV — Segurança Pública e Constituição",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "Nos termos do artigo 144 da Constituição Federal, a segurança pública é dever do Estado, direito e responsabilidade de todos.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A Constituição apresenta a segurança pública como dever estatal, direito de todos e responsabilidade compartilhada pela coletividade.",
+    "id": 63
+  },
+  {
+    "artigo": "UD IV — Prevenção Primária",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A prevenção primária atua antes do surgimento da criminalidade e pode envolver educação, saúde, emprego, lazer e urbanização.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A prevenção primária busca enfrentar fatores sociais e estruturais antes da ocorrência do delito, reduzindo riscos e vulnerabilidades.",
+    "id": 64
+  },
+  {
+    "artigo": "UD IV — Legitimidade da Atuação Policial",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A legitimidade da atuação policial pode aumentar a colaboração da comunidade, melhorar a produção de provas e contribuir para a redução da cifra oculta.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Quando a população confia na atuação policial, tende a comunicar ocorrências, colaborar com informações e preservar a qualidade dos registros e das provas.",
+    "id": 65
+  },
+  {
+    "artigo": "UD IV — Função Social da Segurança Pública",
+    "nivel": "Difícil",
+    "pontos": 10,
+    "tipo": "resposta_curta",
+    "pergunta": "Explique a função social da segurança pública sob a perspectiva da criminologia e destaque o papel da Polícia Militar.",
+    "respostas_aceitas": [
+      "proteger sociedade garantir direitos prevenir criminalidade reduzir fatores risco policia militar policiamento ostensivo preservar ordem publica resposta imediata legitimidade",
+      "seguranca publica prevencao protecao direitos comunidade policia militar ordem publica policiamento ostensivo"
+    ],
+    "resposta_modelo": "A segurança pública possui função social de proteger pessoas e direitos, prevenir conflitos, reduzir fatores de risco e responder legalmente às ocorrências. A Polícia Militar contribui por meio do policiamento ostensivo, da preservação da ordem pública, da prevenção, da resposta imediata e da aproximação legítima com a comunidade.",
+    "comentario": "A resposta deve relacionar proteção de direitos, prevenção da criminalidade e atuação ostensiva, preventiva e legítima da Polícia Militar.",
+    "id": 66
+  },
+  {
+    "artigo": "UD IV — Análise Criminal Baseada em Evidências",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A análise criminal baseada em evidências utiliza dados estatísticos e geográficos para identificar padrões e tendências delitivas e auxiliar na alocação estratégica dos recursos policiais.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Dados confiáveis permitem reconhecer padrões de tempo e lugar, definir prioridades e empregar recursos de forma mais eficiente.",
+    "id": 67
+  },
+  {
+    "artigo": "UD IV — Cifra Negra e Mapeamento Criminal",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A subnotificação de crimes não prejudica os mapas de criminalidade, porque os programas de geoprocessamento corrigem automaticamente todos os dados ausentes.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "Softwares trabalham com os dados disponíveis e não conseguem reconstruir automaticamente todas as ocorrências não registradas; por isso, a cifra negra pode distorcer diagnósticos.",
+    "id": 68
+  },
+  {
+    "artigo": "UD IV — Mapeamento de Hot Spots",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "O mapeamento criminal permite identificar visualmente hot spots, isto é, áreas com alta concentração de ocorrências em determinado período.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "Hot spots são concentrações espaciais de incidentes que podem orientar patrulhamento, prevenção e intervenção focalizada.",
+    "id": 69
+  },
+  {
+    "artigo": "UD IV — Análise Preditiva",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A análise preditiva garante cem por cento de certeza sobre o local, o minuto exato e a identidade do autor do próximo delito.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "F",
+    "comentario": "Modelos preditivos estimam probabilidades com base em dados históricos; eles não oferecem certeza absoluta nem identificam infalivelmente o próximo autor.",
+    "id": 70
+  },
+  {
+    "artigo": "UD IV — Integração de Dados",
+    "nivel": "Médio",
+    "pontos": 2,
+    "tipo": "verdadeiro_falso",
+    "pergunta": "A integração de chamadas de emergência, boletins de ocorrência e indicadores socioeconômicos contribui para diagnósticos criminais mais robustos e integrados.",
+    "opcoes": [
+      "V",
+      "F"
+    ],
+    "correta": "V",
+    "comentario": "A combinação de fontes distintas amplia a compreensão dos padrões criminais e reduz análises baseadas em informações isoladas.",
+    "id": 71
+  },
+  {
+    "artigo": "UD IV — Análise Criminal e Gestão de Dados",
+    "nivel": "Difícil",
+    "pontos": 10,
+    "tipo": "relacionar",
+    "pergunta": "Relacione os conceitos de análise criminal às definições correspondentes.",
+    "coluna_a": [
+      "Hot spots",
+      "Cifra negra",
+      "Análise preditiva"
+    ],
+    "coluna_b": [
+      "Volume de crimes que ocorrem, mas não são registrados oficialmente.",
+      "Concentrações geográficas de ocorrências que indicam áreas prioritárias para intervenção.",
+      "Uso de dados históricos e modelos estatísticos para estimar a probabilidade de crimes futuros em determinadas regiões."
+    ],
+    "correta": "2, 1, 3",
+    "comentario": "Cifra negra é a criminalidade não registrada; hot spots são concentrações espaciais; análise preditiva estima probabilidades futuras com base em dados.",
+    "id": 72
   }
 ]
